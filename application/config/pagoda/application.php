@@ -15,7 +15,7 @@ return array(
 
 	'url' => '',
 
-	/* http://laravel.com/docs/install
+	/*
 	|--------------------------------------------------------------------------
 	| Asset URL
 	|--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return array(
 	|
 	*/
 
-	'key' => '',
+	'key' => 'F7YPHewnK8fezc5wwQ0hlYCir6LAvd0j',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return array(
 	|
 	*/
 
-	'profiler' => false, //keep false for production
+	'profiler' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -170,7 +170,7 @@ return array(
 		'Filter'     	=> 'Laravel\\Routing\\Filter',
 		'Form'       	=> 'Laravel\\Form',
 		'Hash'       	=> 'Laravel\\Hash',
-		'HTML'       	=> 'Laravel\\HTML', 
+		'HTML'       	=> 'Laravel\\HTML',
 		'Input'      	=> 'Laravel\\Input',
 		'IoC'        	=> 'Laravel\\IoC',
 		'Lang'       	=> 'Laravel\\Lang',
