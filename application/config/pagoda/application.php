@@ -13,3 +13,23 @@ return array(
 
 
 );
+public static function base()
+    {
+        if (isset(static::$base)) return static::$base;
+
+        $base = 'http://localhost';
+
+        // If the application's URL configuration is set, we will just use that
+        // instead of trying to guess the URL from the $_SERVER array's host
+        // and script variables as this is a more reliable method.
+        if (($url = Config::get('application.url')) !== '')
+        {
+            $base = $url;
+        }
+        else
+        {
+            $base = Request::foundation()->getRootUrl();
+        }
+
+        return static::$base = $base;
+    }
