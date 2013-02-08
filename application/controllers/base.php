@@ -21,7 +21,7 @@ class Base_Controller extends Controller {
 	{
 		return Response::error('404');
 	}
-	/**
+	/**!!!JC
 	 * set config/application.php url to the base url of the application. 
 	 * Gets rid of the incorrect guessing of baseurl by the Symfony 
 	 * components
