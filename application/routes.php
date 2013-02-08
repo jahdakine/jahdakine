@@ -1,41 +1,41 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Simply tell Laravel the HTTP verbs and URIs it should respond to. It is a
-| breeze to setup your application using Laravel's RESTful routing and it
-| is perfectly suited for building large applications and simple APIs.
-|
-| Let's respond to a simple GET request to http://example.com/hello:
-|
-|		Route::get('hello', function()
-|		{
-|			return 'Hello World!';
-|		});
-|
-| You can even respond to more than one URI:
-|
-|		Route::post(array('hello', 'world'), function()
-|		{
-|			return 'Hello World!';
-|		});
-|
-| It's easy to allow URI wildcards using (:num) or (:any):
-|
-|		Route::put('hello/(:any)', function($name)
-|		{
-|			return "Welcome, $name.";
-|		});
-|
-*/
+//No controller, logic in closure
+// Route::get('/', function()
+// {
+// 	return View::make('home.index');
+// });
+//
+//Manually register individual routes
+// Route::get('/', 'home@index');
+// Route::get('about', 'home@about');
+// Route::get('contact', 'home@contact');
+// Route::get('test', 'home@test');
+// Route::get('/users', 'users@index');
 
-Route::get('/', function()
-{
-	return View::make('home.index');
-});
+//Register route controllers 
+// Route::controller('home');
+// Route::controller('users');
+// or
+//Route::controller(array('home', 'users'));
+
+//Named route - good for REST
+// Route::get('users', array('as' => 'users', 'uses' => 'users@index')); //get all users
+// Route::get('users/(:any)', array('as' => 'user', 'uses' => 'users@show')); //show 1 user
+// Route::get('users/new', array('as' => 'new_user', 'uses' => 'users@new')); //create form for adding new user
+
+//overrides
+Route::get('home', 'home@index');
+Route::get('about', 'home@about');
+Route::get('contact', 'home@contact');
+Route::get('portfolio', 'home@portfolio');
+
+
+// Route::get('users', 'users@index');
+// Route::get('users/(:any)/edit', 'users@edit');
+
+//Detect automatically
+Route::controller(Controller::detect());
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +62,11 @@ Event::listen('500', function()
 	return Response::error('500');
 });
 
+//!!! DEV only
+// Event::listen('laravel.query', function($sql) {
+// 	echo "SQL: {$sql} <br/>";
+// });
+
 /*
 |--------------------------------------------------------------------------
 | Route Filters
@@ -83,7 +88,7 @@ Event::listen('500', function()
 |
 | Next, attach the filter to a route:
 |
-|		Route::get('/', array('before' => 'filter', function()
+|		Router::register('GET /', array('before' => 'filter', function()
 |		{
 |			return 'Hello World!';
 |		}));

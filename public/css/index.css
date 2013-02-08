@@ -1,0 +1,162 @@
+.landing { padding:0 1em 1em 1em; margin-top:0; }
+.separator { background-color: #333; height:36px; margin-bottom:0; }
+/*
+| Image Matrix
+*/
+.image-matrix {
+  width:100%;
+  text-align:center;
+  margin: 7px auto;
+}
+.image-matrix div {
+  display:inline;
+  margin:10px 0;
+}
+.image-matrix a img {
+
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  padding: 9px;
+  margin: 7px;
+  position: relative;
+}
+/*
+| List Carousel
+*/
+.list {
+  background-color: #ccc !important;
+}
+.list-carousel {
+  padding: 15px 18px 15px 18px;
+}
+.list-carousel ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
+}
+.list-carousel li {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  border: 5px solid #bbb;
+  width: 158px;
+  height: 158px;
+  padding: 0;
+  margin: 2px;
+  display: block;
+  float: left;
+}
+.clear-fix {
+  float: none;
+  clear: both;
+}
+/*
+| List Text
+*/
+.list-text {
+  width: 100%;
+  vertical-align: top;
+}
+#t1, #t2 {
+  width: 33%;
+  padding: 10px;
+  float:left;
+  list-style: none;
+}
+#t3 {
+  width:auto;
+  padding: 10px;
+  float:left;
+  list-style: none;
+}
+/*
+| Frames
+*/
+#contentFrame {
+  display:none;
+  list-style:none;
+  margin: 1em auto;
+  padding: 5px;
+  width: 100%;
+}
+/*
+| Sticky notes
+*/
+.notes {
+  width:50%;
+  margin: 50px auto;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 20px rgba(0,0,0,.15);
+  -moz-box-shadow: 10px 10px 20px rgba(0,0,0,.15);
+  box-shadow: 10px 10px 20px rgba(0,0,0,.15);
+  background-color: #fcf59b;  
+  font-family: 'Special Elite', cursive;
+}
+.notes li {
+  list-style: square;
+  color: #2972A3;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+/*
+| Carousel controls
+*/
+.controls {
+  z-index: 1000;
+  list-style: none;
+  position: fixed;
+  margin:0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%; 
+  padding:5px 0 0 0;
+}
+#ctrls1, #ctrls2, #ctrls3, #ctrls4, #ctrls5, #ctrls6 {   
+  display: inline-table;
+  text-decoration:none;
+  background-image:url('/img/controls-icon.png');
+  background-repeat: no-repeat;  
+  width:23px; height:25px;
+}
+#ctrls1 { background-position: 0 0; }
+#ctrls2 { background-position: 0 -25px; }
+#ctrls3 { background-position: 0 -50px; }
+#ctrls4 { background-position: 0 -75px; }
+#ctrls5 { background-position: 0 -100px; }
+#ctrls6 { background-position: 0 -125px; }
+
+#linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #amazon, #yelp, #icloud, #vimeo, #paypal, #skype, #gmail, #carou22, #carou23, #carou24, #carou25 {   
+  display: inline-table;
+  text-decoration:none;
+  background-image:url('/img/carousel-sprite-sheet.png');
+  background-repeat: no-repeat;  
+  width:128px; height:128px;
+}
+#carou1 { background-position: 0 0; }
+#amazon { background-position: 0 -128px; }
+#ebay { background-position: 0 -256px; }
+#blogger { background-position: 0 -386px; }
+#evernote { background-position: 0 -512px; }
+#flickr { background-position: -128px 0; }
+#github { background-position: -128px -128px; }
+#google { background-position: -128px -256px; }
+#grooveshark { background-position: -128px -386px; }
+#linkedin { background-position: -128px -512px; }
+#paypal { background-position: -256px 0; }
+#picassa { background-position: -256px -128px; }
+#skype { background-position: -256px -256px; }
+#icloud { background-position: -256px -386px; }
+#meetup { background-position: -256px -512px; }
+#stackoverflow { background-position: -386px 0; }
+#twitter { background-position: -386px -128px; }
+#vimeo { background-position: -386px -256px; }
+#yelp { background-position: -386px -386px; }
+#zazzle { background-position: -386px -512px; }
+#youtube { background-position: -512px 0; }
+#gmail { background-position: -512px -128px; }
+#carou23 { background-position: -512px -256px; }
+#carou24 { background-position: -512px -386px; }
+#carou25 { background-position: -512px -512px; }
