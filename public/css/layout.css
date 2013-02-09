@@ -50,19 +50,6 @@ a:hover, .hover {
 	color: #fff; 
   text-shadow: 1px 1px 3px #000;
 }
-/*internal linking
-a[href*="8888"]:after,
-a[href*="pagodabox"]:after, 
-a.onsite:after {
-  content: "";
-}*/
-/*external linking 
-a[href^="http"], buggy */
-a.offsite:after {
-  color: #2972A3;
-  content: "\21D2";
-  font-size: 15px;
-}
 /*
 |Wrapper
 */

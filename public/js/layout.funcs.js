@@ -1,15 +1,17 @@
 (function() {
-	/*
-	|	layout.blade.php functions
-	| common across site
-	*/
+/*
+|	layout.blade.php functions
+| common across site
+*/
 
-	/* flexible footer */
+/* flexible footer */
 	var windowHeight = window.innerHeight,
 			headerHeight = $("header").height(),
 			contentHeight = $("#content").height(),
 			footerHeight = $("footer").height(),
-			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight);
+			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight),
+			link_toggle = $("#link-toggle"),
+			offsite = $(".offsite");
   function resizeFooter() {
     $(".flex-footer").css("min-height", flexFooter);
   }
@@ -19,7 +21,7 @@
 		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
 		resizeFooter();
   });
-	/* setup nickname pronunciation player */
+/* setup nickname pronunciation player */
 	var audio = $('<audio>', {
 				id	: "nickSound",
 				src : "/audio/jahdakine.wav",
@@ -42,7 +44,22 @@
 		audio_wrap.css("display", "none");
 		audio_wrap.attr("style", "padding: 0; margin: 0;");
 	});
-	/*tooltips */
+/*link toggle button click*/
+	link_toggle.on('click', function(e) {
+		e.preventDefault();
+		offsite.each(function(i){
+			var $this = $(this),
+			title = $this.attr("title"),
+			link = $this.html().substr(0,$this.html().length-1);
+			console.log(i,title,link);
+			if(this.target) {
+				$this.removeAttr("target").attr("title","Offsite to " +link).removeClass("link-new-win").addClass("link-same-win").html(link+"&#8658;");
+			} else {
+				$this.attr('target', '_blank').attr("title", "Offsite to " +link+ " in a new window/tab").removeClass("link-same-win").addClass("link-new-win").html(link+"&#8663;");
+			}
+		});
+	});
+/*tooltips */
 	//shared
 	var shared = {
 		position: {

@@ -31,7 +31,7 @@
 			</p>
 			<p>
 				Screenshots have been obtained through the 
-				{{ HTML::link("http://archive.org/web/web.php", "Internet Archive (Wayback Machine)", array("title"=>"Offsite to Wayback Machine in a new window", "target"=>"_blank", "class" => "offsite")) }} 
+				{{ HTML::link("http://archive.org/web/web.php", "Internet Archive (Wayback Machine)&#8663;", array("title"=>"Offsite to Wayback Machine in a new window", "target"=>"_blank", "class" => "offsite")) }} 
 				if the site is no longer available or has been radically changed from the time of my involvement.
 			</p>
 			<p>
