@@ -44,7 +44,14 @@
 						<li class="current">Contact</li> 
 					@else 
 						<li>{{ HTML::link('home/contact','Contact') }}</li>
-					@endif 										
+					@endif 	
+					<li class="to-right">
+						{{ HTML::link("#", "Commands") }}
+						<ul>
+							<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
+							<li>{{ HTML::link("#", "Toggle links", array("title"=>"Set external linking style", "id"=>"link-toggle")) }}</li>
+					</ul>
+					</li>														
 				@yield_section <!-- will yield and close section -->
 			</ul>
 		</div><!-- // navigation -->	
@@ -54,8 +61,10 @@
 			<aside id="aside" class="landAside">
 				<h3 class="to-center">Legend</h3>
 				<ul class="nolist">
-					<li><span class="href" title="Links to webpages on my site">Onsite link</span></li>
-					<li><span class="href" title="Links to webpages on an external site">Offsite link</span><span class="offsite">&#8658;</span></li>
+					<li><span class="href" title="Links to web pages on this site">Onsite link</span></li>
+					<li><span class="href" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
+					<li><span class="href" title="Links to web pages on an external site in a new window">New window offsite link&#8663;</span></li>
+					<li><span class="href" title="Links to pop-up windows">Popup&#8657;</span></li>
 					<li><span class="hover" title="Link style with cursor above">Hover</span></li>
 					<li><span class="visited" title="Links that have been followed">Visited</span></li>
 					<li><span class="dfn def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>

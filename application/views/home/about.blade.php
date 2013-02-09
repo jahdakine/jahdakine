@@ -99,7 +99,7 @@
 				<li><a href="#courses-3">Projects</a></li>
 			</ul>
 			<div id="courses-1">
-				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>
+				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>
 				<ul>
 					<li>Laravel Essentials</li>
 					<li>Advanced JavaScript Fundamentals</li>
@@ -118,7 +118,7 @@
 				</ul>
 			</div><!-- // courses-1 -->
 			<div id="courses-2">
-				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>	
+				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>	
 				<ul>
 					<li>Hands-On: Build a Practical Web Application with Laravel</li>
 					<li>Connected to the Backbone</li>
