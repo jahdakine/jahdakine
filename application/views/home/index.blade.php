@@ -88,8 +88,8 @@
 				{{ HTML::link('#', '', array('id' => 'picassa', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
 			</li>		
 			<li class="block2">
-				{{ HTML::link("http://www.amazon.com/", "Amazon", array("title"=>"Open Amazon site in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}
-				{{ HTML::link('#', '', array('id' => 'amazon', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link("http://www.fandango.com/", "Fandango", array("title"=>"Open Fandango site in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}
+				{{ HTML::link('#', '', array('id' => 'fandango', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
 			</li>						
 		</ul><!-- // t2 -->
 		<ul id="t3">	
@@ -110,8 +110,8 @@
 				{{ HTML::link('#', '', array('id' => 'meetup', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }}				
 			</li>		
 			<li class="block3">
-				{{ HTML::link("https://www.paypal.com/", "PayPal", array("title"=>"Open PayPal site in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}
-				{{ HTML::link('#', '', array('id' => 'paypal', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link("https://www.netflix.com/", "Netflix", array("title"=>"Open Netflix site in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}
+				{{ HTML::link('#', '', array('id' => 'netflix', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
 			</li>
 			<li class="block3">
 				{{ HTML::link("http://beta.skype.com/en/", "Skype", array("title"=>"Open Skype site in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}
