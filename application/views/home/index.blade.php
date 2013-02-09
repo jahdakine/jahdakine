@@ -123,10 +123,6 @@
 		</ul><!-- // t3 -->
 	</div><!-- // carousel -->
 </div><!-- // list -->
-<!-- !!!more to consider adding:
-	http://www.fandango.com/centuryboulder_aauni/theaterpage 
-  http://developer.netflix.com/docs/JavaScript_APIs
--->
 <div class="clear-fix"></div>
 <hr class="separator"/>	
 @endsection
@@ -180,7 +176,12 @@
 				<li>Facility for adding icons/sites</li>
 				<li>Package (minify, optimize)</li>
 				<li>Arrive at energy independence!</li>
-			</ul>																
+			</ul>		
+			<!--  
+			Preload images
+			Sprite remaining images
+			
+			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->
 	<div id="contentFrame" class="content"></div><!-- // contentFrame -->
