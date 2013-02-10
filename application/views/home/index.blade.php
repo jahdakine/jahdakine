@@ -170,11 +170,10 @@
 		<section class="notes">
 			<h3 class="to-center">To do:</h3> 
 			<ul>
-				<li><strike>Create external link switcher, remember with LS</strike></li>
 				<li>Research remaining API calls</li>
 				<li>Build out login area</li>
 				<li>Facility for adding icons/sites</li>
-				<li>Package (minify, optimize)</li>
+				<li>Package (minify, optimize, modernizr)</li>
 				<li>Arrive at energy independence!</li>
 			</ul>		
 			<!--  
