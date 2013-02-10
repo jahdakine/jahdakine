@@ -1,0 +1,24 @@
+/*
+| Browser/mail images
+*/
+#gmail, #macmail, #skype, #chrome, #ff, #safari, #opera, #ie {
+  text-decoration:none;
+  background-image:url('/img/browser-spritesheet.png');
+  background-repeat: no-repeat;
+  width:32px;
+  height:32px;
+  text-indent: 38px;
+  display: -webkit-box; display: -moz-box; display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;  
+}
+#gmail { background-position: 0 0; }
+#macmail { background-position: 0 -32px; }
+#skype { background-position: 0 -64px; }
+#chrome { background-position: 0 -96px; }
+#ff { background-position: 0 -128px; }
+#safari { background-position: 0 -160px; }
+#opera { background-position: 0 -192px; }
+#ie { background-position: 0 -224px; }

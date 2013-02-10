@@ -117,7 +117,7 @@
 #ctrls1, #ctrls2, #ctrls3, #ctrls4, #ctrls5, #ctrls6 {   
   display: inline-table;
   text-decoration:none;
-  background-image:url('/img/controls-icon.png');
+  background-image:url('/img/controls-spritesheet.png');
   background-repeat: no-repeat;  
   width:23px; height:25px;
 }
@@ -131,7 +131,7 @@
 #linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gmail, #carou22, #carou23, #carou24, #carou25 {   
   display: inline-table;
   text-decoration:none;
-  background-image:url('/img/carousel-sprite-sheet.png');
+  background-image:url('/img/carousel-spritesheet.png');
   background-repeat: no-repeat;  
   width:128px; height:128px;
 }

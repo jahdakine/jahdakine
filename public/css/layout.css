@@ -149,6 +149,21 @@ ul.drop li:hover > ul { visibility: visible }
   padding: 0;
 }
 /*
+|Status 
+ */
+#nickHide, #nickButton, #info, #help {
+  display: inline-table;
+  text-decoration:none;
+  background-image:url('/img/status-spritesheet.png');
+  background-repeat: no-repeat;
+  width:20px;
+  height:16px;
+}
+#nickHide { background-position: 0 0; }
+#nickButton { background-position: 0 -16px; }
+#info { background-position: 0 -32px; }
+#help { background-position: 0 -48px; }
+/*
 | Footer
 */
 .copy {

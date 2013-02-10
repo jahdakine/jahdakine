@@ -34,7 +34,9 @@
 			carousel_help = $("p#carouselHelp"),
 			num2Scroll = 1,
 			dir2Scroll = "left";
-	/*setup carousel slider*/
+/*!!!pre-load carousel images*/
+
+/*setup carousel slider*/
 	function setCarousel(num2Scroll, dir2Scroll) {
 		carousel.carouFredSel({
 			align						: "center",

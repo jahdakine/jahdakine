@@ -77,8 +77,7 @@
 		<footer class="flex-footer">
 			@yield('footer')
 			<div id="audioWrap" class="hide">
-				<a id="nickHide" href="#" title="Dismiss player"><img class="to-top" width="16" height="16" alt="" src="/img/delete-icon.png"></a>
-				<!-- HTML::a_img('#', '', 'Dismiss player', '/img/delete-icon.png', '', array("id" => "nickHide"), array("height" => "16", "width" => "16", "class" => "to-top")) }} -->
+				<a id="nickHide" href="#" title="Dismiss player"></a>
 			</div>
 			<div class="to-center copy"><time datetime="2013-02-06,20:24:23-07:00">Last Updated: February 6th, 2013</time></div>
 			<p class="copy">copyright &copy;2013 John Chase (aka 
@@ -86,8 +85,7 @@
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
 				</u>)
 				<span style="padding-top:2px;">
-					<a id="nickButton" href="#" title="Play nickname pronunciation audio (wav)"><img class="to-middle" width="21" height="16" alt="" src="/img/audio-icon.png"></a>
-					<!-- HTML::a_img('#', '', 'Play nickname pronunciation audio (wav)', '/img/audio-icon.png', '', array('id' => 'nickButton'), array("height" => "16", "width" => "21", "class" => "to-middle")) }} -->
+					<a id="nickButton" href="#" title="Play nickname pronunciation audio (wav)"></a>
 				</span>
 				</p>	
 		</footer>
