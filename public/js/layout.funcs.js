@@ -5,11 +5,11 @@
 */
 
 /* global vars */
-	var window = $(window),
-			document = $(document),
+	var $window = $(window),
+			$document = $(document),
 			link_toggle = $("#link-toggle");
 /* flexible footer */
-	var windowHeight = window.innerHeight,
+	var windowHeight = $window.innerHeight,
 			headerHeight = $("header").height(),
 			contentHeight = $("#content").height(),
 			footerHeight = $("footer").height(),
@@ -17,13 +17,13 @@
   function resizeFooter() {
     $(".flex-footer").css("min-height", flexFooter);
   }
-  window.load(resizeFooter);
+  $window.load(resizeFooter);
   // !!! only working on load
-  window.resize(function() {
+  $window.resize(function() {
 		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
 		resizeFooter();
   });
-  document.ready(function() {
+  $document.ready(function() {
 		if(localStorage.getItem("link")) {
 			link_style = localStorage.getItem("link");
 		} else {
@@ -78,7 +78,7 @@
 	var shared = {
 		position: {
 				target: 'mouse',
-				viewport: window,
+				viewport: $window,
 				my: 'top left',
 				at: 'left bottom',
 				adjust: {
@@ -86,7 +86,8 @@
 				}
 		},
 		style: {
-			tip: true
+			tip: true,
+			corner: true
 		}
 	};
 	// Setup our first tooltip, adding some other options
@@ -107,7 +108,7 @@
 			overwrite: false,
 			position: {
 					target: 'mouse',
-					viewport: window,
+					viewport: $window,
 					my: 'top left	',
 					at: 'left bottom',
 					adjust: {
