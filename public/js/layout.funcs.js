@@ -4,23 +4,52 @@
 | common across site
 */
 
+/* global vars */
+	var window = $(window),
+			document = $(document),
+			link_toggle = $("#link-toggle");
 /* flexible footer */
 	var windowHeight = window.innerHeight,
 			headerHeight = $("header").height(),
 			contentHeight = $("#content").height(),
 			footerHeight = $("footer").height(),
-			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight),
-			link_toggle = $("#link-toggle"),
-			offsite = $(".offsite");
+			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight);
   function resizeFooter() {
     $(".flex-footer").css("min-height", flexFooter);
   }
-  $(window).load(resizeFooter);
+  window.load(resizeFooter);
   // !!! only working on load
-  $(window).resize(function() {
+  window.resize(function() {
 		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
 		resizeFooter();
   });
+  document.ready(function() {
+		if(localStorage.getItem("link")) {
+			link_style = localStorage.getItem("link");
+		} else {
+			link_style = "same-win";
+		}
+		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
+		link_toggle.trigger('click');
+  });
+/*link toggle button click*/
+	link_toggle.on('click', function(e) {
+		var offsite = $(".offsite"),
+		link_style = localStorage.getItem("link");
+		e.preventDefault();
+		offsite.each(function(i){
+			var $this = $(this),
+			title = $this.attr("title"),
+			link = $this.html().substr(0,$this.html().length-1);
+			// console.log(i,title,link,link_style);
+			if(link_style === "new-win") {
+				$this.removeAttr("target").attr("title","Offsite to " +link).removeClass("link-new-win").addClass("link-same-win").html(link+"&#8658;");
+			} else {
+				$this.attr('target', '_blank').attr("title", "Offsite to " +link+ " in a new window/tab").removeClass("link-same-win").addClass("link-new-win").html(link+"&#8663;");
+			}
+		});
+		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
+	});
 /* setup nickname pronunciation player */
 	var audio = $('<audio>', {
 				id	: "nickSound",
@@ -44,27 +73,12 @@
 		audio_wrap.css("display", "none");
 		audio_wrap.attr("style", "padding: 0; margin: 0;");
 	});
-/*link toggle button click*/
-	link_toggle.on('click', function(e) {
-		e.preventDefault();
-		offsite.each(function(i){
-			var $this = $(this),
-			title = $this.attr("title"),
-			link = $this.html().substr(0,$this.html().length-1);
-			console.log(i,title,link);
-			if(this.target) {
-				$this.removeAttr("target").attr("title","Offsite to " +link).removeClass("link-new-win").addClass("link-same-win").html(link+"&#8658;");
-			} else {
-				$this.attr('target', '_blank').attr("title", "Offsite to " +link+ " in a new window/tab").removeClass("link-same-win").addClass("link-new-win").html(link+"&#8663;");
-			}
-		});
-	});
 /*tooltips */
 	//shared
 	var shared = {
 		position: {
 				target: 'mouse',
-				viewport: $(window),
+				viewport: window,
 				my: 'top left',
 				at: 'left bottom',
 				adjust: {
@@ -93,8 +107,8 @@
 			overwrite: false,
 			position: {
 					target: 'mouse',
-					viewport: $(window),
-					my: 'top left',
+					viewport: window,
+					my: 'top left	',
 					at: 'left bottom',
 					adjust: {
 						x: 15, y: 15, mouse: true

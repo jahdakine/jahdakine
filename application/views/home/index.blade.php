@@ -159,7 +159,7 @@
 			<p>
 				This is as much a launching pad for me as it is a showcase of what I care about and can do. The default external hyperlink style opens sites in a new 
 				window/tab because I keep this page open during my surfing day. This is quicker than using right-click open option. If you prefer opening new sites in 
-				the current window style, use the <em>Commands|Toggle links</em> function.
+				the current window, use the <em>Commands|Toggle links</em> function.
 			</p>
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 
@@ -170,7 +170,7 @@
 		<section class="notes">
 			<h3 class="to-center">To do:</h3> 
 			<ul>
-				<li><strike>Create external link switcher</strike>, remember with LS</li>
+				<li><strike>Create external link switcher, remember with LS</strike></li>
 				<li>Research remaining API calls</li>
 				<li>Build out login area</li>
 				<li>Facility for adding icons/sites</li>
