@@ -157,12 +157,12 @@ ul.drop li:hover > ul { visibility: visible }
   background-image:url('/img/status-spritesheet.png');
   background-repeat: no-repeat;
   width:20px;
-  height:16px;
+  height:18px;
 }
 #nickHide { background-position: 0 0; }
-#nickButton { background-position: 0 -16px; }
-#info { background-position: 0 -32px; }
-#help { background-position: 0 -48px; }
+#nickButton { background-position: 0 -18px; }
+#info { background-position: 0 -35px; }
+#help { background-position: 0 -51px; }
 /*
 | Footer
 */
