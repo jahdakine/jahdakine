@@ -9,7 +9,5 @@ return array(
      * of your application.
      *
      */
-    'url' => 'https://jahdakine.pagodabox.com',
-
-
+    'url' => 'https://jahdakine.pagodabox.com'
 );
