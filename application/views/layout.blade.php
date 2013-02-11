@@ -84,7 +84,7 @@
 			<div id="audioWrap" class="hide">
 				<a id="nickHide" href="#" title="Dismiss player"></a>
 			</div>
-			<div class="to-center copy"><time datetime="2013-02-10T17:00">Last Updated: February 10th, 2013</time></div>
+			<div class="to-center copy"><time datetime="2013-02-11T17:00">Last Updated: February 11th, 2013</time></div>
 			<p class="copy">copyright &copy;{{ date('Y') }} John Chase (aka 
 				<u class="def">
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
