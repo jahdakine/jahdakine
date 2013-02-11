@@ -149,7 +149,7 @@
 			{{ HTML::link("http://caroufredsel.dev7studios.com/", "carouFred&#8663;", array("title"=>"Offsite to carouFred in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}.
 			<abbr title="Javascript Object Notation">jSON</abbr> request examples are documented within the  
 			{{ HTML::link("http://api.jquery.com/jQuery.getJSON/", "jQuery API&#8663;", array("title"=>"Offsite to jQuery API in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}.
-			Mail hide utility demonstrated on {{ HTML::link("contact", "Contact page", array("title"=>"Contact page")) }} courtesy of Google's 
+			Mail reveal utility demonstrated on {{ HTML::link("contact", "Contact page", array("title"=>"Contact page")) }} courtesy of Google's 
 			{{ HTML::link("http://www.google.com/recaptcha/mailhide/", "reCAPTCHA&#8663;", array("title"=>"Offsite to Mail Hide in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}. 
 			Slick icons from the folks at {{ HTML::link("http://www.iconarchive.com/", "IconArchive&#8663;", array("title"=>"Offsite to IconArchive in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }},
 			a useful sprite generator that actually works can be found at 
@@ -158,8 +158,8 @@
 			{{ HTML::link("http://twitter.github.com/bootstrap/customize", "Twitter's Bootstrap&#8663;", array("title"=>"Offsite to Bootstrap Customization in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}.
 			<p>
 				This is as much a launching pad for me as it is a showcase of what I care about and can do. The default external hyperlink style opens sites in a new 
-				window/tab because I keep this page open during my surfing day. This is quicker than using right-click open option. If you prefer opening new sites in 
-				the current window, use the <em>Commands|Toggle links</em> function.
+				window/tab because I keep this page open during my surfing day. This is quicker than using the right-click open option. If you prefer opening new sites 
+				in the current window, use the <em>Commands|Toggle links</em> function.
 			</p>
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 
@@ -177,9 +177,15 @@
 				<li>Arrive at energy independence!</li>
 			</ul>		
 			<!--  
-			Preload images
-			Sprite remaining images
-			
+			Preload images?
+			Chrome BG wierdness?
+			Add yslow and css scores
+			security check
+			accessibility check
+			add carousel swipe for phones
+			check on legacy and IE
+			add cool 404
+			gzip, minify script
 			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->

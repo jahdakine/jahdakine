@@ -13,7 +13,7 @@
 			headerHeight = $("header").height(),
 			contentHeight = $("#content").height(),
 			footerHeight = $("footer").height(),
-			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight);
+			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight -76);
   function resizeFooter() {
     $(".flex-footer").css("min-height", flexFooter);
   }

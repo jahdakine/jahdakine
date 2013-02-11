@@ -18,4 +18,8 @@ class Home_Controller extends Base_Controller {
 	{
 		return View::make('home.portfolio');
 	}
+	public function action_technology()
+	{
+		return View::make('home.technology');
+	}
 }
