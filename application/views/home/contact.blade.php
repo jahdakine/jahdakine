@@ -29,10 +29,10 @@
 	will be displayed in a new window to help prevent spam to my inboxes and reveal my email addresses.</p>
 	<ul class="nolist">
 		<li>
-			<a class="to-top popup" id="gmail" title="Reveal this e-mail address for Gmail" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&c=AdMM-lX29vaEjUJrW54pfWifDhvAuHZcW2xAn_8BgMY=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&c=AdMM-lX29vaEjUJrW54pfWifDhvAuHZcW2xAn_8BgMY=">Gmail&#8657;</a>
+			<a class="to-top popup" id="gmail" title="Reveal this e-mail address for Gmail" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&amp;c=AdMM-lX29vaEjUJrW54pfWifDhvAuHZcW2xAn_8BgMY=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&amp;c=AdMM-lX29vaEjUJrW54pfWifDhvAuHZcW2xAn_8BgMY=">Gmail&#8657;</a>
 		</li>
 		<li>
-			<a class="to-top popup" id="macmail" title="Reveal this e-mail address for Mac mail" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&c=z11k5PSfeXXPl_TPeGhabRsf9FNzh2EmS1_Y2mJjoUc=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&c=z11k5PSfeXXPl_TPeGhabRsf9FNzh2EmS1_Y2mJjoUc=">Mac&nbsp;Mail&#8657;</a>
+			<a class="to-top popup" id="macmail" title="Reveal this e-mail address for Mac mail" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&amp;c=z11k5PSfeXXPl_TPeGhabRsf9FNzh2EmS1_Y2mJjoUc=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&amp;c=z11k5PSfeXXPl_TPeGhabRsf9FNzh2EmS1_Y2mJjoUc=">Mac&nbsp;Mail&#8657;</a>
 		</li>
 		<li>
 			<a class="to-top" id="skype" title="My Skype address callto:jahdakine?call">Skype&nbsp;(best&nbsp;to&nbsp;email&nbsp;first&nbsp;-&nbsp;I&nbsp;don't&nbsp;camp&nbsp;out&nbsp;there)</a> 
@@ -47,7 +47,7 @@
 	<h3>Popup Help</h3>
 	<ul class="nolist">
 		<li>
-			<a class="to-top offsite" id="chrome" target="_blank" href="http://support.google.com/chrome/bin/answer.py?hl=en&answer=95472" title="Open help for Chrome popups in a new window/tab">&nbsp;Chrome&#8663;</a>
+			<a class="to-top offsite" id="chrome" target="_blank" href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95472" title="Open help for Chrome popups in a new window/tab">&nbsp;Chrome&#8663;</a>
 		</li>
 		<li>
 			<a class="to-top offsite" id="ff" target="_blank" href="http://support.mozilla.org/en-US/kb/pop-blocker-settings-exceptions-troubleshooting" title="Open help for Firefox popups in a new window/tab">&nbsp;Firefox&#8663;</a>
