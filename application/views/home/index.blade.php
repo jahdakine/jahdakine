@@ -184,7 +184,6 @@
 			accessibility check
 			add carousel swipe for phones
 			check on legacy and IE
-			add cool 404
 			gzip, minify script
 			-->
 		</section><!-- // notes -->
