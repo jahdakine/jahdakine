@@ -17,7 +17,7 @@
 			<h2 id="nickName">John Chase</h2>
 			<h4>Web Developer</h4>
 			<!-- HTML::link("users/", "Sign-on") }} -->
-			<abbr title="Coming soon">Sign-on</a>
+			<abbr title="Coming soon">Sign-on</abbr>
 		</header>
 		<div id="navigation">
 			<ul class="drop" id="nav">
@@ -38,6 +38,11 @@
 							@else
 								<li>{{ HTML::link("home/portfolio", "Portfolio") }}</li>
 							@endif
+							@if(URI::is('home/technology'))
+								<li class="current">Technolgy</li>
+							@else
+								<li>{{ HTML::link("home/technology", "Technology") }}</li>
+							@endif							
 						</ul>
 					</li> 
 					@if(URI::is('home/contact'))
@@ -79,8 +84,8 @@
 			<div id="audioWrap" class="hide">
 				<a id="nickHide" href="#" title="Dismiss player"></a>
 			</div>
-			<div class="to-center copy"><time datetime="2013-02-06,20:24:23-07:00">Last Updated: February 6th, 2013</time></div>
-			<p class="copy">copyright &copy;2013 John Chase (aka 
+			<div class="to-center copy"><time datetime="2013-02-10T17:00">Last Updated: February 10th, 2013</time></div>
+			<p class="copy">copyright &copy;{{ date('Y') }} John Chase (aka 
 				<u class="def">
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
 				</u>)
@@ -88,6 +93,7 @@
 					<a id="nickButton" href="#" title="Play nickname pronunciation audio (wav)"></a>
 				</span>
 				</p>	
+				<hr class="separator"/>	
 		</footer>
 	</div> <!-- // wrapper -->
 	{{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}	
