@@ -45,6 +45,9 @@
 			items						: Math.round(window.innerWidth/200),
 			scroll					: window.num2Scroll,
 			direction       : window.dir2Scroll,
+			swipe						: {
+          onTouch			: true
+      },
 			prev						: {
         button				: c2
 			},

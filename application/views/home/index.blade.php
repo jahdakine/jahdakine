@@ -179,7 +179,7 @@
 			<!--  
 			Preload images?
 			Chrome BG wierdness?
-			Add yslow and css scores
+			touch swipe
 			security check
 			accessibility check
 			add carousel swipe for phones
@@ -197,6 +197,7 @@
 
 @section('scripts')
 	{{ HTML::script('js/vendor/jquery.carouFredSel-6.2.0-packed.js') }}
+	{{ HTML::script('js/vendor/helper-plugins/jquery.touchSwipe.min.js') }}	
 	{{ HTML::script('js/vendor/jquery.center.min.js') }}	
 	{{ HTML::script('js/index.funcs.js') }}
 @endsection
