@@ -73,9 +73,9 @@
 		<div class="error-spacer"></div>
 		<div role="main" class="main">
 			<img src="img/404.png" class="bg" onerror="this.style.display='none'"/>
-			<?php $messages = array('Ooh, scary!', 'Umm, I think we\'re lost...', 'Yikes, we took a wrong turn!', 'Looks like we\'re not in Kansasa naymore Todo!', 'Bork bork. booerk.'); ?>
+			<?php $messages = array('Ooh, scary!', 'Umm, I think we\'re lost...', 'Yikes, we took a wrong turn!', 'Looks like we\'re not in Kansas anymore Toto!', 'Help, I\'ve 404\'d and I can\'t get up!'); ?>
 
-			<h1><?php echo $messages[mt_rand(0, 2)]; ?></h1>
+			<h1><?php echo $messages[mt_rand(0, 4)]; ?></h1>
 
 			<h2>Server Error: 404 (Not Found)</h2>
 
