@@ -100,9 +100,9 @@
 	<div class="wrapper">
 		<div class="error-spacer"></div>
 		<div role="main" class="main">
-			<?php $messages = array('Ouch.', 'Oh no!', 'Whoops!'); ?>
+			<?php $messages = array('Ouch.', 'Oh no!', 'Whoopsay!', 'Bork bork. Bubbaba ba borkkk...', 'Oh snap!'); ?>
 
-			<h1><?php echo $messages[mt_rand(0, 2)]; ?></h1>
+			<h1><?php echo $messages[mt_rand(0, 4)]; ?></h1>
 
 			<h2>Server Error: 500 (Internal Server Error)</h2>
 
