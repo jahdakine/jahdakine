@@ -53,7 +53,9 @@
 					<li class="to-right">
 						{{ HTML::link("#", "Commands") }}
 						<ul>
-							<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
+							@if(URI::is('home') || URI::is('/'))
+								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
+							@endif
 							<li>{{ HTML::link("#", "Toggle links", array("title"=>"Set external linking style", "id"=>"link-toggle")) }}</li>
 					</ul>
 					</li>														

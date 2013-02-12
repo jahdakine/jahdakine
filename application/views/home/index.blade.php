@@ -179,10 +179,8 @@
 			<!--  
 			Preload images?
 			Chrome BG wierdness?
-			touch swipe
 			security check
 			accessibility check
-			add carousel swipe for phones
 			check on legacy and IE
 			gzip, minify script
 			-->
