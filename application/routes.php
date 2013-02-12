@@ -6,13 +6,6 @@
 // 	return View::make('home.index');
 // });
 //
-//Manually register individual routes
-// Route::get('/', 'home@index');
-// Route::get('about', 'home@about');
-// Route::get('contact', 'home@contact');
-// Route::get('test', 'home@test');
-// Route::get('/users', 'users@index');
-
 //Register route controllers 
 // Route::controller('home');
 // Route::controller('users');
@@ -29,8 +22,6 @@ Route::get('home', 'home@index');
 Route::get('about', 'home@about');
 Route::get('contact', 'home@contact');
 Route::get('portfolio', 'home@portfolio');
-
-
 // Route::get('users', 'users@index');
 // Route::get('users/(:any)/edit', 'users@edit');
 

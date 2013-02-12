@@ -178,6 +178,7 @@
 			</ul>		
 			<!--  
 			Preload images?
+			Link hashes to jquery states
 			Chrome BG wierdness?
 			security check
 			accessibility check
@@ -187,7 +188,6 @@
 		</section><!-- // notes -->
 	</div><!-- // landing -->
 	<div id="contentFrame" class="content"></div><!-- // contentFrame -->
-
 @endsection
 
 @section('footer')	
