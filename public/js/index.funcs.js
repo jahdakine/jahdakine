@@ -9,7 +9,7 @@
 //get square size from flickr
 //use carouFredSel method to resize
 
-(function() {
+(function() { 
 	//cache DOM vars
 	var list = $("#list"),
 			list_img = $(".listImg"),
@@ -33,7 +33,9 @@
 			land_aside = $(".landAside"),
 			carousel_help = $("p#carouselHelp"),
 			num2Scroll = 1,
-			dir2Scroll = "left";
+			dir2Scroll = "left",
+			url = window.location.search,
+			url_no_params = url.split("?")[0];
 /*!!!pre-load carousel images*/
 
 /*setup carousel slider*/
@@ -84,12 +86,14 @@
 			menu_text.addClass("current").parent().addClass("current");
 			menu_graphics.removeClass("current").parent().removeClass("current");
 			carousel_help.fadeOut("fast");
+			history.pushState('text','Home',url_no_params+'?state=text-list');
 		}
 	});
 	//nav menu clicks - graphics
 	menu_graphics.on('click', function(e, num2Scroll, dir2Scroll) {
 		e.preventDefault();
-		if(list_img.css("display") !== "inline") {
+		console.log(list_img.css("display"));
+		if(list_img.css("display") !== "inline-table") {
 			list_img.css("display","inline-table"); //displays hidden images embedded in links
 			list.removeClass("list-text");
 			list.addClass("list-carousel");
@@ -99,6 +103,7 @@
 			menu_graphics.addClass("current").parent().addClass("current");
 			menu_text.removeClass("current").parent().removeClass("current");
 			carousel_help.fadeIn(2000);
+			history.pushState('graphics','Home',url_no_params+'?state=img-list');
 		}
 	});
 	/*reset button click*/
@@ -240,5 +245,20 @@
 				appendDOM(html);
 			}
 		}, 2000);
+	});
+/* Check for state */
+	if(url === '?state=img-list') {
+		menu_graphics.trigger('click');
+	}
+	if(url === '?state=txt-list') {
+		menu_text.trigger('click');
+	}	
+	$(window).on('popstate', function(e, url) {
+		if(e.originalEvent.state === 'graphics') {
+			menu_graphics.trigger('click');
+		}
+		if(e.originalEvent.state === 'text') {
+			menu_text.trigger('click');
+		}
 	});
 })();

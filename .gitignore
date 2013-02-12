@@ -37,3 +37,6 @@ intermediate
 publish
 .idea
 storyboard
+
+# Sensitive files
+/application/config/database.php
