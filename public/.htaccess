@@ -1,13 +1,7 @@
 # Apache configuration file
-# http://httpd.apache.org/docs/2.2/mod/quickreference.html
 
-# Note: ".htaccess" files are an overhead for each request. This logic should
-# be placed in your Apache config whenever possible.
-# http://httpd.apache.org/docs/2.2/howto/htaccess.html
-
-# Turning on the rewrite engine is necessary for the following rules and
-# features. "+FollowSymLinks" must be enabled for this to work symbolically.
-
+############################################
+# BEGIN Rewrite
 <IfModule mod_rewrite.c>
 	Options +FollowSymLinks
 	RewriteEngine On
@@ -21,13 +15,65 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
+# END Rewrite
 
-<IfModule mod_expires.c>
-ExpiresActive On
 ############################################
-## Add default Expires header
-## http://developer.yahoo.com/performance/rules.html#expires
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
-    ExpiresDefault "access plus 10 years"
-</FilesMatch>
-</IfModule>
+# BEGIN Compress text files
+<ifModule mod_deflate.c>
+  <filesMatch "\.(css|js|x?html?|php|wav)$">
+    SetOutputFilter DEFLATE
+  </filesMatch>
+</ifModule>
+# END Compress text files
+
+############################################
+# BEGIN Expire headers
+<ifModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType application/x-shockwave-flash "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+  ExpiresByType text/html "access plus 1 year"
+  ExpiresByType application/xhtml+xml "access plus 1 year"
+</ifModule>
+# END Expire headers
+ 
+############################################
+# BEGIN Cache-Control Headers
+<ifModule mod_headers.c>
+  <filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+  <filesMatch "\.(css)$">
+    Header set Cache-Control "max-age=604800, public"
+  </filesMatch>
+  <filesMatch "\.(js)$">
+    Header set Cache-Control "max-age=216000, private"
+  </filesMatch>
+  <filesMatch "\.(x?html?|php)$">
+    Header set Cache-Control "max-age=600, private, must-revalidate"
+  </filesMatch>
+</ifModule>
+# END Cache-Control Headers
+ 
+############################################
+# BEGIN Turn ETags Off
+<ifModule mod_headers.c>
+  Header unset ETag
+</ifModule>
+FileETag None
+# END Turn ETags Off
+
+############################################
+# BEGIN Remove Last-Modified Header
+<ifModule mod_headers.c>
+  Header unset Last-Modified
+</ifModule>
+# END Remove Last-Modified Header
