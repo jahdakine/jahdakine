@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8"> 
 	<title>@yield('title')</title>
+	<!-- <link href="<?=Minifier::make(array('css/vendor/jquery.qtip2.css', 'css/layout.css'))?>" rel="stylesheet" type="text/css"> -->
 	{{ HTML::style('css/vendor/jquery.qtip2.css') }}
-	{{ HTML::style('css/layout.css') }}
+	{{ HTML::style('css/layout.css') }} 
 	@yield('header')
 </head>
 
