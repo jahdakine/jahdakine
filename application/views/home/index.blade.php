@@ -194,8 +194,5 @@
 @endsection
 
 @section('scripts')
-	{{ HTML::script('js/vendor/jquery.carouFredSel-6.2.0-packed.js') }}
-	{{ HTML::script('js/vendor/helper-plugins/jquery.touchSwipe.min.js') }}	
-	{{ HTML::script('js/vendor/jquery.center.min.js') }}	
 	{{ HTML::script('js/index.funcs.js') }}
 @endsection
