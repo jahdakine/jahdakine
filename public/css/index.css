@@ -23,9 +23,6 @@
 /*
 | List Carousel
 */
-.list {
-  background-color: #ccc !important;
-}
 .list-carousel {
   padding: 15px 18px 15px 18px;
 }
@@ -53,22 +50,26 @@
 }
 /*
 | List Text
-*/
+*/ 
 .list-text {
-  width: 100%;
-  vertical-align: top;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  list-style:none;
+  padding: .5em;
+  margin: 0;  
 }
-#t1, #t2 {
-  width: 33%;
-  padding: 10px;
-  float:left;
-  list-style: none;
+.block1 {
+  text-align: left;
 }
-#t3 {
-  width:auto;
-  padding: 10px;
-  float:left;
-  list-style: none;
+.block2 {
+  text-align: center;
+}
+.block3 {
+  text-align: right;
 }
 /*
 | Frames

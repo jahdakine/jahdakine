@@ -29,9 +29,9 @@
 	</li>
 @endsection 
 @section('top')
-<div id="list">
+<div id="list" class="list">
 	<div id="carousel">
-		<ul id="t1">
+		<ul class="list-text">
 			<li class="block1">
 				{{ HTML::link("http://www.linkedin.com/profile/view?id=14123195", "Linkedin&#8663;", array("title"=>"Open my LinkedIn profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
 				{{ HTML::link('#', '', array('id' => 'linkedin', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }}<!-- Show ? from LinkedIn on this page -->
@@ -60,8 +60,6 @@
 				{{ HTML::link("https://vimeo.com/", "Vimeo&#8663;", array("title"=>"Open Vimeo site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
 				{{ HTML::link('#', '', array('id' => 'vimeo', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
 			</li>		
-		</ul><!-- //t1 -->
-		<ul id="t2">
 			<li class="block2">
 				{{ HTML::link("http://www.youtube.com/user/jahdakine", "YouTube&#8663;", array("title"=>"Open my YouTube page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
 				{{ HTML::link('#', '', array('id' => 'youtube', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }}<!-- Show 5 latest movies from my channel on this page -->
@@ -89,9 +87,7 @@
 			<li class="block2">
 				{{ HTML::link("http://www.fandango.com/", "Fandango&#8663;", array("title"=>"Open Fandango site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
 				{{ HTML::link('#', '', array('id' => 'fandango', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
-			</li>						
-		</ul><!-- // t2 -->
-		<ul id="t3">	
+			</li>							
 			<li class="block3">
 				{{ HTML::link("http://www.zazzle.com/jahdakine+gifts", "Zazzle&#8663;", array("title"=>"Open my Zazzle gift catalog in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
 				{{ HTML::link('#', '', array('id' => 'zazzle', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }} <!--Show latest 3 creations from my gift catalog on this page-->
