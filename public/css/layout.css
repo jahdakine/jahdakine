@@ -15,6 +15,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
 abbr[title], dfn, .def { border-bottom: 1px dotted; text-decoration:none; color: #f6a828; }
 hr { border-radius:0; margin-top:0; }
+.separator { background-color: #333; height:36px; margin-bottom:0; }
 /*
 | Layout
 */
@@ -57,11 +58,11 @@ a:hover, .hover {
   width:100%;
   margin: 0 auto;
   background-color: #eee;
-  background: -webkit-linear-gradient(bottom, #588bae, #eee 75%);
-  background: -moz-linear-gradient(bottom, #588bae, #eee 75%);
-  background: -o-linear-gradient(bottom, #588bae, #eee 75%);
-  background: -ms-linear-gradient(bottom, #588bae, #eee 75%);
-  background: linear-gradient(bottom, #588bae, #eee 75%);
+  background: -webkit-linear-gradient(bottom, #588bae, #eee 50%);
+  background: -moz-linear-gradient(bottom, #588bae, #eee 50%);
+  background: -o-linear-gradient(bottom, #588bae, #eee 50%);
+  background: -ms-linear-gradient(bottom, #588bae, #eee 50%);
+  background: linear-gradient(bottom, #588bae, #eee 50%);
 }
 .wrapper>header {
 	font-family: 'Croissant One', cursive;
@@ -167,11 +168,14 @@ ul.drop li:hover > ul { visibility: visible }
 | Footer
 */
 .copy {
-  color: #fff;
+  padding: 5px 10px;
+  color: #aaa;
   font-style: italic;
-  text-align:center;
-  font-size: 85%;
-  text-shadow: 1px 1px 4px #000;
+  font-size: 75%;
+  display:block; 
+  text-decoration: none;
+  background-color: #333 !important;
+  background-repeat:repeat;
 }
 
 /* end ------------------------ */
