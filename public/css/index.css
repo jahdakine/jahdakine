@@ -58,18 +58,20 @@
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
-  list-style:none;
   padding: .5em;
   margin: 0;  
 }
 .block1 {
-  text-align: left;
+  text-align: left;  
+  list-style:none;
 }
 .block2 {
   text-align: center;
+  list-style:none;  
 }
 .block3 {
   text-align: right;
+  list-style:none;  
 }
 /*
 | Frames
