@@ -26,7 +26,7 @@
 				<li>
 					{{ HTML::link("http://yslow.org/", "YSlow&#8663;", array("id"=>"yslow", "title"=>"Open YSlow in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }} 
 					<ul>
-						<li class="bottom-shim">Lowest score: 81 (grade B)</li>
+						<li class="bottom-shim">Score: 88 (B grade)</li>
 					</ul>
 				</li>
 				<li>
