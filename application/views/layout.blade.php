@@ -82,9 +82,6 @@
 		</div><!-- // content -->
 		<div class="clear-fix"></div>
 		<footer class="flex-footer copy">
-			<div id="audioWrap" class="hide">
-				<a id="nickHide" href="#" title="Dismiss player"></a>
-			</div>
 			<div class="to-left">Copyright &copy;{{ date('Y') }} John Chase (aka 
 				<u class="def">
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
@@ -93,8 +90,13 @@
 					<a id="nickButton" href="#" title="Play nickname pronunciation audio (wav)"></a>
 				</span>
 			</div>
-			<div class="to-right"><time datetime="2013-02-11T17:00">Last Updated: February 11th, 2013</time></div>
-			<div class="to-center">Site hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite")) }}</div>
+			<div class="to-right"><time datetime="2013-02-13T08:00">Last Updated: February 8th, 2013</time></div>
+			<div class="to-center">
+				<div id="audioWrap" class="hide">
+					<a id="nickHide" href="#" title="Dismiss player"></a>
+				</div>
+				<div>Site hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite")) }}</div>
+			</div>
 		</footer>
 	</div> <!-- // wrapper -->
 	{{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}	
