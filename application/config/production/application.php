@@ -12,7 +12,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://portfolio.dev:8888',
+	'url' => '',
 
 	/* http://laravel.com/docs/install
 	|--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ return array(
 	|
 	*/
 
-	'profiler' => true, //keep false for production
+	'profiler' => false, //keep false for production
 
 	/*
 	|--------------------------------------------------------------------------
