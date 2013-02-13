@@ -92,7 +92,6 @@
 	//nav menu clicks - graphics
 	menu_graphics.on('click', function(e, num2Scroll, dir2Scroll) {
 		e.preventDefault();
-		console.log(list_img.css("display"));
 		if(list_img.css("display") !== "inline-table") {
 			list_img.css("display","inline-table"); //displays hidden images embedded in links
 			list.removeClass("list-text");
@@ -225,7 +224,7 @@
 				success = true;
 				//console.log(data);
 				$.each(eval(obj), function(i,item) {
-						console.log(item);
+						//console.log(item);
 						html += eval(tmp);
 						//console.log(html);
 						if(i === limit) { return false; }
@@ -252,13 +251,15 @@
 	}
 	if(url === '?state=txt-list') {
 		menu_text.trigger('click');
-	}	
-	$(window).on('popstate', function(e, url) {
-		if(e.originalEvent.state === 'graphics') {
-			menu_graphics.trigger('click');
-		}
-		if(e.originalEvent.state === 'text') {
-			menu_text.trigger('click');
-		}
-	});
+	}
+	if(window.history && history.pushState) {
+		$(window).on('popstate', function(e, url) {
+			if(e.originalEvent.state &&  e.originalEvent.state === 'graphics') {
+				menu_graphics.trigger('click');
+			}
+			if(e.originalEvent.state && e.originalEvent.state === 'text') {
+				menu_text.trigger('click');
+			}
+		});
+	}
 })();
