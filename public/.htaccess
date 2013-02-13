@@ -21,3 +21,13 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+############################################
+## Add default Expires header
+## http://developer.yahoo.com/performance/rules.html#expires
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    ExpiresDefault "access plus 10 years"
+</FilesMatch>
+</IfModule>

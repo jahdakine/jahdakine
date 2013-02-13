@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8"> 
 	<title>@yield('title')</title>
-	<!-- <link href="<?=Minifier::make(array('css/vendor/jquery.qtip2.css', 'css/layout.css'))?>" rel="stylesheet" type="text/css"> -->
 	{{ HTML::style('css/vendor/jquery.qtip2.css') }}
 	{{ HTML::style('css/layout.css') }} 
 	@yield('header')
@@ -100,10 +99,16 @@
 			</div>
 		</footer>
 	</div> <!-- // wrapper -->
-	{{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}	
-	{{ HTML::script('js/vendor/jquery-ui-1.9.2.custom.min.js') }}
-	{{ HTML::script('js/vendor/jquery.qtip2.min.js') }}		
-	@yield('scripts')	
+	<!-- 
+	{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}	
+	{ HTML::script('js/vendor/jquery-ui-1.9.2.custom.min.js') }}
+	{ HTML::script('js/vendor/jquery.qtip2.min.js') }}		
+	{ HTML::script('js/vendor/jquery.carouFredSel-6.2.0-packed.js') }}
+	{ HTML::script('js/vendor/helper-plugins/jquery.touchSwipe.min.js') }}	
+	{ HTML::script('js/vendor/jquery.center.min.js') }}	
+ 	-->	
+	{{ HTML::script('js/vendor/monolith.js') }}	
 	{{ HTML::script('js/layout.funcs.js') }}
+	@yield('scripts')
 </body>
 </html>
