@@ -156,7 +156,7 @@
 	/*!!!feed click handler - I'm sure there's a better way*/
 	feed_btn.on('click', function(e) {
 		var id = this.id,
-				html = '<h2 align="center">Latest ' +id.substr(0,1).toUpperCase()+id.substr(1)+ ' Updates</h2><ul style="list-style:none">',
+				html = '<h2 class="to-center">Latest ' +id.substr(0,1).toUpperCase()+id.substr(1)+ ' Updates</h2><ul class="nolist">',
 				http = '',
 				obj = '',
 				date = '',
@@ -201,6 +201,11 @@
 //			break;
 //		case ('youtube'):
 //			break;
+		case ('zazzle'):
+			tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed",
+						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed",
+						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117631920418883930\" FlashVars=\"feedId=117631920418883930\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>"];
+			break;
     }
     //put html into content frame
     function appendDOM(html) {
@@ -220,27 +225,35 @@
 		function getFeed(http, obj, tmp, html, id) {
 			//console.log(http);
 			//!!!cache? Would need to use local storage or DB or jquery-json.2.4.0
-			return $.getJSON(http, function(data) {
+			if(http !== '') {
+				return $.getJSON(http, function(data) {
+					success = true;
+					//console.log(data);
+					$.each(eval(obj), function(i,item) {
+							//console.log(item);
+							html += eval(tmp);
+							//console.log(html);
+							if(i === limit) { return false; }
+						});
+					if(id !== 'flickr' && html.search("<li>") === -1) {
+						html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
+					}
+					html += '</ul>';
+					appendDOM(html);
+				});
+			//non-standard feed
+			} else {
 				success = true;
-				//console.log(data);
-				$.each(eval(obj), function(i,item) {
-						//console.log(item);
-						html += eval(tmp);
-						//console.log(html);
-						if(i === limit) { return false; }
-					});
-				if(id !== 'flickr' && html.search("<li>") === -1) {
-					html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
-				}
-				html += '</ul>';
+				var rand = Math.floor((Math.random()*3));
+				html = '<h2 class="to-center">Latest Zazzle Gifts</h2><div class="to-center">' +tmp[rand]+ "</div>";
 				appendDOM(html);
-			});
+			}
 		}
 		getFeed(http, obj, tmp, html, id);
 		//ERROR: Can be tested by commenting appendDOM(html) line in getFeed
 		setTimeout(function() {
 			if (!success) {
-				html = '<h2 align="center">Error!</h2><blockquote>There has been an error requesting ' +id.substr(0,1).toUpperCase()+id.substr(1)+ ' data</blockquote>';
+				html = '<h2 class="to-center">Error!</h2><blockquote>There has been an error requesting ' +id.substr(0,1).toUpperCase()+id.substr(1)+ ' data</blockquote>';
 				appendDOM(html);
 			}
 		}, 2000);

@@ -76,12 +76,16 @@
 /*
 | Frames
 */
+#contentFrame h2 {
+  font-family: 'Croissant One', cursive;
+}
 #contentFrame {
   display:none;
   list-style:none;
   margin: 1em auto;
   padding: 5px;
   width: 100%;
+  min-height: 300px;
 }
 /*
 | Sticky notes

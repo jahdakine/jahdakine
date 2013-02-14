@@ -50,7 +50,7 @@
 			</li>
 			<li class="block1">
 				{{ HTML::link("www.yelp.com/", "Yelp&#8663;", array("title"=>"Open Yelp site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'yelp', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', '', array('id' => 'yelp', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>
 			<li class="block1">
 				{{ HTML::link("https://www.icloud.com/", "iCloud&#8663;", array("title"=>"Open iCloud site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -58,7 +58,7 @@
 			</li>
 			<li class="block1">
 				{{ HTML::link("https://vimeo.com/", "Vimeo&#8663;", array("title"=>"Open Vimeo site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'vimeo', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', '', array('id' => 'vimeo', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>		
 			<li class="block2">
 				{{ HTML::link("http://www.youtube.com/user/jahdakine", "YouTube&#8663;", array("title"=>"Open my YouTube page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -82,15 +82,15 @@
 			</li>
 			<li class="block2">
 				{{ HTML::link("http://picasa.google.com/", "Picassa&#8663;", array("title"=>"Open Picassa site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'picassa', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', '', array('id' => 'picassa', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>		
 			<li class="block2">
 				{{ HTML::link("http://www.fandango.com/", "Fandango&#8663;", array("title"=>"Open Fandango site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'fandango', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', '', array('id' => 'fandango', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>							
 			<li class="block3">
 				{{ HTML::link("http://www.zazzle.com/jahdakine+gifts", "Zazzle&#8663;", array("title"=>"Open my Zazzle gift catalog in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'zazzle', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }} <!--Show latest 3 creations from my gift catalog on this page-->
+				{{ HTML::link('#', '', array('id' => 'zazzle', 'class' => 'feedBtn listImg', 'title' => 'Show latest creations from my Zazzle stores on this page')) }} 
 			</li>
 			<li class="block3">
 				{{ HTML::link("http://myworld.ebay.com/specrun/", "eBay&#8663;", array("title"=>"Open my eBay profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -106,7 +106,7 @@
 			</li>		
 			<li class="block3">
 				{{ HTML::link("https://www.netflix.com/", "Netflix&#8663;", array("title"=>"Open Netflix site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'netflix', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', '', array('id' => 'netflix', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>
 			<li class="block3">
 				{{ HTML::link("http://beta.skype.com/en/", "Skype&#8663;", array("title"=>"Open Skype site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -136,7 +136,7 @@
 			{{ HTML::link("http://laravel.com/docs", "Laravel&#8663;", array("title"=>"Offsite to Laravel Documentation in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}, the 
 			<abbr title="Model View Controller">MVC</abbr>
 			framework that I'm gravitating to at the moment. It is responsive, accessible, and includes an ever popular scrolling style jQuery menu carousel 
-			<em>(List menu|Image list)</em> that I'm thinking I'll call the social parade. It is basically my playground to spend time trying out new technologies and learning 
+			<em>(List menu|Image list)</em> that I'm thinking I'll call my social parade. It is basically my playground to spend time trying out new technologies and learning 
 			about what works and what doesn't in the fine art and science of internet programming and design. Tabs and other user interface goodies can be found at
 			{{ HTML::link("http://jqueryui.com/", "jQuery UI&#8663;", array("title"=>"Offsite to jQuery UI in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}.
 			Customizable tooltips:
@@ -174,12 +174,13 @@
 			</ul>		
 			<!--  
 			Preload images?
-			Link hashes to jquery states
 			Chrome BG wierdness?
 			security check
 			accessibility check
 			check on legacy and IE
-			gzip, minify script
+			gzip, minify scripts
+			tooltips in feeds?
+			back to top floater on portfolio
 			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->
