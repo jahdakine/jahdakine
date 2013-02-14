@@ -202,8 +202,8 @@
 //		case ('youtube'):
 //			break;
 		case ('zazzle'):
-			tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed",
-						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed",
+			tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
+						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
 						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117631920418883930\" FlashVars=\"feedId=117631920418883930\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>"];
 			break;
     }
@@ -246,6 +246,7 @@
 				success = true;
 				var rand = Math.floor((Math.random()*3));
 				html = '<h2 class="to-center">Latest Zazzle Gifts</h2><div class="to-center">' +tmp[rand]+ "</div>";
+				console.log(html);
 				appendDOM(html);
 			}
 		}
