@@ -35,7 +35,7 @@
 			<a class="to-top popup" id="macmail" title="Reveal this e-mail address for Mac mail" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&amp;c=z11k5PSfeXXPl_TPeGhabRsf9FNzh2EmS1_Y2mJjoUc=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="http://www.google.com/recaptcha/mailhide/d?k=01QoO8IU9RiXd2fkEo9RIO9g==&amp;c=z11k5PSfeXXPl_TPeGhabRsf9FNzh2EmS1_Y2mJjoUc=">Mac&nbsp;Mail&#8657;</a>
 		</li>
 		<li>
-			<a class="to-top" id="skype" title="My Skype address callto:jahdakine?call">Skype&nbsp;(best&nbsp;to&nbsp;email&nbsp;first&nbsp;-&nbsp;I&nbsp;don't&nbsp;camp&nbsp;out&nbsp;there)</a> 
+			<a href="callto:jahdakine?call" class="to-top" id="skype" title="Launch a call to my Skype address" target="_blank">Skype&nbsp;(best&nbsp;to&nbsp;email&nbsp;first&nbsp;-&nbsp;I&nbsp;don't&nbsp;camp&nbsp;out&nbsp;there)</a> 
 		</li>
 	</ul>
 	<p>

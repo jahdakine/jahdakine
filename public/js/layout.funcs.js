@@ -23,6 +23,7 @@
 		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
 		resizeFooter();
   });
+/* store link preference */  
   $document.ready(function() {
 		if(localStorage.getItem("link")) {
 			link_style = localStorage.getItem("link");
@@ -32,7 +33,7 @@
 		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
 		link_toggle.trigger('click');
   });
-/*link toggle button click*/
+/* link toggle button click */
 	link_toggle.on('click', function(e) {
 		var offsite = $(".offsite"),
 		link_style = localStorage.getItem("link");
@@ -73,7 +74,7 @@
 		audio_wrap.css("display", "none");
 		audio_wrap.attr("style", "padding: 0; margin: 0;");
 	});
-/*tooltips */
+/* tooltips */
 	//shared
 	var shared = {
 		position: {
