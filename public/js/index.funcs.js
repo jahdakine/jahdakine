@@ -184,34 +184,69 @@
 				show = "content_frame.css('display','inline-block').addClass('image-matrix')";
 				limit = 20;
         break;
-//    case ('meetup'): //venue=1139097 member=65732862 group=1769691 group_urlname=HTML5-Denver-Users-Group
+			case ('meetup'): //venue=1139097 member=65732862 group=1769691 group_urlname=HTML5-Denver-Users-Group
+				http="false";
 //			http = 'https://api.meetup.com/2/checkins?group_id=1769691&key=4c20142a4141d657e707171794141c&_=1359581403601&event_id=93211712&order=time&desc=True&member_id=65732862&offset=0&callback=?&format=json&page=20&sign=true';
 //			obj = 'results';
 //			tmp = "<li><li>";
 //			limit = 3;
-//      break;
-//    case ('linkedin'):
-//      break;
-//    case ('grooveshark'):
-//      break;
-//    case ('github'):
+				break;
+			case ('linkedin'):
+				http = "false";
+				break;
+			case ('grooveshark'):
+				http="false";
+				break;
+			case ('github'):
+				http="false";
 //			http = 'https://api.github.com/?/repos/jahdakine/portfolio&callback=?';//!!!nope
 //			obj = 'data.data';
 //			limit = 5;
-//			break;
-//		case ('youtube'):
-//			break;
-		case ('google'):
+				break;
+			case ('youtube'):
+				http="false";
+				break;
+			case ('stackoverflow'):
+				http="false";
+				break;
+			case ('yelp'):
+				http="false";
+				break;
+			case ('ebay'):
+				http="false";
+				break;
+			case ('gmail'):
+				http="false";
+				break;
+			case ('icloud'):
+				http="false";
+				break;
+			case ('vimeo'):
+				http="false";
+				break;
+			case ('netflix'):
+				http="false";
+				break;
+			case ('evernote'):
+				http="false";
+				break;
+			case ('picassa'):
+				http="false";
+				break;
+			case ('fandango'):
+				http="false";
+				break;
+			case ('google'):
 				http = 'https://www.googleapis.com/plus/v1/people/114704033710627861845/activities/public?key=AIzaSyC7qL3rj2BltH6GV6WOjovK3zuuS5sy024';
 				obj = 'data.items';
 				tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\">' + item.object.attachments[0].content.substr(0,50) + '...</a></li>'";
         limit = 5;
 				break;
-		case ('zazzle'):
-			tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
+			case ('zazzle'):
+				tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
 						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
 						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117631920418883930\" FlashVars=\"feedId=117631920418883930\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>"];
-			break;
+				break;
     }
     //put html into content frame
     function appendDOM(html) {
