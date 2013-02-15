@@ -174,7 +174,7 @@
       case ('twitter'):
 				http = 'http://search.twitter.com/search.json?q=jahdakine&callback=?';
 				obj = 'data.results';
-				tmp = "'<li><img src=\"' +item.profile_image_url+ '\" height=\"24\" width=\"24\" alt=\"profile icon\"/>&nbsp;<time datetime=\"' +item.created_at.split(' ').slice(0, 4).join(' ')+ '\">' +item.created_at.split(' ').slice(0, 4).join(' ')+ '</time>:&nbsp;<a href=\"http://twitter.com/jahdakine/status/' +item.id_str+ '\" target=\"_blank\">' +item.text+ '</a></li>'";
+				tmp = "'<li><img src=\"' +item.profile_image_url+ '\" height=\"25\" width=\"25\" alt=\"profile icon\"/>&nbsp;<time datetime=\"' +item.created_at.split(' ').slice(0, 4).join(' ')+ '\">' +item.created_at.split(' ').slice(0, 4).join(' ')+ '</time>:&nbsp;<a href=\"http://twitter.com/jahdakine/status/' +item.id_str+ '\" target=\"_blank\">' +item.text+ '</a></li>'";
         limit = 10;
         break;
       case ('flickr'):
@@ -201,6 +201,12 @@
 //			break;
 //		case ('youtube'):
 //			break;
+		case ('google'):
+				http = 'https://www.googleapis.com/plus/v1/people/114704033710627861845/activities/public?key=AIzaSyC7qL3rj2BltH6GV6WOjovK3zuuS5sy024';
+				obj = 'data.items';
+				tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\">' + item.object.attachments[0].content.substr(0,50) + '...</a></li>'";
+        limit = 5;
+				break;
 		case ('zazzle'):
 			tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
 						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
@@ -228,9 +234,12 @@
 			if(http !== '') {
 				return $.getJSON(http, function(data) {
 					success = true;
-					//console.log(data);
+					console.log("data: " + data);
 					$.each(eval(obj), function(i,item) {
-							//console.log(item);
+							console.log(item);
+							if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
+								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" style=\"vertical-align:top;padding:10px;\"/></a></li>'";
+							}
 							html += eval(tmp);
 							//console.log(html);
 							if(i === limit) { return false; }
@@ -254,7 +263,7 @@
 		//ERROR: Can be tested by commenting appendDOM(html) line in getFeed
 		setTimeout(function() {
 			if (!success) {
-				html = '<h2 class="to-center">Error!</h2><blockquote>There has been an error requesting ' +id.substr(0,1).toUpperCase()+id.substr(1)+ ' data</blockquote>';
+				html = '<h2 class="to-center">Timed out!</h2><blockquote>The request for ' +id.substr(0,1).toUpperCase()+id.substr(1)+ ' data has timed out. Please try again later.</blockquote>';
 				appendDOM(html);
 			}
 		}, 2000);

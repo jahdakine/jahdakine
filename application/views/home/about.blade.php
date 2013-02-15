@@ -37,9 +37,9 @@
 	<h3>Future</h3>
 	<p>Sure, knowing how to serve up data correctly and guide users through complicated processes and make difficult concepts 
 	understandable has its place, but the right side of my brain has begun to rebel a little and now has tipped the
-	scales toward balance in additional creative outlets. The good news is the web is still a wonderful place to enhance both 
+	scales toward balance in additional creative outlets. The good news is the web is still a wonderful place to leverage both 
 	creative and analytical skills! So my new career will include more front end work. My goal is to round into a full-stack
-	developer and web artisan.</p>
+	developer and web artisan<sup>1</sup>.</p>
 </article>
 <section>
 	<h3>Skills</h3>
@@ -133,14 +133,15 @@
 			<div id="courses-3">
 			  <ul>
 					<li>Online CV (this site)</li>
-					<li>2D Gaming</li>
-					<li>Form Beautification</li>
-					<li>Conference Generatr</li>
-					<li>SoShl Parade</li>	
+					<li>Gnerdl (consulting - requirements gathering)</li>
+					<!-- <li>One Voice ~ Many Paths (volunteer - non-profit)</li> -->
+					<li>Conference Generatr (modernize NREL project)</li>
+					<li>SoShl Parade (extension of home page)</li>	
 				</ul>
 			</div><!-- // courses-3 -->
 		</div><!-- // courses -->
 	</div><!-- // wrapper2 -->
+	<p><sup>1</sup>Borrowed from the Laravel community.
 </section>             
 @endsection
 

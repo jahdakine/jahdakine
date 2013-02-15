@@ -67,11 +67,13 @@
 						<li><a href="#" title="Show description and screenshots" class="project">Thin-Film Partnerships</a></li>
 						<li><a href="#" title="Show description and screenshots" class="project">News and Events</a></li>
 						<li><a href="#" title="Show description and screenshots" class="project">PV Partnerships</a></li>
+						<li>Conference Generator - Form wizard builds conference sites with registration</li>
+						<li>Survey in a Box - Question wizard builds surveys complete with stats</li> 
 					</ul> 
 					<section id="nrelFrame" class="box hide"></section> 		
 				</div><!-- // nrel -->
 				<div id="eere">
-				  <ul><!-- !!! pervasive into other tabs? -->
+				  <ul>
 						<li><a href="#" title="Show description and screenshots" class="project">Energy Plus Example File Generator</a></li>
 						<li><a href="#" title="Show description and screenshots" class="project">Energy Plus Weather Data</a></li>
 						<li><a href="#" title="Show description and screenshots" class="project">Energy Plus Real-Time Weather</a></li>						
