@@ -99,7 +99,7 @@
 			</li>
 			<li class="block3">
 				{{ HTML::link("http://beta.skype.com/en/", "Skype&#8663;", array("title"=>"Open Skype site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				<a href='callto:jahdakine?call' title='Launch call to my Skype address' target="_blank" id="skype" class="listImg"></a>				
+				<a href='callto:jahdakine?call' title='Launch a call to my Skype address' target="_blank" id="skype" class="listImg"></a>				
 			</li>	
 			<li class="block3">
 				{{ HTML::link("http://mail.google.com", "Gmail&#8663;", array("title"=>"Open Gmail site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -157,7 +157,7 @@
 			<p>
 				This is as much a launching pad for me as it is a showcase of what I care about and can do. The default external hyperlink style opens sites in a new 
 				window/tab because I keep this page open during my surfing day. This is quicker than using the right-click open option. If you prefer opening new sites 
-				in the current window, use the <em>Commands|Toggle links</em> function.
+				in the current window, use the <em>Commands|Toggle links</em> function and your setting will be saved for future visits thanks to Local Storage.
 			</p>
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 
