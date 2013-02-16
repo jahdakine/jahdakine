@@ -134,7 +134,7 @@
 #ctrls5 { background-position: 0 -100px; }
 #ctrls6 { background-position: 0 -125px; }
 
-#linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gmail, #carou22, #carou23, #carou24, #carou25 {   
+#linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gnerdl, #carou22, #carou23, #carou24, #carou25 {   
   display: inline-table;
   text-decoration:none;
   background-image:url('/img/carousel-spritesheet.png');
@@ -162,7 +162,7 @@
 #yelp { background-position: -386px -386px; }
 #zazzle { background-position: -386px -512px; }
 #youtube { background-position: -512px 0; }
-#gmail { background-position: -512px -128px; }
+#gnerdl { background-position: -512px -128px; }
 #carou23 { background-position: -512px -256px; }
 #carou24 { background-position: -512px -386px; }
 #carou25 { background-position: -512px -512px; }

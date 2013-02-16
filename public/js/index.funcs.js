@@ -198,10 +198,10 @@
 				http="false";
 				break;
 			case ('github'):
-				http="false";
-//			http = 'https://api.github.com/?/repos/jahdakine/portfolio&callback=?';//!!!nope
-//			obj = 'data.data';
-//			limit = 5;
+				//http="false";
+				http = "https://api.github.com/repos/jahdakine/jahdakine/commits?callback=getFeed";
+				obj = 'data';
+				limit = 5;
 				break;
 			case ('youtube'):
 				http="false";
@@ -269,9 +269,9 @@
 			if(http !== '') {
 				return $.getJSON(http, function(data) {
 					success = true;
-					console.log("data: " + data);
+					//console.log("data: " + data);
 					$.each(eval(obj), function(i,item) {
-							console.log(item);
+							//console.log(item);
 							if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
 								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" style=\"vertical-align:top;padding:10px;\"/></a></li>'";
 							}

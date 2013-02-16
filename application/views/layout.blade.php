@@ -61,9 +61,12 @@
 					</li>														
 				@yield_section <!-- will yield and close section -->
 			</ul>
-		</div><!-- // navigation -->	
+		</div><!-- // navigation -->
 		<div class="clear-fix"></div>
 		@yield('top')
+		<div style="background-color:#333;display:block;height:35px;">
+			@yield('controls')
+		</div>
 		<div role="main" id="content" class="main">		
 			<aside id="aside" class="landAside">
 				<h3 class="to-center">Legend</h3>
@@ -77,6 +80,19 @@
 					<li><span class="dfn def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
 				</ul>
 				@yield('aside')
+				<hr style="margin:1em 0;">
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_preferred_1"></a>
+					<a class="addthis_button_preferred_2"></a>
+					<a class="addthis_button_preferred_3"></a>
+					<a class="addthis_button_preferred_4"></a>
+					<a class="addthis_button_compact"></a>
+					<a class="addthis_counter addthis_bubble_style"></a>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
+					<!-- AddThis Button END -->
 			</aside><!-- // aside -->
 			@yield('main')
 		</div><!-- // content -->
