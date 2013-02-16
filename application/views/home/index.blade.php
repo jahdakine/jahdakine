@@ -102,26 +102,27 @@
 				<a href='callto:jahdakine?call' title='Launch a call to my Skype address' target="_blank" id="skype" class="listImg"></a>				
 			</li>	
 			<li class="block3">
-				{{ HTML::link("http://mail.google.com", "Gmail&#8663;", array("title"=>"Open Gmail site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'gmail', 'class' => 'feedBtn listImg', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link("#", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win", "return"=>"false")) }}
+				{{ HTML::link('#', '', array('id' => 'gnerdl', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>		
 		</ul><!-- // t3 -->
 	</div><!-- // carousel -->
 </div><!-- // list -->
 <div class="clear-fix"></div>
-<div style="background-color:#333;display:block;height:35px;">
-<ul class="reset">
-	<li id="ctrls" class="controls transparent">
-		<img src="/img/spacer.gif" width="5" height="1" alt=""/>
-		{{ HTML::link("#", "", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1")) }}
-		{{ HTML::link("#", "", array("title"=>"Scroll backward", "id"=>"ctrls2")) }}
-		{{ HTML::link("#", "", array("title"=>"Pause the carousel", "id"=>"ctrls3")) }}
-		{{ HTML::link("#", "", array("title"=>"Restart the carousel", "id"=>"ctrls4")) }}
-		{{ HTML::link("#", "", array("title"=>"Scroll forward", "id"=>"ctrls5")) }}
-		{{ HTML::link("#", "", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6")) }} 
-		<img src="/img/spacer.gif" width="5" height="1" alt=""/><!-- without it last button drops down -->
-	</li>
-</ul>
+	@section('controls')
+	<ul class="reset">
+		<li id="ctrls" class="controls transparent">
+			<img src="/img/spacer.gif" width="5" height="1" alt=""/>
+			{{ HTML::link("#", "", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1")) }}
+			{{ HTML::link("#", "", array("title"=>"Scroll backward", "id"=>"ctrls2")) }}
+			{{ HTML::link("#", "", array("title"=>"Pause the carousel", "id"=>"ctrls3")) }}
+			{{ HTML::link("#", "", array("title"=>"Restart the carousel", "id"=>"ctrls4")) }}
+			{{ HTML::link("#", "", array("title"=>"Scroll forward", "id"=>"ctrls5")) }}
+			{{ HTML::link("#", "", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6")) }} 
+			<img src="/img/spacer.gif" width="5" height="1" alt=""/><!-- without it last button drops down -->
+		</li>
+	</ul>
+	@endsection
 </div><!-- end  -->
 @endsection
 
