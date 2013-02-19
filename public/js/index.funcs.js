@@ -33,7 +33,7 @@
 			land_aside = $(".landAside"),
 			carousel_help = $("p#carouselHelp"),
 			num2Scroll = 1,
-			dir2Scroll = "left",
+			dir2Scroll = "right",
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
 /*!!!pre-load carousel images*/
