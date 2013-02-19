@@ -23,7 +23,28 @@
 		<ul class="list-text">
 			<li class="block1">
 				{{ HTML::link("http://www.linkedin.com/profile/view?id=14123195", "Linkedin&#8663;", array("title"=>"Open my LinkedIn profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'linkedin', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }}<!-- Show ? from LinkedIn on this page -->
+				{{ HTML::link('#', '', array('id' => 'linkedin', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }}<!-- Show last 3 recommendations from LinkedIn on this page -->
+				<!-- 
+				<script>
+					recosHTML = '';
+				  function onLinkedInLoad() {
+				    IN.Event.on(IN, "auth", onLinkedInAuth);
+				  }
+					function onLinkedInAuth() {
+						//console.log("authorized");
+						recosHTML = authSuccess();
+				  }
+					function authSuccess() {
+						IN.API.Raw("/people/url=http%3A%2F%2Fwww.linkedin.com%2Fin%2Fjahdakine/recommendations-received?scope=r_fullprofile").result(function(result) {
+							for(var key in result.values) {
+								var reco = result.values[key];
+								recosHTML += "<p><i><b>" + reco.recommender.firstName + " " + reco.recommender.lastName + "</b> says:</i><br>" + reco.recommendationText + "</p>";
+							}
+						});
+						return recosHTML;
+					}
+				</script>
+				 -->			
 			</li>
 			<li class="block1">
 				{{ HTML::link("https://github.com/jahdakine", "GitHub&#8663;", array("title"=>"Open my Github page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -31,7 +52,7 @@
 			</li>
 			<li class="block1">
 				{{ HTML::link("https://plus.google.com/u/0/114704033710627861845/posts", "Google+&#8663;", array("title"=>"Open my Google+ page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'google', 'class' => 'feedBtn listImg', 'title' => 'Show the 5 latest posts from Google+ on this page')) }}<!-- Show 5 latest comments from my Google+ circle on this page -->
+				{{ HTML::link('#', '', array('id' => 'google', 'class' => 'feedBtn listImg', 'title' => 'Show latest posts from Google+ on this page')) }}<!-- Show 5 latest comments from my Google+ circle on this page -->
 			</li>			
 			<li class="block1">
 				{{ HTML::link("http://stackoverflow.com/users/1997909/jahdakine", "Stackoverflow&#8663;", array("title"=>"Open my stackoverflow+ profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -51,19 +72,19 @@
 			</li>		
 			<li class="block2">
 				{{ HTML::link("http://www.youtube.com/user/jahdakine", "YouTube&#8663;", array("title"=>"Open my YouTube page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'youtube', 'class' => 'feedBtn listImg', 'title' => 'Coming soon')) }}<!-- Show 5 latest movies from my channel on this page -->
+				{{ HTML::link('#', '', array('id' => 'youtube', 'class' => 'feedBtn listImg', 'title' => 'Show latest movies from my channel on this page')) }}
 			</li>
 			<li class="block2">
 				{{ HTML::link("https://twitter.com/jahdakine", "Twitter&#8663;", array("title"=>"Open my Twitter page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'twitter', 'class' => 'feedBtn listImg', 'title' => 'Show 10 latest tweets on this page')) }}
+				{{ HTML::link('#', '', array('id' => 'twitter', 'class' => 'feedBtn listImg', 'title' => 'Show latest tweets on this page')) }}
 			</li>
 			<li class="block2">
 				{{ HTML::link("http://www.flickr.com/photos/jahdakinebrah/", 'Flickr&#8663;', array("title"=>"Open my Flickr page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'flickr', 'class' => 'feedBtn listImg', 'title' => 'Show 20 latest images from my stream on this page')) }}
+				{{ HTML::link('#', '', array('id' => 'flickr', 'class' => 'feedBtn listImg', 'title' => 'Show latest images from my stream on this page')) }}
 			</li>
 			<li class="block2">
 				{{ HTML::link("http://jahdakine.blogspot.com/", "Blogger&#8663;", array("title"=>"Open my Blogger page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', '', array('id' => 'blogger', 'class' => 'feedBtn listImg', 'title' => 'Show latest 5 articles from my blog on this page')) }}
+				{{ HTML::link('#', '', array('id' => 'blogger', 'class' => 'feedBtn listImg', 'title' => 'Show latest articles from my blog on this page')) }}
 			</li>
 			<li class="block2">
 				{{ HTML::link("http://evernote.com/", "Evernote&#8663;", array("title"=>"Open Evernote site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
@@ -194,5 +215,13 @@
 @endsection
 
 @section('scripts')
-	{{ HTML::script('js/index.funcs.js') }}
+	<!-- 	
+	<script src="http://platform.linkedin.com/in.js" type="text/javascript">
+		api_key: wjykc0bcemsm
+		scope: r_fullprofile
+		authorize: true
+		onLoad: onLinkedInLoad
+	</script>	
+ 	-->	
+ {{ HTML::script('js/index.funcs.js') }}
 @endsection
