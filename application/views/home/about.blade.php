@@ -101,6 +101,7 @@
 			<div id="courses-1">
 				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>
 				<ul>
+					<li>Hands-On: Build a Practical Web Application with Laravel</li>
 					<li>Laravel Essentials</li>
 					<li>Advanced JavaScript Fundamentals</li>
 					<li>Your Obedient Assistant: Yeoman</li>
@@ -108,19 +109,19 @@
 					<li>JavaScript Fundamentals 101</li>
 					<li>Easy Development With jQuery Mobile</li>
 					<li>30 Days to Learn jQuery</li>
+					<li>WordPress Plugin Development Essentials</li>
 					<li>Regular Expressions: Up and Running</li>
 					<li>Perfect Workflow in Sublime Text 2</li>
-					<li>HTML5 Fundamentals</li>
-					<li>CSS3 Essentials</li>
 					<li>The Joy of FirePHP: A Crash-Course</li>
-					<li>WordPress Plugin Development Essentials</li>
 					<li>PHP Fundamentals</li>
+					<li>HTML5 Fundamentals</li>
+					<li>CSS3 Essentials</li>					
 				</ul>
 			</div><!-- // courses-1 -->
 			<div id="courses-2">
 				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>	
 				<ul>
-					<li>Hands-On: Build a Practical Web Application with Laravel</li>
+					<li>Rails or Laravel: Building an App Twice</li>
 					<li>Connected to the Backbone</li>
 					<li>jQuery Plugin Development: Best Practices</li>
 					<li>Venture Into Vim</li>

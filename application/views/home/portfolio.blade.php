@@ -48,6 +48,7 @@
 					<li><a class="clients" href="#eere">EERE&nbsp;<abbr title="Energy Efficiency and Renewable Energy Network">(?)</abbr></a></li>
 					<li><a class="clients" href="#source">Source&nbsp;<abbr title="NREL's Intranet">(?)</abbr></a></li>				
 					<li><a class="clients" href="#doe">DOE&nbsp;<abbr title="Department of Energy">(?)</abbr></a></li>	
+					<li><a class="clients" href="#volunteer">Volunteer&nbsp;</a></li>	
 				</ul>
 				<div id="contracts">
 				<ul>
@@ -94,7 +95,16 @@
 						<li><a href="#" title="Show description and screenshots" class="project">Hydrogen and Fuel Cells Program</a></li>
 					</ul>
 					<section id="doeFrame" class="box hide"></section>
-				</div><!-- // doe -->						
+				</div><!-- // doe -->		
+				<div id="volunteer">
+				  <ul>
+						<!-- <li><a href="#" title="Show description and screenshots" class="project no-image">One Voice ~ Many Paths</a></li> -->										
+						<li><a href="#" title="Show description and screenshots" class="project no-image">Gnerdl</a></li>										
+						<li><a href="#" title="Show description and screenshots" class="project no-image">Corin Designs</a></li>
+						<li><a href="#" title="Show description and screenshots" class="project">Personal Site</a></li>
+					</ul>
+					<section id="volunteerFrame" class="box hide"></section>
+				</div><!-- // volunteer -->									
 			</div><!-- // projects -->
 		</div><!-- // tabs -->
 	</section>    
