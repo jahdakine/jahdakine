@@ -69,7 +69,8 @@
 		</div>
 		<div role="main" id="content" class="main">		
 			<aside id="aside" class="landAside">
-				<h3 class="to-center">Legend</h3>
+				<h3 class="to-center reset">Legend</h3>
+				<hr style="margin-bottom:.5em;">
 				<ul class="nolist">
 					<li><span class="href" title="Links to web pages on this site">Onsite link</span></li>
 					<li><span class="href" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
@@ -80,7 +81,8 @@
 					<li><span class="dfn def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
 				</ul>
 				@yield('aside')
-				<hr style="margin:1em 0;">
+				<h3 class="to-center reset">Share</h3>
+				<hr class="margin-bottom:.5em;">
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
 					<a class="addthis_button_preferred_1"></a>
@@ -115,7 +117,7 @@
 			</div>
 		</footer>
 	</div> <!-- // wrapper -->
-	<!-- 
+	<!-- monolith contains:
 	{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}	
 	{ HTML::script('js/vendor/jquery-ui-1.9.2.custom.min.js') }}
 	{ HTML::script('js/vendor/jquery.qtip2.min.js') }}		

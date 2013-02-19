@@ -35,10 +35,11 @@
 .list-carousel li {
   font-size: 12px;
   color: #666;
+  background-color: #ddd;
   text-align: center;
   border: 5px solid #bbb;
   width: 158px;
-  height: 158px;
+  height: 178px;
   padding: 0;
   margin: 2px;
   display: block;
@@ -76,7 +77,7 @@
 /*
 | Frames
 */
-#contentFrame h2 {
+#contentFrame h2, h3 {
   font-family: 'Croissant One', cursive;
 }
 #contentFrame {

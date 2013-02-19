@@ -162,9 +162,15 @@
 				date = '',
 				show = '',
 				tmp = '',
+				limit = 5;
 				success = false;
-		show = "content_frame.css('display','inline').removeClass('image-matrix')";
+				show = "content_frame.css('display','inline').removeClass('image-matrix')";
 		switch (id) {
+			case ('linkedin'):
+				http='';
+				//html += '<h3 class="to-center">Recommendations</h3>';
+				//tmp=recosHTML;
+				break;
 			case ('blogger'):
 				http = 'https://www.googleapis.com/blogger/v3/blogs/2575251403540723939/posts?key=AIzaSyC4Zhv-nd_98_9Vn8Ad3U6TjY99Pd2YzOQ';
 				obj = 'data.items';
@@ -186,25 +192,24 @@
         break;
 			case ('meetup'): //venue=1139097 member=65732862 group=1769691 group_urlname=HTML5-Denver-Users-Group
 				http="false";
-//			http = 'https://api.meetup.com/2/checkins?group_id=1769691&key=4c20142a4141d657e707171794141c&_=1359581403601&event_id=93211712&order=time&desc=True&member_id=65732862&offset=0&callback=?&format=json&page=20&sign=true';
-//			obj = 'results';
-//			tmp = "<li><li>";
-//			limit = 3;
-				break;
-			case ('linkedin'):
-				http = "false";
+				// http = 'http://api.meetup.com/activity?_=1361290215235&member_id=65732862&format=json&sig_id=65732862&sig=7be5cdcf1093d70515959c1b785e75c67f9c642f';
+				// obj = 'data';
+				// tmp = "'<li><li>'";
+				// limit = 3;
 				break;
 			case ('grooveshark'):
 				http="false";
 				break;
 			case ('github'):
-				//http="false";
-				http = "https://api.github.com/repos/jahdakine/jahdakine/commits?callback=getFeed";
+				http="false";
+				//http = "https://api.github.com/repos/jahdakine/jahdakine/commits?callback=getFeed";
 				obj = 'data';
 				limit = 5;
 				break;
 			case ('youtube'):
-				http="false";
+				http="https://gdata.youtube.com/feeds/api/users/jahdakine/uploads?v=2&alt=json";
+				obj = "data.feed.entry";
+				tmp = "'<li><time datetime=\"' + item.updated.$t + '\">' +item.updated.$t.substr(0,10) + '</time>: <a href=\"' +item.link[0].href+ '\" title=\"Open' +item.title.$t+ 'in a new window\" target=\"_blank\">' +item.title.$t+ '</a></li>'";
 				break;
 			case ('stackoverflow'):
 				http="false";
@@ -277,7 +282,7 @@
 							}
 							html += eval(tmp);
 							//console.log(html);
-							if(i === limit) { return false; }
+							if(i > limit) { return false; }
 						});
 					if(id !== 'flickr' && html.search("<li>") === -1) {
 						html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
@@ -288,9 +293,13 @@
 			//non-standard feed
 			} else {
 				success = true;
-				var rand = Math.floor((Math.random()*3));
-				html = '<h2 class="to-center">Latest Zazzle Gifts</h2><div class="to-center">' +tmp[rand]+ "</div>";
-				console.log(html);
+				if(id==='zazzle') {
+					var rand = Math.floor((Math.random()*3));
+					html = '<h2 class="to-center">Latest Zazzle Products</h2><div class="to-center">' +tmp[rand]+ "</div>";
+				} else {
+					html += tmp;
+				}
+				//console.log(html);
 				appendDOM(html);
 			}
 		}
