@@ -44,28 +44,50 @@
 		}
 		img.bg {
 			/* Set rules to fill background */
-			max-height: 600px;
-			min-height: 100%;
-			min-width: 600px;
+			height: 400px;
+			width: 600px;
 			z-index: -1;
-			
-			/* Set up proportionate scaling */
-			width: 100%;
-			height: auto;
-			
-			/* Set up positioning */
 			position: fixed;
 			top: 0;
 			left: 0;
 			border: 0;
 		}
-
-		@media screen and (max-width: 600px) { /* Specific to this particular image */
-			img.bg {
-				left: 50%;
-				margin-left: -300px;   /* 50% */
-			}
-		}		
+		#eyes1 {
+			width:75px;
+			height:25px; 			
+			top:322px;
+			left:8px;
+		}
+		#eyes2 {
+			width:17px;
+			height:25px; 			
+			top:244px;
+			left:188px;
+		}
+		#eyes3 {
+			width:50px;
+			height:25px; 			
+			top:215px;
+			left:330px;
+		}				
+		.eyelids {
+			background-color:black;
+			position: absolute;
+			z-index: 5;
+		  -webkit-opacity: 0.25;
+		  -moz-opacity: 0.25;
+		  opacity: 0.25;
+			-webkit-transition: all 1s ease;
+		  -moz-transition: all 1s ease;
+		  -ms-transition: all 1s ease;
+		  -o-transition: all 1s ease;
+		  transition: all 1s ease;
+		} 
+		#eyes1:hover, #eyes2:hover, #eyes3:hover {
+		  -webkit-opacity: 1;
+		  -moz-opacity: 1;
+		  opacity: 1;
+		}
 	</style>
 </head>
 <body>
@@ -73,6 +95,9 @@
 		<div class="error-spacer"></div>
 		<div role="main" class="main">
 			<img src="img/404.png" class="bg" onerror="this.style.display='none'"/>
+			<div class="eyelids" id="eyes1"></div>
+			<div class="eyelids" id="eyes2"></div>
+			<div class="eyelids" id="eyes3"></div>
 			<?php $messages = array('Ooh, scary!', 'Umm, I think we\'re lost...', 'Yikes, we took a wrong turn!', 'Looks like we\'re not in Kansas anymore Toto!', 'Help, I\'ve 404\'d and I can\'t get up!'); ?>
 
 			<h1><?php echo $messages[mt_rand(0, 4)]; ?></h1>
