@@ -113,7 +113,7 @@
 				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Dismiss player"></a>
 				</div>			
-				<div><time datetime="2013-02-13T08:00">February 8th, 2013</time></div>
+				<div><time datetime="2013-02-20T09:43">February 20th, 2013</time></div>
 			</div>
 		</footer>
 	</div> <!-- // wrapper -->
@@ -124,6 +124,7 @@
 	{ HTML::script('js/vendor/jquery.carouFredSel-6.2.0-packed.js') }}
 	{ HTML::script('js/vendor/helper-plugins/jquery.touchSwipe.min.js') }}	
 	{ HTML::script('js/vendor/jquery.center.min.js') }}	
+	google analytics code
  	-->	
 	{{ HTML::script('js/vendor/monolith.js') }}	
 	{{ HTML::script('js/layout.funcs.js') }}
