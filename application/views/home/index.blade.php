@@ -218,7 +218,7 @@
 @section('scripts')
 	<!-- 	
 	<script src="http://platform.linkedin.com/in.js" type="text/javascript">
-		api_key: wjykc0bcemsm
+		api_key: 
 		scope: r_fullprofile
 		authorize: true
 		onLoad: onLinkedInLoad
