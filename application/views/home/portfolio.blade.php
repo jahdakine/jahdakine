@@ -98,9 +98,9 @@
 				</div><!-- // doe -->		
 				<div id="volunteer">
 				  <ul>
-						<!-- <li><a href="#" title="Show description and screenshots" class="project no-image">One Voice ~ Many Paths</a></li> -->										
+						<!-- <li><a href="#" title="Show description and screenshots" class="project">One Voice ~ Many Paths</a></li> -->										
 						<li><a href="#" title="Show description and screenshots" class="project no-image">Gnerdl</a></li>										
-						<li><a href="#" title="Show description and screenshots" class="project no-image">Corin Designs</a></li>
+						<li><a href="#" title="Show description and screenshots" class="project">Corin Design</a></li>
 						<li><a href="#" title="Show description and screenshots" class="project">Personal Site</a></li>
 					</ul>
 					<section id="volunteerFrame" class="box hide"></section>
