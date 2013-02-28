@@ -167,3 +167,10 @@
 #carou23 { background-position: -512px -256px; }
 #carou24 { background-position: -512px -386px; }
 #carou25 { background-position: -512px -512px; }
+/*
+| Misc
+ */
+.feedStyle {
+  vertical-align:top;
+  padding:10px;
+}
