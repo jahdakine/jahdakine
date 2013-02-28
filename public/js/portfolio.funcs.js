@@ -32,7 +32,7 @@
 		if ($this.hasClass('no-image')) {
 			frag = "'</h3><div id=\"project-desc\">' + data + '</div>'";
 		} else {
-			frag = "'</h3><div><img src=\"/img/portfolio/'+ filename +'.jpg\" alt=\"Screenshot of '+ title +' project\"/ align=\"right\" class=\"project-img\"></div><div id=\"project-desc\">' + data + '</div>'";
+			frag = "'</h3><div><img style=\"max-width:700px;\" src=\"/img/portfolio/'+ filename +'.jpg\" alt=\"Screenshot of '+ title +' project\"/ align=\"right\" class=\"project-img\"></div><div id=\"project-desc\">' + data + '</div>'";
 		}
 		$.ajax({
 			url: '/partials/' + filename + '.html',
