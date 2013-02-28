@@ -64,13 +64,13 @@
 		</div><!-- // navigation -->
 		<div class="clear-fix"></div>
 		@yield('top')
-		<div style="background-color:#333;display:block;height:35px;">
+		<div class="control-bg">
 			@yield('controls')
 		</div>
 		<div role="main" id="content" class="main">		
 			<aside id="aside" class="landAside">
 				<h3 class="to-center reset">Legend</h3>
-				<hr style="margin-bottom:.5em;">
+				<hr class="aside-sep">
 				<ul class="nolist">
 					<li><span class="href" title="Links to web pages on this site">Onsite link</span></li>
 					<li><span class="href" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
@@ -82,7 +82,7 @@
 				</ul>
 				@yield('aside')
 				<h3 class="to-center reset">Share</h3>
-				<hr class="margin-bottom:.5em;">
+				<hr class="aside-sep">
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
 					<a class="addthis_button_preferred_1"></a>
@@ -104,7 +104,7 @@
 				<u class="def">
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
 				</u>)
-				<span style="padding-top:2px;">
+				<span id="nickSpan">
 					<a id="nickButton" href="#" title="Play nickname pronunciation audio (wav)"></a>
 				</span>
 			</div>

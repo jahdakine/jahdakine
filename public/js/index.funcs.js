@@ -278,7 +278,7 @@
 					$.each(eval(obj), function(i,item) {
 							//console.log(item);
 							if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
-								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" style=\"vertical-align:top;padding:10px;\"/></a></li>'";
+								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
 							}
 							html += eval(tmp);
 							//console.log(html);

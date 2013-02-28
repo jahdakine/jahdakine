@@ -120,6 +120,11 @@ ul.drop li:hover > ul { visibility: visible }
 /*
 | Misc
 */
+.control-bg { 
+  background-color:#333;
+  display:block;
+  height:35px; 
+}
 .hilited { background-color: yellow; }
 .hidden {
   position:absolute;
@@ -149,6 +154,7 @@ ul.drop li:hover > ul { visibility: visible }
   margin: 0;
   padding: 0;
 }
+.aside-sep { margin-bottom:.5em; }
 /*
 |Status 
  */
@@ -160,6 +166,7 @@ ul.drop li:hover > ul { visibility: visible }
   width:20px;
   height:18px;
 }
+#nickSpan { padding-top:2px; }
 #nickHide { background-position: 0 0; }
 #nickButton { background-position: 0 -18px; }
 #info { background-position: 0 -35px; }
