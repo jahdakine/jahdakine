@@ -90,11 +90,11 @@
 	password1.on("blur", {elem: password1, name: 'Password'}, chkReqd);
 	//submit
 	sr_sub.on("click", function(e) {
+		e.preventDefault();
 		username1.trigger('blur');
 		password1.trigger('blur');
-		//console.log(errors);
-		if(errors) {
-			e.preventDefault();
+		if(!errors) {
+			alert('This is purely for demonstration purposes only. No one can register or sign on.');
 		}
 		errors=false;
 	});
@@ -134,7 +134,6 @@
 		fname.trigger('blur');
 		lname.trigger('blur');
 		username2.trigger('blur');
-		//console.log(errors);
 		if(!errors){ alert('This is purely for demonstration purposes only. No one can register or sign on.'); }
 		errors=false;
 	});
