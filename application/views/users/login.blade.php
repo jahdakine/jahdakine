@@ -92,9 +92,9 @@
 	    <div class="control-group" id="agree-group">				
 		    <div class="controls">
 					{{ Form::checkbox('agree', "1", false, array("style"=>"vertical-align:text-top", "id"=>"agree")) }} I agree to the terms of the <i class="icon-file"></i>
-					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('user-agreement.pdf', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="user-agreement.pdf">user agreement (PDF 1.2MB)&#8657;</a>
+					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('/partials/user-agreement.html', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/user-agreement.html">user agreement (PDF 1.2MB)&#8657;</a>
 					and <i class="icon-file"></i>
-					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('privacy-policy.pdf', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="privacy-policy.pdf">privacy policy (PDF 989KB)&#8657;</a>
+					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('/partials/privacy-policy.html', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/privacy-policy.html">privacy policy (PDF 989KB)&#8657;</a>
 					<span class="help-inline" id="agree-status"></span>
 		    </div>
 	    </div>			
