@@ -116,7 +116,7 @@
 	//extended validations
 	c_password.on('blur', function(e) {
 		e.preventDefault();
-		if(c_password.val() != password2.val()) {
+		if(c_password.val() !== password2.val()) {
 			showError('password2', 'Passwords don\'t match');
 			errors = true;
 		} else {
@@ -132,8 +132,8 @@
 			resetError('agree', '', true);
 		}
 		email.trigger('blur');
-		c_password.trigger('blur');
 		password2.trigger('blur');
+		c_password.trigger('blur');
 		fname.trigger('blur');
 		lname.trigger('blur');
 		username2.trigger('blur');
