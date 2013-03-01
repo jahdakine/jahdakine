@@ -22,6 +22,8 @@ Route::get('home', 'home@index');
 Route::get('about', 'home@about');
 Route::get('contact', 'home@contact');
 Route::get('portfolio', 'home@portfolio');
+
+Route::get('login', array('as'=>'login', 'uses'=>'users@login'));
 // Route::get('users', 'users@index');
 // Route::get('users/(:any)/edit', 'users@edit');
 

@@ -16,8 +16,9 @@
 			<h1>@yield("title")</h1>
 			<h2 id="nickName">John Chase</h2>
 			<h4>Web Developer</h4>
-			<!-- HTML::link("users/", "Sign-on") }} -->
-			<abbr title="Coming soon">Sign-on</abbr>
+			@if(!URI::is('users/login'))
+				{{ HTML::link("users/login", "Sign-on") }}
+			@endif
 		</header>
 		<div id="navigation">
 			<ul class="drop" id="nav">

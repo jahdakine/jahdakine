@@ -28,6 +28,7 @@ aside {
   margin: 5px 15px 5px 15px;
   border-radius: 5px;
   min-width: 100px;
+  opacity:0.7;
 }
 .main {
   padding: 1em;
@@ -144,6 +145,7 @@ ul.drop li:hover > ul { visibility: visible }
 .to-top { vertical-align: top; }
 .to-middle { vertical-align: middle; }
 .to-bottom { vertical-align: bottom; }
+.to-tbottom { vertical-align: text-bottom; }
 .no-overflow { overflow:hidden !important; }
 .shim { 
   margin-bottom:1em; 

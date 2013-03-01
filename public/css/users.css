@@ -1,0 +1,15 @@
+.sign-reg,.reg-sign {
+  background:#ddd;
+  float:left;
+  margin-right:1em;
+  padding:.5em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.required {
+  color:#f89406;
+  border:1px #f89406 solid;
+  background-color:#fff;
+}

@@ -1,7 +1,7 @@
 @layout('layout')
 
 @section('title')
-	Sign on
+	User
 @endsection
 @section('header')
 

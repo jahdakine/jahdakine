@@ -192,7 +192,6 @@
 			<h3 class="to-center">To do:</h3> 
 			<ul>
 				<li>Research remaining API calls</li>
-				<li>Build out login area</li>
 				<li>Facility for adding icons/sites</li>
 				<li>Package (minify, optimize, modernizr)</li>
 				<li>Arrive at energy independence!</li>
