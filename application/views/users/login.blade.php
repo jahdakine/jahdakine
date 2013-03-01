@@ -12,10 +12,7 @@
 @endsection 
 
 @section('main')
-	<p>
-	This restricted area contains a facility for me to add more feed icons, and serves the purpose of building a user authorization form for reuse. 
-	Try the 'Register!' link to see the animation swap between signing in and registering. Some front-end validations included for show.
-	</p>
+
 	<div id="sr" class="sign-reg">
 		<fieldset>
 	  <legend>Sign On</legend>
@@ -44,7 +41,9 @@
 		</fieldset>
 		<fieldset>
 			<legend>-or-</legend>
-			Sign on using ...
+			Connect using a service:<br/>
+			<a href="#" class="connect" title="Sign in with Google+" return false;><img src="/img/google-login-icon.png" alt=""/></a><br/>
+			<a href="#" class="connect" title="Sign in with Facebook" return false;><img src="/img/fb-login-icon.png" alt=""/></a><br/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">
@@ -104,9 +103,12 @@
 			{{ Form::close() }}
 		</fieldset>
 	</div>	
-<div class="clear-fix"></div>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+<p style="padding-bottom:15em;margin:0;">
+This pseudo-restricted area serves the purpose of building a user authorization form for reuse. 
+Try the 'Register!' link to see the animation swap between signing in and registering and how I've handled the forms. 
+Some front-end validations are included for show... 
+<span style="color:#aaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -148,6 +150,24 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 </p>
 @endsection
 

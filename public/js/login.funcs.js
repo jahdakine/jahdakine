@@ -89,7 +89,7 @@
 		}
 	}
 /*sign on form*/
-	username1.on("blur", {elem: username1, name: 'Username'}, chkReqd);
+	username1.on("blur", {elem: username1, name: 'Username'}, chkReqd);//!!!fires if user clicks service button
 	password1.on("blur", {elem: password1, name: 'Password'}, chkReqd);
 	//submit
 	sr_sub.on("click", function(e) {
@@ -151,5 +151,12 @@
 	rs_reset.on("click", function() {
 		resetAll2();
 		fname.focus();
+	});
+	//dont show error if connect buttons are clicked
+	$(".connect").on('click', function(){
+		$("#username1-group").removeClass("error success");
+		$("#username1-status").text("");
+		$("#password1-group").removeClass("error success");
+		$("#password1-status").text("");		
 	});
 })();

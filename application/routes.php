@@ -1,31 +1,10 @@
 <?php
-
-//No controller, logic in closure
-// Route::get('/', function()
-// {
-// 	return View::make('home.index');
-// });
-//
-//Register route controllers 
-// Route::controller('home');
-// Route::controller('users');
-// or
-//Route::controller(array('home', 'users'));
-
-//Named route - good for REST
-// Route::get('users', array('as' => 'users', 'uses' => 'users@index')); //get all users
-// Route::get('users/(:any)', array('as' => 'user', 'uses' => 'users@show')); //show 1 user
-// Route::get('users/new', array('as' => 'new_user', 'uses' => 'users@new')); //create form for adding new user
-
-//overrides
 Route::get('home', 'home@index');
 Route::get('about', 'home@about');
 Route::get('contact', 'home@contact');
 Route::get('portfolio', 'home@portfolio');
 
 Route::get('login', array('as'=>'login', 'uses'=>'users@login'));
-// Route::get('users', 'users@index');
-// Route::get('users/(:any)/edit', 'users@edit');
 
 //Detect automatically
 Route::controller(Controller::detect());

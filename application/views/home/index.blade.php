@@ -116,7 +116,7 @@
 			</li>		
 
 			<li class="block3">
-				{{ HTML::link("#", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win", "return"=>"false")) }}
+				{{ HTML::link("http://www.gnerdl.com", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win", "return"=>"false")) }}
 				{{ HTML::link('#', '', array('id' => 'gnerdl', 'class' => 'feedBtn listImg', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>	
 			<li class="block3">
