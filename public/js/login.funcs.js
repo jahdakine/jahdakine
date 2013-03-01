@@ -116,7 +116,13 @@
 	//extended validations
 	c_password.on('blur', function(e) {
 		e.preventDefault();
-		if(c_password.val() !== password2.val()) {
+		if(password2.val() === '') {
+			showError('password2', 'Password is required');
+			errors = true;
+		} else if(c_password.val() === '') {
+			showError('password2', 'You must retype your password');
+			errors = true;
+		} else if(c_password.val() !== password2.val()) {
 			showError('password2', 'Passwords don\'t match');
 			errors = true;
 		} else {
@@ -128,15 +134,16 @@
 		e.preventDefault();
 		if(!agree.is(':checked')) {
 			showError('agree','You must agree');
+			errors = true;
 		} else {
 			resetError('agree', '', true);
 		}
-		email.trigger('blur');
-		password2.trigger('blur');
-		c_password.trigger('blur');
 		fname.trigger('blur');
 		lname.trigger('blur');
 		username2.trigger('blur');
+		email.trigger('blur');
+		password2.trigger('blur');
+		c_password.trigger('blur');
 		if(!errors){ alert('This is purely for demonstration purposes only. No one can register or sign on.'); }
 		errors=false;
 	});
