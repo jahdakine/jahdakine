@@ -97,7 +97,7 @@
 		username1.trigger('blur');
 		password1.trigger('blur');
 		if(!errors) {
-			alert('This is purely for demonstration purposes only. No one can register or sign on.');
+			alert('CLICK STATUS ALERT:\n\nThis is purely for demonstration purposes only. No one can register or sign on.');
 		}
 		errors=false;
 	});
@@ -144,7 +144,7 @@
 		email.trigger('blur');
 		password2.trigger('blur');
 		c_password.trigger('blur');
-		if(!errors){ alert('This is purely for demonstration purposes only. No one can register or sign on.'); }
+		if(!errors){ alert('CLICK STATUS ALERT:\n\nThis is purely for demonstration purposes only. No one can register or sign on.'); }
 		errors=false;
 	});
 	//reset
@@ -153,10 +153,17 @@
 		fname.focus();
 	});
 	//dont show error if connect buttons are clicked
-	$(".connect").on('click', function(){
+	$(".hide-error1").on('click', function(){
 		$("#username1-group").removeClass("error success");
 		$("#username1-status").text("");
 		$("#password1-group").removeClass("error success");
-		$("#password1-status").text("");		
+		$("#password1-status").text("");
+		username1.focus();
 	});
+	//dont show error if connect pdfs are clicked
+	$(".hide-error2").on('click', function(){
+		$("#fname-group").removeClass("error success");
+		$("#fname-status").text("");
+		fname.focus();
+	});	
 })();

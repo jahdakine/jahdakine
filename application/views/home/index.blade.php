@@ -156,7 +156,7 @@
 			Welcome. This is my online 
 			<abbr title="Curriculum Vitae">CV</abbr>. 
 			Select from any of the menu items above to explore more of my interests 
-			and accomplishments, or contact me if you have a dream front-end web programming job 
+			and accomplishments, or {{ HTML::link("home/contact", "contact", array("title"=>"Get in touch")) }} me if you have a dream front-end web programming job 
 			opening! This website is powered by jQuery, <abbr title="PHP: Hypertext Preprocessor">PHP</abbr>, and 
 			{{ HTML::link("http://laravel.com/docs", "Laravel&#8663;", array("title"=>"Offsite to Laravel Documentation in a new window", "target"=>"_blank", "class" => "offsite link-new-win")) }}, the 
 			<abbr title="Model View Controller">MVC</abbr>
@@ -180,7 +180,8 @@
 			<p>
 				This is as much a launching pad for me as it is a showcase of what I care about and can do. The default external hyperlink style opens sites in a new 
 				window/tab because I keep this page open during my surfing day. This is quicker than using the right-click open option. If you prefer opening new sites 
-				in the current window, use the <em>Commands|Toggle links</em> function and your setting will be saved for future visits thanks to Local Storage.
+				in the current window, use the <em>Commands|Toggle links</em> function and your setting will be saved for future visits thanks to Local Storage. While you're 
+				poking around, try out my interactive  {{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!")) }} for fun.
 			</p>
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 

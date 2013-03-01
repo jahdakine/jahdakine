@@ -13,3 +13,10 @@
   border:1px #f89406 solid;
   background-color:#fff;
 }
+.lorem-text {
+    padding-bottom:15em;
+    margin:0;
+}
+.lighter-text {
+  color:#aaa;
+}

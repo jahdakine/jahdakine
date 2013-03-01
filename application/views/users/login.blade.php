@@ -42,8 +42,8 @@
 		<fieldset>
 			<legend>-or-</legend>
 			Connect using a service:<br/>
-			<a href="#" class="connect" title="Sign in with Google+" return false;><img src="/img/google-login-icon.png" alt=""/></a><br/>
-			<a href="#" class="connect" title="Sign in with Facebook" return false;><img src="/img/fb-login-icon.png" alt=""/></a><br/>
+			<a href="#" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1" title="Sign in with Google+" return false;><img src="/img/google-login-icon.png" alt=""/></a><br/>
+			<a href="#" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1" title="Sign in with Facebook" return false;><img src="/img/fb-login-icon.png" alt=""/></a><br/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">
@@ -92,8 +92,9 @@
 	    <div class="control-group" id="agree-group">				
 		    <div class="controls">
 					{{ Form::checkbox('agree', "1", false, array("style"=>"vertical-align:text-top", "id"=>"agree")) }} I agree to the terms of the <i class="icon-file"></i>
-					{{ HTML::link("", "user agreement (PDF 1.2MB)&#8657;", array("target"=>"_blank", "title" => "Open PDF in a popup window")) }} and <i class="icon-file"></i>
-					{{ HTML::link("", "privacy policy (PDF 989KB)&#8657;", array("target"=>"_blank", "title" => "Open PDF in a popup window")) }}.
+					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('user-agreement.pdf', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="user-agreement.pdf">user agreement (PDF 1.2MB)&#8657;</a>
+					and <i class="icon-file"></i>
+					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('privacy-policy.pdf', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="privacy-policy.pdf">privacy policy (PDF 989KB)&#8657;</a>
 					<span class="help-inline" id="agree-status"></span>
 		    </div>
 	    </div>			
@@ -104,11 +105,11 @@
 		</fieldset>
 	</div>	
 
-<p style="padding-bottom:15em;margin:0;">
+<p class="lorem-text">
 This pseudo-restricted area serves the purpose of building a user authorization form for reuse. 
 Try the 'Register!' link to see the animation swap between signing in and registering and how I've handled the forms. 
 Some front-end validations are included for show... 
-<span style="color:#aaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<span class="lighter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
