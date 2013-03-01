@@ -47,33 +47,36 @@
 		username1.focus();
 	});
 /* Validations */
-	function resetError(elem,test) {
+	function resetError(elem, name, test) {
 		test = test || false;
+		name = name || "";
 		$("#"+elem+"-group").removeClass("error success");
 		if(test) {
 			$("#"+elem+"-group").addClass('success');
+			$("#"+elem+"-status").html("&#x2713; " +name);
+		} else {
+			$("#"+elem+"-status").text("");
 		}
-		$("#"+elem+"-status").text("");
 		return true;
 	}
 	function showError(elem,error,alt) {
 		alt = alt || elem;
 		$("#"+elem+"-group").addClass("error").removeClass("success");
-		$("#"+elem+"-status").html(error).css("font-size","16px","font-weight", "bold", "font-style", "italic");
+		$("#"+elem+"-status").text(error).css("font-size","16px","font-weight", "bold", "font-style", "italic");
 		$("#"+alt).focus(); //!!!only works if not tabbed
 		return true;
 	}
 	function resetAll1() {
-		resetError('password1');
-		resetError('username1');
+		resetError('password1','Password');
+		resetError('username1','Username');
 	}
 	function resetAll2() {
 		resetError('agree');
-		resetError('email');
-		resetError('password2');
-		resetError('username2');
-		resetError('lname');
-		resetError('fname');
+		resetError('email', 'Email address');
+		resetError('password2', 'Password');
+		resetError('username2', 'Username');
+		resetError('lname', 'Last name');
+		resetError('fname', 'First name');
 	}
 	function chkReqd(event) {
 		event.data.msg = event.data.msg || " is required";
@@ -82,7 +85,7 @@
 			showError(event.data.elem[0].id, event.data.name + event.data.msg);
 			errors = true;
 		} else {
-			resetError(event.data.elem[0].id, true);
+			resetError(event.data.elem[0].id, event.data.name, true);
 		}
 	}
 /*sign on form*/
@@ -109,7 +112,7 @@
 	lname.on("blur", {elem: lname, name: 'Last name'}, chkReqd);
 	username2.on("blur", {elem: username2, name: 'Username'}, chkReqd);
 	password2.on("blur", {elem: password2, name: 'Password'}, chkReqd);
-	email.on("blur", {elem: email, name: 'Email'}, chkReqd);
+	email.on("blur", {elem: email, name: 'Email address'}, chkReqd);
 	//extended validations
 	c_password.on('blur', function(e) {
 		e.preventDefault();
@@ -117,7 +120,7 @@
 			showError('password2', 'Passwords don\'t match');
 			errors = true;
 		} else {
-			resetError('password2', true);
+			resetError('password2', 'Password', true);
 		}
 	});
 	//submit
@@ -126,7 +129,7 @@
 		if(!agree.is(':checked')) {
 			showError('agree','You must agree');
 		} else {
-			resetError('agree',true);
+			resetError('agree', '', true);
 		}
 		email.trigger('blur');
 		c_password.trigger('blur');

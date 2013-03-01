@@ -14,7 +14,7 @@
 @section('main')
 	<p>
 	This restricted area contains a facility for me to add more feed icons, and serves the purpose of building a user authorization form for reuse. 
-	Try the 'Register!' link to see the animation swap between signing in and registering.
+	Try the 'Register!' link to see the animation swap between signing in and registering. Some front-end validations included for show.
 	</p>
 	<div id="sr" class="sign-reg">
 		<fieldset>
