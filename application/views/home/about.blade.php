@@ -21,7 +21,7 @@
 
 @section('main')
 <article>
-	<h3>History</h3>
+	<h4>History</h4>
 	<p>Started out in mechanical design after a stint in ranching, fast food, 
 	encyclopedia sales, hardware, and quality assurance testing. Worked in solids modeling 
 	and quality control for a tape drive manufacturer. Developed a taste for computer programming while automating 
@@ -34,7 +34,7 @@
 	Eventually landed a web programming position in a communications department for Government 
 	intra and extranets. This entailed design, documentation, programming and testing web applications.</p>
 
-	<h3>Future</h3>
+	<h4>Future</h4>
 	<p>Sure, knowing how to serve up data correctly and guide users through complicated processes and make difficult concepts 
 	understandable has its place, but the right side of my brain has begun to rebel a little and now has tipped the
 	scales toward balance in additional creative outlets. The good news is the web is still a wonderful place to leverage both 
@@ -42,7 +42,7 @@
 	developer and web artisan<sup>1</sup>.</p>
 </article>
 <section>
-	<h3>Skills</h3>
+	<h4>Skills</h4>
 	<div id="wrapper1">
 		<div id="skills">
 			<ul>
@@ -66,9 +66,9 @@
 				<ul>
 					<li>PHP (4 &amp; 5)</li>
 					<li>MAMP</li>
-					<li><dfn title="Heavy emphasis" class="def hilited">jQuery</dfn></li>
+					<li><span title="Heavy emphasis" class="hilited">jQuery</span></li>
 					<li>HTML5</li>
-					<li><dfn title="Heavy emphasis" class="def hilited">Laravel</dfn></li>
+					<li><span title="Heavy emphasis" class="hilited">Laravel</span></li>
 					<li>AJAX/jSON</li>
 					<li>CSS/3</li>
 					<li>Sublime Text 2/VIM</li>
@@ -90,7 +90,7 @@
 			</div><!-- // skills-3 -->
 		</div><!-- // skills -->
 	</div><!-- // wrapper1 -->
-	<h3>Current Training</h3>
+	<h4>Current Training</h4>
 	<div id="wrapper2">
 		<div id="courses">
 			<ul>
@@ -99,7 +99,7 @@
 				<li><a href="#courses-3">Projects</a></li>
 			</ul>
 			<div id="courses-1">
-				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>
+				<h4>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h4>
 				<ul>
 					<li>Hands-On: Build a Practical Web Application with Laravel</li>
 					<li>Laravel Essentials</li>
@@ -119,7 +119,7 @@
 				</ul>
 			</div><!-- // courses-1 -->
 			<div id="courses-2">
-				<h3>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h3>	
+				<h4>Tuts Premium</h4>	
 				<ul>
 					<li>Rails or Laravel: Building an App Twice</li>
 					<li>Connected to the Backbone</li>

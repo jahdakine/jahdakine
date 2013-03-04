@@ -1,7 +1,7 @@
 /*
 | Tools images
 */
-#yslow, #w3c, #html5 {
+#yslow, #w3c, #html5, #wave {
   text-decoration:none;
   background-image:url('/img/tools-spritesheet.png');
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@
 #yslow { background-position: 0 0; width:42px; height:28px; text-indent: 40px;}
 #w3c { background-position: 0 -32px; width:87px; height:28px; text-indent: 85px;}
 #html5 { background-position: 0 -65px; width:87px; height:34px; text-indent: 95px;}
+#wave { background-position: 0 -111px; width:164px; height:34px; text-indent: 165px;}
 
 .bottom-shim {
   padding-bottom: 10px;

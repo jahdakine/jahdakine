@@ -27,20 +27,20 @@
 
 /* Component containers
 ----------------------------------*/
-.ui-widget-content { border: 1px solid #888; background: #fff; }
-.ui-widget-header { border: 1px solid #fff; background: #f6a828 url(/css/vendor/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; }
+.ui-widget-content { border: 1px solid #888; background: #ddd; }
+.ui-widget-header { border: 1px solid #555; background: #f6a828 url(/css/vendor/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; }
 
 /* Interaction states
 ----------------------------------*/
 /* inactive tabs*/
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: #000; border: 1px solid #e78f08; }
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #aaa; text-decoration: none; background-color: #555; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #fff; text-decoration: none; background-color: #333; }
 /* onhover */
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #e78f08; background: #3dc1ff; }
 .ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited { background: #0b75b2; text-decoration: none; text-shadow: none; }
 /* active tab*/
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #e78f08; background: #fff; font-weight: bold; color: #c77405; }
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #f5ab31; text-decoration: none; background: #fff; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #e78f08; background: #555; font-weight: bold; color: #c77405; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #f5ab31; text-decoration: none; background: #555; }
 
 
 /* page specific */

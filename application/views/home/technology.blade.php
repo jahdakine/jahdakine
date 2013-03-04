@@ -41,6 +41,12 @@
 						<li class="bottom-shim">HTML5 features: CSS3 / Styling, Semantics, and Offline &amp; Storage</li>
 					</ul>	
 				</li>
+				<li>
+					{{ HTML::link("http://wave.webaim.org/", "Wave&nbsp;Org&#8663;", array("id"=>"wave", "title"=>"Open WAVE Accessibility Evaluation Tool in a new window/tab", "target"=>"_blank", "class"=>"offsite link-new-win")) }}
+					<ul>
+						<li class="bottom-shim">Section 503: No errors or alerts</li>
+					</ul>	
+				</li>
 			</ul>
 		</article>
 	</div><!-- // -->
