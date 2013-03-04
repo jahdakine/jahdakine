@@ -23,47 +23,47 @@
 		<ul class="list-text">
 			<li class="block1">
 				{{ HTML::link("https://twitter.com/jahdakine", "Twitter&#8663;", array("title"=>"Open my Twitter page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest tweets on this page', array('id' => 'twitter', 'class' => 'feedBtn listImg accessLink', 'title' => 'Show latest tweets on this page')) }}
+				{{ HTML::link('#', 'Show latest tweets on this page', array('id' => 'twitter', 'class' => 'feedBtn listImg access-link', 'title' => 'Show latest tweets on this page')) }}
 			</li>
 			<li class="block1">
 				{{ HTML::link("http://www.flickr.com/photos/jahdakinebrah/", 'Flickr&#8663;', array("title"=>"Open my Flickr page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest images from my stream on this page', array('id' => 'flickr', 'class' => 'feedBtn listImg accessLink', 'title' => 'Show latest images from my stream on this page')) }}
+				{{ HTML::link('#', 'Show latest images from my stream on this page', array('id' => 'flickr', 'class' => 'feedBtn listImg access-link', 'title' => 'Show latest images from my stream on this page')) }}
 			</li>
 			<li class="block1">
 				{{ HTML::link("http://jahdakine.blogspot.com/", "Blogger&#8663;", array("title"=>"Open my Blogger page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest articles from my blog on this page', array('id' => 'blogger', 'class' => 'feedBtn listImg accessLink', 'title' => 'Show latest articles from my blog on this page')) }}
+				{{ HTML::link('#', 'Show latest articles from my blog on this page', array('id' => 'blogger', 'class' => 'feedBtn listImg access-link', 'title' => 'Show latest articles from my blog on this page')) }}
 			</li>			
 			<li class="block1">
 				{{ HTML::link("http://www.youtube.com/user/jahdakine", "YouTube&#8663;", array("title"=>"Open my YouTube page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest movies from my YouTube channel on this page', array('id' => 'youtube', 'class' => 'feedBtn listImg accessLink', 'title' => 'Show latest movies from my YouTube channel on this page')) }}
+				{{ HTML::link('#', 'Show latest movies from my YouTube channel on this page', array('id' => 'youtube', 'class' => 'feedBtn listImg access-link', 'title' => 'Show latest movies from my YouTube channel on this page')) }}
 			</li>			
 			<li class="block1">
 				{{ HTML::link("https://plus.google.com/u/0/114704033710627861845/posts", "Google+&#8663;", array("title"=>"Open my Google+ page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest posts from Google+ on this page', array('id' => 'google', 'class' => 'feedBtn listImg accessLink', 'title' => 'Show latest posts from Google+ on this page')) }}<!-- Show 5 latest comments from my Google+ circle on this page -->
+				{{ HTML::link('#', 'Show latest posts from Google+ on this page', array('id' => 'google', 'class' => 'feedBtn listImg access-link', 'title' => 'Show latest posts from Google+ on this page')) }}<!-- Show 5 latest comments from my Google+ circle on this page -->
 			</li>	
 			<li class="block1">
 				{{ HTML::link("http://www.zazzle.com/jahdakine+gifts", "Zazzle&#8663;", array("title"=>"Open my Zazzle gift catalog in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest creations from my Zazzle stores on this page', array('id' => 'zazzle', 'class' => 'feedBtn listImg accessLink', 'title' => 'Show latest creations from my Zazzle stores on this page')) }} 
+				{{ HTML::link('#', 'Show latest creations from my Zazzle stores on this page', array('id' => 'zazzle', 'class' => 'feedBtn listImg access-link', 'title' => 'Show latest creations from my Zazzle stores on this page')) }} 
 			</li>	
 			<li class="block1">
 				{{ HTML::link("http://beta.skype.com/en/", "Skype&#8663;", array("title"=>"Open Skype site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				<a href='callto:jahdakine?call' title='Launch a call to my Skype address' target="_blank" id="skype" class="listImg accessLink">Launch a call to my Skype address</a>				
+				<a href='callto:jahdakine?call' title='Launch a call to my Skype address' target="_blank" id="skype" class="listImg access-link">Launch a call to my Skype address</a>				
 			</li>								
 			<li class="block2">
 				{{ HTML::link("http://stackoverflow.com/users/1997909/jahdakine", "Stackoverflow&#8663;", array("title"=>"Open my stackoverflow+ profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show 5 latest question/answers from my Stackoverflow on this page - coming soon', array('id' => 'stackoverflow', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon')) }}
+				{{ HTML::link('#', 'Show 5 latest question/answers from my Stackoverflow on this page - coming soon', array('id' => 'stackoverflow', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}
 			</li>
 			<li class="block2">
 				{{ HTML::link("www.yelp.com/", "Yelp&#8663;", array("title"=>"Open Yelp site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my 5 latest comments from Yelp on this page - coming soon', array('id' => 'yelp', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'Show my 5 latest comments from Yelp on this page - coming soon', array('id' => 'yelp', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>
 			<li class="block2">
 				{{ HTML::link("https://vimeo.com/", "Vimeo&#8663;", array("title"=>"Open Vimeo site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show latest movies from my Vimeo channel on this page - coming soon', array('id' => 'vimeo', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'Show latest movies from my Vimeo channel on this page - coming soon', array('id' => 'vimeo', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>	
 			<li class="block2">
 				{{ HTML::link("http://www.linkedin.com/profile/view?id=14123195", "Linkedin&#8663;", array("title"=>"Open my LinkedIn profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show last 3 recommendations from LinkedIn on this page - coming soon', array('id' => 'linkedin', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon')) }}
+				{{ HTML::link('#', 'Show last 3 recommendations from LinkedIn on this page - coming soon', array('id' => 'linkedin', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}
 				<!-- 
 				<script>
 					recosHTML = '';
@@ -88,44 +88,44 @@
 			</li>		
 			<li class="block2">
 				{{ HTML::link("https://github.com/jahdakine", "GitHub&#8663;", array("title"=>"Open my Github page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my latest repository activity from GitHub repo on this page - coming soon', array('id' => 'github', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon')) }}
+				{{ HTML::link('#', 'Show my latest repository activity from GitHub repo on this page - coming soon', array('id' => 'github', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}
 			</li>					
 			<li class="block2">
 				{{ HTML::link("http://picasa.google.com/", "Picassa&#8663;", array("title"=>"Open Picassa site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my latest album from Picassa on this page - coming soon', array('id' => 'picassa', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'Show my latest album from Picassa on this page - coming soon', array('id' => 'picassa', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>		
 			<li class="block2">
 				{{ HTML::link("http://www.fandango.com/", "Fandango&#8663;", array("title"=>"Open Fandango site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my lastest movies seen at Fandango on this page - coming soon', array('id' => 'fandango', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'Show my lastest movies seen at Fandango on this page - coming soon', array('id' => 'fandango', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>		
 				<li class="block3">
 				{{ HTML::link("https://www.netflix.com/", "Netflix&#8663;", array("title"=>"Open Netflix site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my latest movie recommendations from Netflix on this page - coming soon', array('id' => 'netflix', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'Show my latest movie recommendations from Netflix on this page - coming soon', array('id' => 'netflix', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>		
 			<li class="block3">
 				{{ HTML::link("http://myworld.ebay.com/specrun/", "eBay&#8663;", array("title"=>"Open my eBay profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my latest feedback from Ebay on this page', array('id' => 'ebay', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon')) }}
+				{{ HTML::link('#', 'Show my latest feedback from Ebay on this page', array('id' => 'ebay', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}
 			</li>
 			<li class="block3">
 				{{ HTML::link("http://grooveshark.com/#!/jahdakine", "Grooveshark&#8663;", array("title"=>"Open my GrooveShark profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', "Show the last 5 songs I've played at Groveshark on this page - coming soon", array('id' => 'grooveshark', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon')) }}				
+				{{ HTML::link('#', "Show the last 5 songs I've played at Groveshark on this page - coming soon", array('id' => 'grooveshark', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}				
 			</li>	
 			<li class="block3">
 				{{ HTML::link("http://www.meetup.com/HTML5-Denver-Users-Group/members/65732862/", "Meetup&#8663;", array("title"=>"Open my Meetup profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'Show my recent attendance at Meetup on this page - coming soon', array('id' => 'meetup', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon')) }}				
+				{{ HTML::link('#', 'Show my recent attendance at Meetup on this page - coming soon', array('id' => 'meetup', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}				
 			</li>		
 
 			<li class="block3">
 				{{ HTML::link("http://www.gnerdl.com", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win", "return"=>"false")) }}
-				{{ HTML::link('#', 'Futuristic site - placeholder only', array('id' => 'gnerdl', 'class' => 'feedBtn listImg accessLink', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'Futuristic site - placeholder only', array('id' => 'gnerdl', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
 			</li>	
 			<li class="block3">
 				{{ HTML::link("https://www.icloud.com/", "iCloud&#8663;", array("title"=>"Open iCloud site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'You must be logged in to access private account', array('id' => 'icloud', 'class' => 'feedBtn listImg accessLink', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
+				{{ HTML::link('#', 'You must be logged in to access private account', array('id' => 'icloud', 'class' => 'feedBtn listImg access-link', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
 			</li>				
 			<li class="block3">
 				{{ HTML::link("http://evernote.com/", "Evernote&#8663;", array("title"=>"Open Evernote site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }}
-				{{ HTML::link('#', 'You must be logged in to access private account', array('id' => 'evernote', 'class' => 'feedBtn listImg accessLink', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}								
+				{{ HTML::link('#', 'You must be logged in to access private account', array('id' => 'evernote', 'class' => 'feedBtn listImg access-link', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}								
 			</li>			
 		</ul><!-- // t3 -->
 	</div><!-- // carousel -->
@@ -135,12 +135,12 @@
 	<ul class="reset">
 		<li id="ctrls" class="controls transparent bg-dark">
 			<img src="/img/spacer.gif" width="5" height="1" alt=""/>
-			{{ HTML::link("#", "Slow down carousel scroll rate", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"accessLink white")) }}
-			{{ HTML::link("#", "Scroll backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"accessLink white")) }}
-			{{ HTML::link("#", "Pause the carousel", array("title"=>"Pause the carousel", "id"=>"ctrls3", "class"=>"accessLink white")) }}
-			{{ HTML::link("#", "Restart the carousel", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"accessLink white")) }}
-			{{ HTML::link("#", "Scroll forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"accessLink white")) }}
-			{{ HTML::link("#", "Speed up carousel scroll rate", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"accessLink white")) }} 
+			{{ HTML::link("#", "Slow down carousel scroll rate", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Scroll backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Pause the carousel", array("title"=>"Pause the carousel", "id"=>"ctrls3", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Restart the carousel", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Scroll forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Speed up carousel scroll rate", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"access-link white")) }} 
 			<img src="/img/spacer.gif" width="1" height="1" alt="" class="bg-dark"/><!-- without it last button drops down -->
 		</li>
 	</ul>

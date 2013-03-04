@@ -151,7 +151,7 @@ ul.drop li:hover > ul { visibility: visible }
   display:block;
   height:35px; 
 }
-.accessLink {text-indent:-9999em; display:block;}
+.access-link {text-indent:-9999em; display:block;}
 .hilited { background-color: yellow; }
 .hidden {
   position:absolute;
