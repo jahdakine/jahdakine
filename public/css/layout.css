@@ -38,11 +38,13 @@ aside {
 | Links
 */
 abbr[title], dfn, .def { 
-  border-bottom: 1px dotted; 
-  text-decoration:none;  
+  border-bottom: 1px dotted;
+  text-decoration:none;
   background-color: #333;
-  color: darkorange; /*color: #f6a828*/
-  padding:1px;
+  color: darkorange;
+  /*color: #f6a828*/
+  padding:0 3px 0 3.5px;
+  border-radius: 3px 3px 0 0;
 } 
 a { 
 	color: blue; /*color: #3dc1ff;*/
@@ -66,6 +68,7 @@ a:hover {
   color: #fff; 
   text-shadow: 1px 1px 2px #000;
   background-color: #777;
+  padding: 0 2px;
 }
 /*
 |Wrapper
@@ -115,7 +118,7 @@ h4 {
 | Navigation
 */
 .current, li.current:hover {
-	color: darkorange !important; /*#f6a828*/
+	color: darkorange !important;
   display:block; 
   text-decoration: none;
   background-color: #555 !important; 
@@ -180,6 +183,8 @@ ul.drop li:hover > ul { visibility: visible }
   padding: 0;
 }
 .aside-sep { margin-bottom:.5em; }
+.white { color: #fff; }
+.bg-light { background-color: #aaa;}
 /*
 |Status 
  */
@@ -201,7 +206,7 @@ ul.drop li:hover > ul { visibility: visible }
 */
 .copy {
   padding: 5px 10px;
-  color: #ccc;
+  color: #eee;
   font-style: italic;
   font-size: 75%;
   display:block; 

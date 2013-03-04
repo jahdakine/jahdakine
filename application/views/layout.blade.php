@@ -102,17 +102,17 @@
 		<div class="clear-fix"></div>
 		<footer class="flex-footer copy">
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
-				<u class="def">
+				<span>
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
-				</u>)
+				</span>)
 				<span id="nickSpan">
 					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="accessLink">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
-			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite",  "style"=>"background-color: #eee;")) }}</div>
+			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite bg-light")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
-					<a id="nickHide" href="#" title="Dismiss player" class="accessLink">Dismiss player</a>
+					<a id="nickHide" href="#" title="Dismiss player" class="accessLink white">Dismiss player</a>
 				</div>			
 				<div><time datetime="2013-02-20T09:43">February 20th, 2013</time></div>
 			</div>

@@ -135,12 +135,12 @@
 	<ul class="reset">
 		<li id="ctrls" class="controls transparent">
 			<img src="/img/spacer.gif" width="5" height="1" alt=""/>
-			{{ HTML::link("#", "Slow down carousel scroll rate", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"accessLink")) }}
-			{{ HTML::link("#", "Scroll backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"accessLink")) }}
-			{{ HTML::link("#", "Pause the carousel", array("title"=>"Pause the carousel", "id"=>"ctrls3", "class"=>"accessLink")) }}
-			{{ HTML::link("#", "Restart the carousel", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"accessLink")) }}
-			{{ HTML::link("#", "Scroll forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"accessLink")) }}
-			{{ HTML::link("#", "Speed up carousel scroll rate", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"accessLink")) }} 
+			{{ HTML::link("#", "Slow down carousel scroll rate", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"accessLink white")) }}
+			{{ HTML::link("#", "Scroll backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"accessLink white")) }}
+			{{ HTML::link("#", "Pause the carousel", array("title"=>"Pause the carousel", "id"=>"ctrls3", "class"=>"accessLink white")) }}
+			{{ HTML::link("#", "Restart the carousel", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"accessLink white")) }}
+			{{ HTML::link("#", "Scroll forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"accessLink white")) }}
+			{{ HTML::link("#", "Speed up carousel scroll rate", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"accessLink white")) }} 
 			<img src="/img/spacer.gif" width="5" height="1" alt=""/><!-- without it last button drops down -->
 		</li>
 	</ul>
