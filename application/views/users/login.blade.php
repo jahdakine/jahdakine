@@ -106,9 +106,8 @@
 	</div>	
 
 <p class="lorem-text">
-This pseudo-restricted area serves the purpose of building a user authorization form for reuse. 
-Try the 'Register!' link to see the animation swap between signing in and registering and how I've handled the forms. 
-Some front-end validations are included for show... 
+This pseudo-restricted area serves the purpose of building a user authorization form for reuse. It does not acutally create a session or connect to a database. 
+Try the 'Register!' link to see the animation swap between signing in and registering and how I've handled the forms. Some front-end validations are included for show...
 <span class="lighter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -40,9 +40,14 @@ aside {
 /*
 | Links
 */
-a, .href { 
+a { 
 	color: #3dc1ff;
 	text-decoration:underline; 
+}
+.href { 
+  color: #3dc1ff;
+  padding-bottom:0;
+  border-bottom: 1px solid #3dc1ff;
 }
 a:visited, .visited {
 	color: #2972A3; 
@@ -85,9 +90,16 @@ a:hover, .hover {
 	letter-spacing: 2px;
 	margin: 20px 0 10px 0;
 }
-.wrapper>header h4 {
+.wrapper>header h3 {
 	letter-spacing: 2px;
 	margin: 12px 0 10px 0;
+}
+.wrapper>header h4 {
+  letter-spacing: 2px;
+  margin: 12px 0 10px 0;
+}
+h4 {
+  font-family: 'Croissant One', cursive; 
 }
 /*
 | Navigation
@@ -126,6 +138,7 @@ ul.drop li:hover > ul { visibility: visible }
   display:block;
   height:35px; 
 }
+.accessLink {text-indent:-9999em; display:block;}
 .hilited { background-color: yellow; }
 .hidden {
   position:absolute;

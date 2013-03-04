@@ -15,7 +15,7 @@
 		<header id="whats-this">
 			<h1>@yield("title")</h1>
 			<h2 id="nickName">John Chase</h2>
-			<h4>Web Developer</h4>
+			<h3>Web Developer</h3>
 			@if(!URI::is('users/login'))
 				{{ HTML::link("users/login", "Sign-on") }}
 			@endif
@@ -63,14 +63,14 @@
 				@yield_section <!-- will yield and close section -->
 			</ul>
 		</div><!-- // navigation -->
-		<div class="clear-fix"></div>
+		<div class="clear-fix" id="content"></div>
 		@yield('top')
 		<div class="control-bg">
 			@yield('controls')
 		</div>
-		<div role="main" id="content" class="main">		
+		<div role="main" class="main">		
 			<aside id="aside" class="landAside">
-				<h3 class="to-center reset">Legend</h3>
+				<h4 class="to-center reset">Legend</h4>
 				<hr class="aside-sep">
 				<ul class="nolist">
 					<li><span class="href" title="Links to web pages on this site">Onsite link</span></li>
@@ -82,7 +82,7 @@
 					<li><span class="dfn def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
 				</ul>
 				@yield('aside')
-				<h3 class="to-center reset">Share</h3>
+				<h4 class="to-center reset">Share</h4>
 				<hr class="aside-sep">
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
@@ -106,13 +106,13 @@
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
 				</u>)
 				<span id="nickSpan">
-					<a id="nickButton" href="#" title="Play nickname pronunciation audio (wav)"></a>
+					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="accessLink">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
 			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
-					<a id="nickHide" href="#" title="Dismiss player"></a>
+					<a id="nickHide" href="#" title="Dismiss player" class="accessLink">Dismiss player</a>
 				</div>			
 				<div><time datetime="2013-02-20T09:43">February 20th, 2013</time></div>
 			</div>
