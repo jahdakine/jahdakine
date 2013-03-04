@@ -19,8 +19,8 @@ hr { border-radius:0; margin-top:0; }
 */
 aside {
   float: right;
-  border: 1px #999 solid;
-  background-color: #aaa; /*#ddd */
+  border: 1px #aaa solid;
+  background-color: #ddd; /*#ddd */
   font-size: 80%;
   padding: 5px;
   margin: 5px 15px 5px 15px;
@@ -39,8 +39,10 @@ aside {
 */
 abbr[title], dfn, .def { 
   border-bottom: 1px dotted; 
-  text-decoration:none; 
-  color: darkorange; /*color: #f6a828;*/
+  text-decoration:none;  
+  background-color: #333;
+  color: darkorange; /*color: #f6a828*/
+  padding:1px;
 } 
 a { 
 	color: blue; /*color: #3dc1ff;*/
@@ -86,20 +88,20 @@ a:hover, .hover {
 	font-size: 32pt;
 	margin: 40px 0 12px 0;
 	letter-spacing: 2px;
-	color:#888;
+	color:#777;
 }
 .wrapper>header h2 {
-	color:#666;
+	color:#555;
 	letter-spacing: 2px;
 	margin: 20px 0 10px 0;
 }
 .wrapper>header h3 {
-  color:#444;
+  color:#333;
 	letter-spacing: 2px;
 	margin: 12px 0 10px 0;
 }
 h4 {
-  color:#222;  
+  color:#333;  
   .letter-spacing: 2px;
   .margin: 12px 0 10px 0;
   font-family: 'Croissant One', cursive; 
@@ -108,10 +110,10 @@ h4 {
 | Navigation
 */
 .current, li.current:hover {
-	color: darkorange !important; /*#f6a828 */
+	color: darkorange !important; /*#f6a828*/
   display:block; 
   text-decoration: none;
-  background-color: #555 !important;
+  background-color: #555 !important; 
   background-repeat:repeat;
 }
 .container {
