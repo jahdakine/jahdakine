@@ -133,7 +133,7 @@
 <div class="clear-fix"></div>
 	@section('controls')
 	<ul class="reset">
-		<li id="ctrls" class="controls transparent">
+		<li id="ctrls" class="controls transparent bg-dark">
 			<img src="/img/spacer.gif" width="5" height="1" alt=""/>
 			{{ HTML::link("#", "Slow down carousel scroll rate", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"accessLink white")) }}
 			{{ HTML::link("#", "Scroll backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"accessLink white")) }}
