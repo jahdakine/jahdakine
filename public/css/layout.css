@@ -12,8 +12,6 @@ body
 }
 /* for legacy browsers - wnew html5 tags wont break layout */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-
-abbr[title], dfn, .def { border-bottom: 1px dotted; text-decoration:none; color: darkorange;} /*color: #f6a828;*/
 hr { border-radius:0; margin-top:0; }
 .separator { background-color: #333; height:36px; margin-bottom:0; }
 /*
@@ -40,6 +38,11 @@ aside {
 /*
 | Links
 */
+abbr[title], dfn, .def { 
+  border-bottom: 1px dotted; 
+  text-decoration:none; 
+  color: darkorange;
+} /*color: #f6a828;*/
 a { 
 	.color: #3dc1ff;
 	color: blue;
@@ -87,14 +90,15 @@ a:hover, .hover {
 	font-size: 32pt;
 	margin: 40px 0 12px 0;
 	letter-spacing: 2px;
-	color:#aaa;
+	color:#999;
 }
 .wrapper>header h2 {
-	color:#888;
+	color:#777;
 	letter-spacing: 2px;
 	margin: 20px 0 10px 0;
 }
 .wrapper>header h3 {
+  color:#555;
 	letter-spacing: 2px;
 	margin: 12px 0 10px 0;
 }
@@ -125,11 +129,11 @@ ul#nav{
   margin:0;
   padding:0;
 }
-ul.drop a { display:block; color: #aaa; text-decoration: none; text-shadow: none; }
+ul.drop a { display:block; text-decoration: none; text-shadow: none; color: #fff;} /*color: #aaa;*/
 ul.drop, ul.drop li, ul.drop ul { list-style: none; margin: 0; padding: 0; background: #555; color: #fff;}
 ul.drop { position: relative; z-index: 597; float: left; }
 ul.drop li { float: left; vertical-align: middle; padding: 5px 10px; color: #333; }
-ul.drop li.hover, ul.drop li:hover { position: relative; z-index: 599; cursor: default; background: #0b75b2; }
+ul.drop li.hover, ul.drop li:hover { position: relative; z-index: 599; cursor: default; background: #0b75b2; } /* 084f78 */
 ul.drop ul { visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; background: #555; }
 ul.drop ul li { float: none; width: 103px}
 ul.drop ul ul { top: -2px; left: 100%; }
