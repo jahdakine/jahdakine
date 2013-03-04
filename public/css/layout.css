@@ -5,7 +5,7 @@ body
 	font-family:'Droid Sans', sans-serif;
 	color:#555;
 	line-height: 25px;
-  background-color: #eee;
+  background-color: #ccc; /*#eee*/
   min-width: 575px;
   height:100%;
   margin:0;
@@ -19,14 +19,13 @@ hr { border-radius:0; margin-top:0; }
 */
 aside {
   float: right;
-  border: 1px #ccc solid;
-  background-color: #ddd; 
+  border: 1px #999 solid;
+  background-color: #aaa; /*#ddd */
   font-size: 80%;
   padding: 5px;
   margin: 5px 15px 5px 15px;
   border-radius: 5px;
   min-width: 100px;
-  opacity:0.7;
 }
 .main {
   padding: 1em;
@@ -41,28 +40,25 @@ aside {
 abbr[title], dfn, .def { 
   border-bottom: 1px dotted; 
   text-decoration:none; 
-  color: darkorange;
-} /*color: #f6a828;*/
+  color: darkorange; /*color: #f6a828;*/
+} 
 a { 
-	.color: #3dc1ff;
-	color: blue;
+	color: blue; /*color: #3dc1ff;*/
   text-decoration:underline; 
 } 
 /* keep separate for 503 */
 .href { 
-  color: blue;
-  .color: #3dc1ff;
+  color: blue; /*color: #3dc1ff;*/
   padding-bottom:0;
   border-bottom: 1px solid blue;
 }
 a:visited, .visited {
-	.color: #2972A3; 
-	color: purple;
+	color: purple; /*color: #2972A3;*/ 
   text-decoration:none;
 }
 a:hover, .hover {
 	color: #fff; 
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 1px 2px #000;
 }
 /*
 |Wrapper
@@ -70,12 +66,12 @@ a:hover, .hover {
 .wrapper {
   width:100%;
   margin: 0 auto;
-  background-color: #eee;
-  background: -webkit-linear-gradient(bottom, #588bae, #eee 50%);
-  background: -moz-linear-gradient(bottom, #588bae, #eee 50%);
-  background: -o-linear-gradient(bottom, #588bae, #eee 50%);
-  background: -ms-linear-gradient(bottom, #588bae, #eee 50%);
-  background: linear-gradient(bottom, #588bae, #eee 50%);
+  background-color: #ccc; /*#eee*/
+  background: -webkit-linear-gradient(bottom, #588bae, #ccc 50%);
+  background: -moz-linear-gradient(bottom, #588bae, #ccc 50%);
+  background: -o-linear-gradient(bottom, #588bae, #ccc 50%);
+  background: -ms-linear-gradient(bottom, #588bae, #ccc 50%);
+  background: linear-gradient(bottom, #588bae, #ccc 50%);
 }
 .wrapper>header {
 	font-family: 'Croissant One', cursive;
@@ -90,30 +86,29 @@ a:hover, .hover {
 	font-size: 32pt;
 	margin: 40px 0 12px 0;
 	letter-spacing: 2px;
-	color:#999;
+	color:#888;
 }
 .wrapper>header h2 {
-	color:#777;
+	color:#666;
 	letter-spacing: 2px;
 	margin: 20px 0 10px 0;
 }
 .wrapper>header h3 {
-  color:#555;
+  color:#444;
 	letter-spacing: 2px;
 	margin: 12px 0 10px 0;
 }
-.wrapper>header h4 {
-  letter-spacing: 2px;
-  margin: 12px 0 10px 0;
-}
 h4 {
+  color:#222;  
+  .letter-spacing: 2px;
+  .margin: 12px 0 10px 0;
   font-family: 'Croissant One', cursive; 
 }
 /*
 | Navigation
 */
 .current, li.current:hover {
-	color: #f6a828 !important;
+	color: darkorange !important; /*#f6a828 */
   display:block; 
   text-decoration: none;
   background-color: #555 !important;
@@ -186,20 +181,20 @@ ul.drop li:hover > ul { visibility: visible }
   text-decoration:none;
   background-image:url('/img/status-spritesheet.png');
   background-repeat: no-repeat;
-  width:20px;
-  height:18px;
+  width:19px;
+  height:19px;
 }
-#nickSpan { padding-top:2px; }
+#nickSpan { padding:4px; }
 #nickHide { background-position: 0 0; }
-#nickButton { background-position: 0 -18px; }
-#info { background-position: 0 -35px; }
-#help { background-position: 0 -51px; }
+#nickButton { background-position: 0 -26px; }
+#info { background-position: 0 -56px; }
+#help { background-position: 0 -87px; }
 /*
 | Footer
 */
 .copy {
   padding: 5px 10px;
-  color: #aaa;
+  color: #ccc;
   font-style: italic;
   font-size: 75%;
   display:block; 
