@@ -34,7 +34,8 @@
 			{{ Form::submit('Submit', array("class"=>"btn btn-primary", "id"=>"sr_sub")) }}
 			{{ Form::reset('Reset', array("class"=>"btn btn-warning", "title" => "Reset the form", "id"=>"sr_reset")) }}
 			<p>
-			{{ Form::checkbox('persist', "1", true ,array("style"=>"vertical-align:text-top")) }} Keep me signed in
+			{{ Form::label("persist", "Keep me signed in", array("class"=>"access-link"))}}
+			{{ Form::checkbox('persist', "1", true ,array("style"=>"vertical-align:text-top", "id"=>"persist")) }} Keep me signed in
 			</p>
 			<aside class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</aside>
 			{{ Form::close() }}
@@ -42,8 +43,8 @@
 		<fieldset>
 			<legend>-or-</legend>
 			Connect using a service:<br/>
-			<a href="#" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1" title="Sign in with Google+" return false;><img src="/img/google-login-icon.png" alt=""/></a><br/>
-			<a href="#" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1" title="Sign in with Facebook" return false;><img src="/img/fb-login-icon.png" alt=""/></a><br/>
+			<a href="#" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link" title="Sign in with Google+" return false;><img src="/img/google-login-icon.png" alt=""/>Sign in with Google+</a><br/>
+			<a href="#" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link" title="Sign in with Facebook" return false;><img src="/img/fb-login-icon.png" alt=""/>Sign in with Facebook</a><br/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">
