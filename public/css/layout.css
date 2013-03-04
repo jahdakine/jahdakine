@@ -58,9 +58,14 @@ a:visited, .visited {
 	color: purple; /*color: #2972A3;*/ 
   text-decoration:none;
 }
-a:hover, .hover {
+a:hover {
 	color: #fff; 
   text-shadow: 1px 1px 2px #000;
+}
+.hover {
+  color: #fff; 
+  text-shadow: 1px 1px 2px #000;
+  background-color: #777;
 }
 /*
 |Wrapper
@@ -88,20 +93,20 @@ a:hover, .hover {
 	font-size: 32pt;
 	margin: 40px 0 12px 0;
 	letter-spacing: 2px;
-	color:#777;
+	color:#666;
 }
 .wrapper>header h2 {
-	color:#555;
+	color:#444;
 	letter-spacing: 2px;
 	margin: 20px 0 10px 0;
 }
 .wrapper>header h3 {
-  color:#333;
+  color:#222;
 	letter-spacing: 2px;
 	margin: 12px 0 10px 0;
 }
 h4 {
-  color:#333;  
+  color:#222;  
   .letter-spacing: 2px;
   .margin: 12px 0 10px 0;
   font-family: 'Croissant One', cursive; 

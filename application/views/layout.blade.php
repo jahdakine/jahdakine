@@ -109,7 +109,7 @@
 					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="accessLink">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
-			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite")) }}</div>
+			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite",  "style"=>"background-color: #eee;")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Dismiss player" class="accessLink">Dismiss player</a>
