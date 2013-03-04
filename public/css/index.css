@@ -126,14 +126,14 @@
   text-decoration:none;
   background-image:url('/img/controls-spritesheet.png');
   background-repeat: no-repeat;  
-  width:23px; height:25px;
+  width:24px; height:30px;
 }
 #ctrls1 { background-position: 0 0; }
-#ctrls2 { background-position: 0 -25px; }
-#ctrls3 { background-position: 0 -50px; }
-#ctrls4 { background-position: 0 -75px; }
-#ctrls5 { background-position: 0 -100px; }
-#ctrls6 { background-position: 0 -125px; }
+#ctrls2 { background-position: 0 -50px; }
+#ctrls3 { background-position: 0 -100px; }
+#ctrls4 { background-position: 0 -150px; }
+#ctrls5 { background-position: 0 -200px; }
+#ctrls6 { background-position: 0 -250px; }
 
 #linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gnerdl, #carou22, #carou23, #carou24, #carou25 {   
   display: inline-table;

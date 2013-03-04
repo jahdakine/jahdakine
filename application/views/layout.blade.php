@@ -106,7 +106,7 @@
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
 				</span>)
 				<span id="nickSpan">
-					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="accessLink">Play nickname pronunciation audio (wav)</a>
+					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="accessLink white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
 			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite bg-light")) }}</div>
