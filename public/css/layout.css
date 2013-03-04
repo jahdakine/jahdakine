@@ -13,7 +13,7 @@ body
 /* for legacy browsers - wnew html5 tags wont break layout */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 
-abbr[title], dfn, .def { border-bottom: 1px dotted; text-decoration:none; color: #f6a828; }
+abbr[title], dfn, .def { border-bottom: 1px dotted; text-decoration:none; color: darkorange;} /*color: #f6a828;*/
 hr { border-radius:0; margin-top:0; }
 .separator { background-color: #333; height:36px; margin-bottom:0; }
 /*
@@ -41,17 +41,21 @@ aside {
 | Links
 */
 a { 
-	color: #3dc1ff;
-	text-decoration:underline; 
-}
+	.color: #3dc1ff;
+	color: blue;
+  text-decoration:underline; 
+} 
+/* keep separate for 503 */
 .href { 
-  color: #3dc1ff;
+  color: blue;
+  .color: #3dc1ff;
   padding-bottom:0;
-  border-bottom: 1px solid #3dc1ff;
+  border-bottom: 1px solid blue;
 }
 a:visited, .visited {
-	color: #2972A3; 
-	text-decoration:none;
+	.color: #2972A3; 
+	color: purple;
+  text-decoration:none;
 }
 a:hover, .hover {
 	color: #fff; 
