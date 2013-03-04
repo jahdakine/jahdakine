@@ -21,12 +21,14 @@
 			{{ Form::token() }}
 			<div class="control-group" id="username1-group">
 		    <div class="controls">
+		    	{{ Form::label("username1", "Username", array("class"=>"access-link"))}}
 					{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1")) }}
 					<span class="help-inline" id="username1-status"></span>
 		    </div>
 		  </div>
 			<div class="control-group" id="password1-group">
 		    <div class="controls">
+		    	{{ Form::label("password1", "Password", array("class"=>"access-link"))}}
 					{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1")) }}					
 					<span class="help-inline" id="password1-status"></span>
 		    </div>
@@ -53,9 +55,16 @@
 			<p style="margin-top:0;">Already registered? {{ HTML::link("#", "Sign on!", array("title"=>"Switch to sign on form", "id" => "reg-sign")) }}&nbsp;<i class="icon-pencil"></i></p>
 			{{ Form::open('404','POST',array("class" => "")) }}
 			{{ Form::token() }}
+			{{ Form::label("fname", "First name", array("class"=>"access-link"))}}
+			{{ Form::label("lname", "Last name", array("class"=>"access-link"))}}
+			{{ Form::label("username2", "Username", array("class"=>"access-link"))}}		    	
+		  {{ Form::label("password2", "Password", array("class"=>"access-link"))}}		    	
+		  {{ Form::label("c_password", "Confirm password", array("class"=>"access-link"))}}		    	
+			{{ Form::label("email", "Email", array("class"=>"access-link"))}}		    	
+		  {{ Form::label("agree", "I agree to the terms of the user-agreement and privacy policy", array("class"=>"access-link"))}}		    	
 			<div class="control-group" id="fname-group">
 		    <div class="controls">
-					{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname")) }}
+		    	{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname")) }}
 					<span class="help-inline" id="fname-status"></span>
 		    </div>
 		  </div>
