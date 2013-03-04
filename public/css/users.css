@@ -9,9 +9,9 @@
   border-radius: 10px;
 }
 .required {
-  color:darkorange;
-  border:1px #f89406 solid;
-  background-color:#333;
+  color:#b94a48;
+  border:1px #b94a48 solid;
+  background-color:#fff;
 }
 .lorem-text {
     padding-bottom:15em;
