@@ -9,7 +9,7 @@
 			$document = $(document),
 			link_toggle = $("#link-toggle"),
 			color_toggle = $("#color-toggle");
-/* Top link */			
+/* Top link */
 	jQuery.fn.topLink = function(settings) {
 			settings = jQuery.extend({
 			min: 1,
@@ -43,8 +43,17 @@
 		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
 		resizeFooter();
   });
-/* store link color and style preference */  
+/* store link color and style preference */
   $document.ready(function() {
+		//top link
+		$('#top-link').topLink({
+			min: 50,
+			fadeSpeed: 500
+		});
+		$('#top-link').click(function(e) {
+			e.preventDefault();
+			$('body,html').animate({scrollTop:0},800);
+		});
 		//link external style
 		if(localStorage.getItem("link")) {
 			link_style = localStorage.getItem("link");
@@ -88,7 +97,7 @@
 				visited_link = $("#visitedLink"),
 				href_orig = $(".href-orig"),
 				href_aside_orig = $(".href-aside-orig"),
-				link_color = localStorage.getItem("color");console.log(link_color);
+				link_color = localStorage.getItem("color");
 		e.preventDefault();
 		if(link_color == 'href') {
 			href.removeClass('href hover visited').addClass('href-orig visited-orig hover-orig');
@@ -148,7 +157,7 @@
 		}
 	}));
 	// Setup our second tooltip, again adding some new options
-	$('acronym,dfn,abbr,.def').qtip( $.extend({}, shared, {
+	$('acronym,dfn,abbr').qtip( $.extend({}, shared, {
 		style: {
 			classes: 'qtip-orange'
 		}
@@ -205,14 +214,3 @@
 		}
 	});
 })();
-
-$(document).ready(function() {
-	$('#top-link').topLink({
-		min: 200,
-		fadeSpeed: 500
-	});
-	$('#top-link').click(function(e) {
-    e.preventDefault();
-		$('body,html').animate({scrollTop:0},800);
-  });
-});

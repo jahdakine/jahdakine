@@ -80,7 +80,7 @@
 					<li><span class="href-aside" title="Links to pop-up windows">Popup&#8657;</span></li>
 					<li><span class="hover-aside" title="Link style with cursor above">Hover</span></li>
 					<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
-					<li><span class="dfn def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
+					<li><span class="def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
 				</ul>
 				@yield('aside')
 				<h4 class="to-center reset">Share</h4>
