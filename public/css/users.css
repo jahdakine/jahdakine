@@ -20,3 +20,12 @@
 .lighter-text {
   color:#aaa;
 }
+#so-google, #so-facebook {   
+  display: inline-table;
+  text-decoration:none;
+  background-image:url('/img/connect-spritesheet.png');
+  background-repeat: no-repeat;    
+  height:24px;
+}
+#so-google { background-position: 0 0; width:163px;}
+#so-facebook { background-position: 0 -30px; width:69px; }
