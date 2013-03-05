@@ -99,13 +99,13 @@
 					<!-- AddThis Button END -->
 			</aside><!-- // aside -->
 			@yield('main')
-			<a href="#top" id="top-link">Top of Page</a>
+			<a href="#content" id="top-link">Top of Page</a>
 		</div><!-- // content -->
 		<div class="clear-fix"></div>
 		<footer class="flex-footer copy">
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
 				<span>
-					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)">jahdakine</dfn>
+					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>
 				</span>)
 				<span id="nickSpan">
 					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="access-link white">Play nickname pronunciation audio (wav)</a>

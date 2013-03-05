@@ -41,6 +41,7 @@ abbr[title], dfn, .def {
   border-bottom: 1px dotted;
   text-decoration:none;
   background-color:#f6a828;
+  color: #000;
   padding:0 3px 0 3.5px;
   border-radius: 3px 3px 0 0;
 } 
@@ -213,6 +214,7 @@ ul.drop li:hover > ul { visibility: visible }
 }
 .aside-sep { margin-bottom:.5em; }
 .white { color: #fff; }
+.black { color: #000; }
 .bg-light { background-color: #eee; padding: 0 2px; }
 .bg-dark { background-color: #333; padding: 0 2px;}
 .pbox { background-color: #eee; padding: 0 2px; border: 3px solid #3dc1ff; }
