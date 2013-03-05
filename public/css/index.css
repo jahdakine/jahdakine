@@ -118,16 +118,17 @@
   margin:0;
   margin-left: auto;
   margin-right: auto;
-  left: 50%; 
+  top:0; left: 50%; 
+
+  height:30px !important;  
   padding:5px 0 0 0;
 }
 #ctrls1, #ctrls2, #ctrls3, #ctrls4, #ctrls5, #ctrls6 {   
   display: inline-table;
   text-decoration:none;
   background-image:url('/img/controls-spritesheet.png');
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;    
   width:24px !important; 
-  height:30px;
 }
 #ctrls1 { background-position: 0 0; }
 #ctrls2 { background-position: 0 -50px; }
