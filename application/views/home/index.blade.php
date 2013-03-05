@@ -141,7 +141,7 @@
 			{{ HTML::link("#", "Restart the carousel", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"access-link white")) }}
 			{{ HTML::link("#", "Scroll forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"access-link white")) }}
 			{{ HTML::link("#", "Speed up carousel scroll rate", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"access-link white")) }} 
-			<img src="/img/spacer.gif" width="1" height="1" alt="" class="bg-dark"/><!-- without it last button drops down -->
+			<img src="/img/spacer.gif" width="1" height="1" alt="" class="bg-dark"/> 
 		</li>
 	</ul>
 	@endsection

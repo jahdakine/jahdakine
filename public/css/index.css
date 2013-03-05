@@ -126,7 +126,8 @@
   text-decoration:none;
   background-image:url('/img/controls-spritesheet.png');
   background-repeat: no-repeat;  
-  width:24px; height:30px;
+  width:24px !important; 
+  height:30px;
 }
 #ctrls1 { background-position: 0 0; }
 #ctrls2 { background-position: 0 -50px; }
