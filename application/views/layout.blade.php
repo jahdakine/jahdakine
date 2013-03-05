@@ -115,7 +115,7 @@
 				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Dismiss player" class="access-link white">Dismiss player</a>
 				</div>			
-				<div><time datetime="2013-02-20T09:43">February 20th, 2013</time></div>
+				<div><time datetime="2013-03-05T09:43">March 5th, 2013</time></div>
 			</div>
 		</footer>
 	</div> <!-- // wrapper -->

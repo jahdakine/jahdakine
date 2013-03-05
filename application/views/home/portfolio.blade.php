@@ -106,6 +106,7 @@
 					<section id="volunteerFrame" class="box hide"></section>
 				</div><!-- // volunteer -->									
 			</div><!-- // projects -->
+			<a href="#top" id="top-link">Top of Page</a>
 		</div><!-- // tabs -->
 	</section>    
 @endsection
