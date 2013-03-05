@@ -58,7 +58,7 @@
 								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
 							@endif
 							<li>{{ HTML::link("#", "Toggle links", array("title"=>"Set external linking style", "id"=>"link-toggle")) }}</li>
-							<li>{{ HTML::link("#", "Toggle color", array("title"=>"Set color contrast", "id"=>"color-toggle")) }}</li>
+							<li>{{ HTML::link("#", "Toggle color", array("title"=>"Set link color contrast", "id"=>"color-toggle")) }}</li>
 					</ul>
 					</li>														
 				@yield_section <!-- will yield and close section -->
@@ -110,7 +110,7 @@
 					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="access-link white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
-			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite bg-light href")) }}</div>
+			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite href pbox")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Dismiss player" class="access-link white">Dismiss player</a>

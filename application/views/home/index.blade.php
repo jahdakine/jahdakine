@@ -183,7 +183,9 @@
 				in the current window, use the <em>Commands|Toggle links</em> function and your setting will be saved for future visits thanks to Local Storage. I originally designed 
 				this site with lower contrast, color coordinated links. If you don't mind that, try the <em>Commands|Toggle color</em> function to get a nicer look 
 				(this does not pass Section 503 contrast standards). While you're poking around, try out my interactive  
-				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun.
+				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun or jump over to the 
+				{{ HTML::link("home/technology", "Technology page", array("title"=>"Technology page", "class"=>"href")) }} to see more of what makes
+				this site tick.
 			</p>
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 

@@ -202,8 +202,9 @@ ul.drop li:hover > ul { visibility: visible }
 }
 .aside-sep { margin-bottom:.5em; }
 .white { color: #fff; }
-.bg-light { background-color: #eee; padding: 0 2px;}
+.bg-light { background-color: #eee; padding: 0 2px; }
 .bg-dark { background-color: #333; padding: 0 2px;}
+.pbox { background-color: #eee; padding: 0 2px; border: 3px solid #3dc1ff; }
 /*
 |Status 
  */
