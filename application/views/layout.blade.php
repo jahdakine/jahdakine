@@ -99,6 +99,7 @@
 					<!-- AddThis Button END -->
 			</aside><!-- // aside -->
 			@yield('main')
+			<a href="#top" id="top-link">Top of Page</a>
 		</div><!-- // content -->
 		<div class="clear-fix"></div>
 		<footer class="flex-footer copy">
