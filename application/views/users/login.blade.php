@@ -16,7 +16,7 @@
 	<div id="sr" class="sign-reg">
 		<fieldset>
 	  <legend>Sign On</legend>
-			<p style="margin-top:0;">Don't have an account? {{ HTML::link("#", "Register!", array("title"=>"Switch to registration form", "id" => "sign-reg")) }}&nbsp;<i class="icon-book"></i></p>
+			<p style="margin-top:0;">Don't have an account? {{ HTML::link("#", "Register!", array("title"=>"Switch to registration form", "id" => "sign-reg", "class"=>"href")) }}&nbsp;<i class="icon-book"></i></p>
 			{{ Form::open('login','POST',array("class" => "form-inline")) }}
 			{{ Form::token() }}
 			<div class="control-group" id="username1-group">
@@ -33,8 +33,8 @@
 					<span class="help-inline" id="password1-status"></span>
 		    </div>
 		  </div>
-			{{ Form::submit('Submit', array("class"=>"btn btn-primary", "id"=>"sr_sub")) }}
-			{{ Form::reset('Reset', array("class"=>"btn btn-warning", "title" => "Reset the form", "id"=>"sr_reset")) }}
+			{{ Form::submit('Submit', array("class"=>"btn btn-primary href", "title"=>"Not functional - for show only", "id"=>"sr_sub")) }}
+			{{ Form::reset('Reset', array("class"=>"btn btn-warning href", "title" => "Reset the form", "id"=>"sr_reset")) }}
 			<p>
 			{{ Form::label("persist", "Keep me signed in", array("class"=>"access-link"))}}
 			{{ Form::checkbox('persist', "1", true ,array("style"=>"vertical-align:text-top", "id"=>"persist")) }} Keep me signed in
@@ -45,14 +45,14 @@
 		<fieldset>
 			<legend>-or-</legend>
 			Connect using a service:<br/>
-			<a href="#" id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link" title="Sign in with Google+" return false;>Sign in with Google+</a><br/>
-			<a href="#" id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link" title="Sign in with Facebook" return false;>Sign in with Facebook</a><br/>
+			<a href="#" id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Sign in with Google+" return false;>Sign in with Google+</a><br/>
+			<a href="#" id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Sign in with Facebook" return false;>Sign in with Facebook</a><br/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">
 		<fieldset>
 	  <legend>Register</legend>
-			<p style="margin-top:0;">Already registered? {{ HTML::link("#", "Sign on!", array("title"=>"Switch to sign on form", "id" => "reg-sign")) }}&nbsp;<i class="icon-pencil"></i></p>
+			<p style="margin-top:0;">Already registered? {{ HTML::link("#", "Sign on!", array("title"=>"Switch to sign on form", "id" => "reg-sign", "class"=>"href")) }}&nbsp;<i class="icon-pencil"></i></p>
 			{{ Form::open('404','POST',array("class" => "")) }}
 			{{ Form::token() }}
 			{{ Form::label("fname", "First name", array("class"=>"access-link"))}}
@@ -108,8 +108,8 @@
 					<span class="help-inline" id="agree-status"></span>
 		    </div>
 	    </div>			
-			{{ Form::submit('Submit', array("class"=>"btn btn-primary", "style" =>"margin-top:1em;", "id"=>"rs_sub", "title" => "Not functional - for show only")) }}
-			{{ Form::reset('Reset', array("class"=>"btn btn-warning", "style" =>"margin-top:1em;", "title" => "Reset the form", "id"=>"rs_reset")) }}
+			{{ Form::submit('Submit', array("class"=>"btn btn-primary href", "style" =>"margin-top:1em;", "id"=>"rs_sub", "title" => "Not functional - for show only")) }}
+			{{ Form::reset('Reset', array("class"=>"btn btn-warning href", "style" =>"margin-top:1em;", "title" => "Reset the form", "id"=>"rs_reset")) }}
 			<aside class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</aside>
 			{{ Form::close() }}
 		</fieldset>
