@@ -91,6 +91,9 @@
 /*
 | Sticky notes
 */
+.note-font {
+  font-family: 'Special Elite', cursive;
+}
 .notes {
   width:50%;
   margin: 50px auto;

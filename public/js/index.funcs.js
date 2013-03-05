@@ -28,6 +28,7 @@
 			c6 = $("#ctrls6"),
 			ctrls = $("#ctrls");
 			reset = $("#reset"),
+			note_flip = $("#note-flip"),
 			feed_btn = $(".feedBtn"),
 			content_frame = $("#contentFrame"),
 			land_aside = $(".landAside"),
@@ -114,6 +115,25 @@
 		});
 		reset.addClass("current");
 		reset.parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
+	});
+	/*note flipper */
+	note_flip.on('click', function(e) {
+		e.preventDefault();
+		var next = 0;
+		for(i=1;i<5;i++){
+			if(eval($("#note"+i)).hasClass('show')){
+				eval($("#note"+i)).removeClass().addClass("hide");
+				if(i===4){
+					next = 1;
+					$("#todo").text("To do:");
+				} else {
+					next = i+1;
+					$("#todo").text("Past to dos:").addClass("note-font");
+				}
+			}
+		}
+		eval($("#note"+next)).removeClass().addClass("show");
+
 	});
 	/*carousel controls*/
 	c1.on('click', function(e, num2Scroll, dir2Scroll) { //slow down num2Scroll
