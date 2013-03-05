@@ -99,7 +99,7 @@
 				<li><a href="#courses-3">Projects</a></li>
 			</ul>
 			<div id="courses-1">
-				<h4>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite")) }}</h4>
+				<h4>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h4>
 				<ul>
 					<li>Hands-On: Build a Practical Web Application with Laravel</li>
 					<li>Laravel Essentials</li>

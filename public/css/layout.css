@@ -5,7 +5,7 @@ body
 	font-family:'Droid Sans', sans-serif;
 	color:#555;
 	line-height: 25px;
-  background-color: #ccc; /*#eee*/
+  background-color: #ccc;
   min-width: 575px;
   height:100%;
   margin:0;
@@ -42,34 +42,52 @@ abbr[title], dfn, .def {
   text-decoration:none;
   background-color: #333;
   color: darkorange;
-  /*color: #f6a828*/
   padding:0 3px 0 3.5px;
   border-radius: 3px 3px 0 0;
 } 
-a { 
-	color: blue; /*color: #3dc1ff;*/
-  text-decoration:underline; 
-} 
-/* keep separate for 503 */
-.href { 
-  color: blue; /*color: #3dc1ff;*/
-  padding-bottom:0;
+.href {
+  color: blue;
+}
+.href-orig {
+  color: #3dc1ff;
+}
+.href-aside {
+  color: blue;
   border-bottom: 1px solid blue;
 }
-a:visited, .visited {
-	color: purple; /*color: #2972A3;*/ 
-  text-decoration:none;
+.href-aside-orig {
+  color: #3dc1ff;
+  border-bottom: 1px solid #3dc1ff;
 }
-a:hover {
-	color: #fff; 
-  text-shadow: 1px 1px 2px #000;
+.href:visited {
+  color: purple;
 }
-.hover {
+.href-orig:visited {
+  color: #2972A3;
+}
+.visited-aside {
+  color: purple;
+  border-bottom: 1px solid purple;
+}
+.visited-aside-orig {
+  color: #2972A3;
+  border-bottom: 1px solid #2972A3;
+}
+.href:hover {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+a.href-orig:hover {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+.hover-aside {
   color: #fff; 
   text-shadow: 1px 1px 2px #000;
   background-color: #777;
-  padding: 0 2px;
+  padding: 0 2px;  
 }
+
 /*
 |Wrapper
 */
@@ -77,11 +95,11 @@ a:hover {
   width:100%;
   margin: 0 auto;
   background-color: #ccc; /*#eee*/
-  background: -webkit-linear-gradient(bottom, #588bae, #ccc 50%);
-  background: -moz-linear-gradient(bottom, #588bae, #ccc 50%);
-  background: -o-linear-gradient(bottom, #588bae, #ccc 50%);
-  background: -ms-linear-gradient(bottom, #588bae, #ccc 50%);
-  background: linear-gradient(bottom, #588bae, #ccc 50%);
+  background: -webkit-linear-gradient(bottom, #81adcb, #ccc 50%);
+  background: -moz-linear-gradient(bottom, #81adcb, #ccc 50%);
+  background: -o-linear-gradient(bottom, #81adcb, #ccc 50%);
+  background: -ms-linear-gradient(bottom, #81adcb, #ccc 50%);
+  background: linear-gradient(bottom, #81adcb, #ccc 50%);
 }
 .wrapper>header {
 	font-family: 'Croissant One', cursive;

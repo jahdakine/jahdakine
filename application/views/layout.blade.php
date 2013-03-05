@@ -17,7 +17,7 @@
 			<h2 id="nickName">John Chase</h2>
 			<h3>Web Developer</h3>
 			@if(!URI::is('users/login'))
-				{{ HTML::link("users/login", "Sign-on") }}
+				{{ HTML::link("users/login", "Sign-on", array("class"=>"href")) }}
 			@endif
 		</header>
 		<div id="navigation">
@@ -58,6 +58,7 @@
 								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
 							@endif
 							<li>{{ HTML::link("#", "Toggle links", array("title"=>"Set external linking style", "id"=>"link-toggle")) }}</li>
+							<li>{{ HTML::link("#", "Toggle color", array("title"=>"Set color contrast", "id"=>"color-toggle")) }}</li>
 					</ul>
 					</li>														
 				@yield_section <!-- will yield and close section -->
@@ -73,12 +74,12 @@
 				<h4 class="to-center reset">Legend</h4>
 				<hr class="aside-sep">
 				<ul class="nolist">
-					<li><span class="href" title="Links to web pages on this site">Onsite link</span></li>
-					<li><span class="href" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
-					<li><span class="href" title="Links to web pages on an external site in a new window">New window offsite link&#8663;</span></li>
-					<li><span class="href" title="Links to pop-up windows">Popup&#8657;</span></li>
-					<li><span class="hover" title="Link style with cursor above">Hover</span></li>
-					<li><span class="visited" title="Links that have been followed">Visited</span></li>
+					<li><span id="onsiteLink" class="href-aside" title="Links to web pages on this site">Onsite link</span></li>
+					<li><span class="href-aside" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
+					<li><span class="href-aside" title="Links to web pages on an external site in a new window">New window offsite link&#8663;</span></li>
+					<li><span class="href-aside" title="Links to pop-up windows">Popup&#8657;</span></li>
+					<li><span class="hover-aside" title="Link style with cursor above">Hover</span></li>
+					<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
 					<li><span class="dfn def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
 				</ul>
 				@yield('aside')
@@ -109,7 +110,7 @@
 					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="access-link white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
-			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite bg-light")) }}</div>
+			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite bg-light href")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Dismiss player" class="access-link white">Dismiss player</a>

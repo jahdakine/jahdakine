@@ -24,25 +24,25 @@
 			</p>
 			<ul class="nolist">
 				<li>
-					{{ HTML::link("http://yslow.org/", "YSlow&#8663;", array("id"=>"yslow", "title"=>"Open YSlow in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }} 
+					{{ HTML::link("http://yslow.org/", "YSlow&#8663;", array("id"=>"yslow", "title"=>"Open YSlow in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }} 
 					<ul>
 						<li class="bottom-shim">Score: 88 (B grade)</li>
 					</ul>
 				</li>
 				<li>
-					{{ HTML::link("http://validator.w3.org/", "W3C&nbsp;HTML&nbsp;Markup&#8663;", array("id"=>"w3c", "title"=>"Open W3C HTML Markup Validator in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win")) }} 
+					{{ HTML::link("http://validator.w3.org/", "W3C&nbsp;HTML&nbsp;Markup&#8663;", array("id"=>"w3c", "title"=>"Open W3C HTML Markup Validator in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }} 
 					<ul>
 						<li class="bottom-shim">All pages valid HTML5</li>
 					</ul>
 				</li>
 				<li>
-					{{ HTML::link("http://html5.org/", "HTML5&nbsp;Org&#8663;", array("id"=>"html5", "title"=>"Open HTML5 in a new window/tab", "target"=>"_blank", "class"=>"offsite link-new-win")) }}
+					{{ HTML::link("http://html5.org/", "HTML5&nbsp;Org&#8663;", array("id"=>"html5", "title"=>"Open HTML5 in a new window/tab", "target"=>"_blank", "class"=>"offsite link-new-win href")) }}
 					<ul>
 						<li class="bottom-shim">HTML5 features: CSS3 / Styling, Semantics, and Offline &amp; Storage</li>
 					</ul>	
 				</li>
 				<li>
-					{{ HTML::link("http://wave.webaim.org/", "Wave&nbsp;Org&#8663;", array("id"=>"wave", "title"=>"Open WAVE Accessibility Evaluation Tool in a new window/tab", "target"=>"_blank", "class"=>"offsite link-new-win")) }}
+					{{ HTML::link("http://wave.webaim.org/", "Wave&nbsp;Org&#8663;", array("id"=>"wave", "title"=>"Open WAVE Accessibility Evaluation Tool in a new window/tab", "target"=>"_blank", "class"=>"offsite link-new-win href")) }}
 					<ul>
 						<li class="bottom-shim">Section 503: No errors or alerts</li>
 					</ul>	

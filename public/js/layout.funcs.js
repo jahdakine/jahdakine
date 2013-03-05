@@ -7,7 +7,8 @@
 /* global vars */
 	var $window = $(window),
 			$document = $(document),
-			link_toggle = $("#link-toggle");
+			link_toggle = $("#link-toggle"),
+			color_toggle = $("#color-toggle");
 /* flexible footer */
 	var windowHeight = $window.innerHeight,
 			headerHeight = $("header").height(),
@@ -23,8 +24,9 @@
 		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
 		resizeFooter();
   });
-/* store link preference */  
+/* store link color and style preference */  
   $document.ready(function() {
+		//link external style
 		if(localStorage.getItem("link")) {
 			link_style = localStorage.getItem("link");
 		} else {
@@ -32,6 +34,14 @@
 		}
 		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
 		link_toggle.trigger('click');
+		//link contrast color
+		if(localStorage.getItem("color")) {
+			link_color = localStorage.getItem("color");
+		} else {
+			link_color = "href-orig";
+		}
+		(link_color === "href") ? localStorage.setItem("color", "href-orig") : localStorage.setItem("color", "href");
+		color_toggle.trigger('click');
   });
 /* link toggle button click */
 	link_toggle.on('click', function(e) {
@@ -50,6 +60,27 @@
 			}
 		});
 		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
+	});
+/* color contrast toggle button click */
+	color_toggle.on('click', function(e) {
+		var onsite_link = $("#onsiteLink"),
+				href = $(".href"),
+				href_aside = $(".href-aside"),
+				visited_link = $("#visitedLink"),
+				href_orig = $(".href-orig"),
+				href_aside_orig = $(".href-aside-orig"),
+				link_color = localStorage.getItem("color");console.log(link_color);
+		e.preventDefault();
+		if(link_color == 'href') {
+			href.removeClass('href hover visited').addClass('href-orig visited-orig hover-orig');
+			href_aside.removeClass('href-aside').addClass('href-aside-orig');
+			visited_link.removeClass('visited-aside').addClass('visited-aside-orig');
+		} else {
+			href_orig.removeClass('href-orig visited-orig hover-orig').addClass('href hover visited');
+			href_aside_orig.removeClass('href-aside-orig').addClass('href-aside');
+			visited_link.removeClass('visited-aside-orig').addClass('visited-aside');
+		}
+		(link_color=== "href") ? localStorage.setItem("color", "href-orig") : localStorage.setItem("color", "href");
 	});
 /* setup nickname pronunciation player */
 	var audio = $('<audio>', {
