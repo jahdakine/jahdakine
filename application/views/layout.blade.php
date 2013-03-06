@@ -24,10 +24,18 @@
 			<ul class="drop" id="nav">
 				@section('nav')
 					@if(URI::is('home') || URI::is('/'))
-						<li class="current">Home</li> 
+						<li class="current">Home 
 					@else 
-						<li>{{ HTML::link('home/','Home') }}</li>
+						<li>{{ HTML::link('home/','Home') }}
 					@endif 
+						<ul>
+							@if(URI::is('home/technology'))
+								<li class="current">Technology</li>
+							@else
+								<li>{{ HTML::link("home/technology", "Technology") }}</li>
+							@endif							
+						</ul>
+					</li>
 					@if(URI::is('home/about'))
 						<li class="current">About
 					@else 
@@ -39,10 +47,10 @@
 							@else
 								<li>{{ HTML::link("home/portfolio", "Portfolio") }}</li>
 							@endif
-							@if(URI::is('home/technology'))
-								<li class="current">Technolgy</li>
+							@if(URI::is('home/resume'))
+								<li class="current">Resume</li>
 							@else
-								<li>{{ HTML::link("home/technology", "Technology") }}</li>
+								<li>{{ HTML::link("home/resume", "Resume") }}</li>
 							@endif							
 						</ul>
 					</li> 
@@ -99,7 +107,7 @@
 					<!-- AddThis Button END -->
 			</aside><!-- // aside -->
 			@yield('main')
-			<a href="#content" id="top-link">Top of Page</a>
+			<a href="#content" id="top-link" class="href" title="Jump back to the top of this page">Top of Page</a>
 		</div><!-- // content -->
 		<div class="clear-fix"></div>
 		<footer class="flex-footer copy">

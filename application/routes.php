@@ -3,6 +3,7 @@ Route::get('home', 'home@index');
 Route::get('about', 'home@about');
 Route::get('contact', 'home@contact');
 Route::get('portfolio', 'home@portfolio');
+Route::get('resume', 'home@resume');
 
 Route::get('login', array('as'=>'login', 'uses'=>'users@login'));
 

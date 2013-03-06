@@ -22,4 +22,8 @@ class Home_Controller extends Base_Controller {
 	{
 		return View::make('home.technology');
 	}
+	public function action_resume()
+	{
+		return View::make('home.resume');
+	}
 }
