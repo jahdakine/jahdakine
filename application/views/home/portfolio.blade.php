@@ -20,7 +20,7 @@
 
 @section('main')	
 	<section>
-		<h3>Past projects</h3>
+		<h4>Past projects</h4>
 		<article>
 			<p>
 				Many of my projects are protected by authentication protocols and are inaccessible to the public. 

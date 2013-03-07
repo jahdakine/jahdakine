@@ -150,7 +150,7 @@
 	@endsection<!-- aside -->
 	<div id="landing" class="landAside">
 		<article>
-			<h4 class="reset">Welcome</h4> 
+			<h4>Welcome</h4> 
 			This is my online <abbr title="Curriculum Vitae">CV</abbr>.
 			Select from any of the menu items above to explore more of my interests 
 			and accomplishments, or {{ HTML::link("home/contact", "contact", array("title"=>"Get in touch", "class"=>"href")) }} me if you have a dream front-end web programming job 

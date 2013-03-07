@@ -84,7 +84,7 @@
 				<ul class="nolist">
 					<li><a href="{{URL::current();}}/print" class="href small to-bottom" title="Properly format this page and print it"><i class="icon-print"></i>&nbsp;Print</a>
 					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Contrast</a>
-					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Linking&#8663;</a>
+					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Linking<span class="offsite">&#8663;</span></a>
 					@yield('index')	
 					<li><a href="#content" class="href small to-bottom hide" title="Scroll to top" id="top-link"><i class="icon-hand-up"></i>&nbsp;Top of page</a>
 				</ul>
