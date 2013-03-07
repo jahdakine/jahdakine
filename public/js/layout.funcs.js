@@ -8,7 +8,13 @@
 	var $window = $(window),
 			$document = $(document),
 			link_toggle = $(".link-toggle"),
-			color_toggle = $(".color-toggle");
+			color_toggle = $(".color-toggle"),
+			windowHeight = $window.height(),
+			headerHeight = $("header").height(),
+			navHeight = $("#navigation").height(),
+			contentHeight = $("#main").height(),
+			footerHeight = $("footer").height(),
+			flexFooter = 0;
 /* Top link */
 	jQuery.fn.topLink = function(settings) {
 			settings = jQuery.extend({
@@ -29,20 +35,17 @@
 		});
 	};
 /* flexible footer */
-	var windowHeight = $window.innerHeight,
-			headerHeight = $("header").height(),
-			contentHeight = $("#content").height(),
-			footerHeight = $("footer").height(),
-			flexFooter = windowHeight - (headerHeight + contentHeight + footerHeight -76);
   function resizeFooter() {
-    $(".flex-footer").css("min-height", flexFooter);
+		flexFooter = $window.height() - (headerHeight + navHeight + contentHeight + footerHeight + 108);
+		if (flexFooter < 250) { flexFooter = 250; } //don't squish the elephant!
+    $(".pad").css("min-height", flexFooter);
   }
   $window.load(resizeFooter);
-  // !!! only working on load
-  $window.resize(function() {
-		//console.log(headerHeight + ' ' + contentHeight + ' ' + footerHeight + ' ' + flexFooter);
-		resizeFooter();
-  });
+  var resizeTimer;
+	$window.resize(function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(resizeFooter, 200);
+	});
 /* store link color and style preference */
   $document.ready(function() {
 		//top link

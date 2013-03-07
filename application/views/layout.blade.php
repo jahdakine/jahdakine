@@ -66,7 +66,7 @@
 		<div class="clear-fix" id="content"></div>
 		@yield('top')
 		@yield('controls')
-		<div role="main" class="main">
+		<div role="main" class="main" id="main">
 			<aside id="legend">
 				<h4 class="to-center reset">Legend</h4>
 					<ul class="nolist small">
@@ -106,7 +106,7 @@
 			@yield('main')
 			<div class="clear-fix pad"></div>
 		</div><!-- // content -->
-		<footer class="flex-footer copy">
+		<footer class="copy">
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
 				<span>
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>

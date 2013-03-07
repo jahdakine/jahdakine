@@ -180,7 +180,7 @@
 				window/tab because I keep this page open during my surfing day. This is quicker than using the right-click open option. If you prefer opening new sites 
 				in the current window, use the <em>Commands|Linking</em> function and your setting will be saved for future visits thanks to Local Storage. I originally designed 
 				this site with lower contrast, color coordinated links. If you don't mind that, try the <em>Commands|Contrast</em> function to get a nicer look 
-				(this does not pass Section 503 contrast standards). While you're poking around, try out my interactive  
+				(this does not pass Section 503 contrast standards). While you're poking around, check out my interactive  
 				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun or jump over to the 
 				{{ HTML::link("home/technology", "Technology page", array("title"=>"Technology page", "class"=>"href")) }} to see more of what makes
 				this site tick.
@@ -229,10 +229,10 @@
 			<div class="clear-fix">&nbsp;</div>	
 			<!--  
 			Preload images?
-			Stretch windo to viewport
 			security check
 			check on legacy and IE
 			bug in textlist - 40px padding-left
+			make command bar menu-able
 			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->

@@ -221,7 +221,6 @@ ul.drop li:hover > ul { visibility: visible }
   clear: both;
 }
 .pad{ 
-  padding-bottom:250px;
   background-image:url(/img/logoback.png);
   background-repeat: no-repeat;
   background-position:left; 
