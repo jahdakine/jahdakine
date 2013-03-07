@@ -1,24 +1,39 @@
+/*
+| Frames
+*/
+#contentFrame h2, h3 {
+  font-family: 'Croissant One', cursive;
+}
+#contentFrame {
+  display:none;
+  list-style:none;
+  padding: 5px;
+  width:100%;
+  min-height: 300px;
+  position: relative;
+}
 .landing { padding:0 1em 1em 1em; margin-top:0; }
+/*
+| Feeds
+ */
+.feedStyle {
+  vertical-align:top;
+  padding:10px;
+}
 /*
 | Image Matrix
 */
-.image-matrix {
-  width:100%;
-  text-align:center;
-  margin: 7px auto;
-}
-.image-matrix div {
-  display:inline;
-  margin:10px 0;
-}
-.image-matrix a img {
-
-  width: 150px;
-  height: 150px;
+#flickr-container {
+  border: 5px solid white;
+  overflow: hidden; 
   background-color: white;
-  padding: 9px;
-  margin: 7px;
-  position: relative;
+}
+#flickr-container div {
+  overflow: hidden;
+  width: 144px;
+  height: 144px;
+  border: 5px solid white;
+  float: left;
 }
 /*
 | List Carousel
@@ -71,20 +86,6 @@
   list-style:none;  
 }
 /*
-| Frames
-*/
-#contentFrame h2, h3 {
-  font-family: 'Croissant One', cursive;
-}
-#contentFrame {
-  display:none;
-  list-style:none;
-  margin: 1em auto;
-  padding: 5px;
-  width: 100%;
-  min-height: 300px;
-}
-/*
 | Sticky notes
 */
 .note-font {
@@ -105,13 +106,13 @@
   list-style: square;
   color: #2972A3;
   line-height: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /*
 | Carousel controls
 */
 .controls {
-  z-index: 1000;
+  z-index: 5;
   list-style: none;
   position: fixed;
   margin:0;
@@ -168,10 +169,3 @@
 #carou23 { background-position: -512px -256px; }
 #carou24 { background-position: -512px -386px; }
 #carou25 { background-position: -512px -512px; }
-/*
-| Misc
- */
-.feedStyle {
-  vertical-align:top;
-  padding:10px;
-}

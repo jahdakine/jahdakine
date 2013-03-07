@@ -33,6 +33,7 @@
 			content_frame = $("#contentFrame"),
 			aside = $("#aside"),
 			land_aside = $(".landAside"),
+			legend = $("#legend"),
 			carousel_help = $("p#carouselHelp"),
 			num2Scroll = 1,
 			dir2Scroll = "right",
@@ -119,6 +120,7 @@
 		content_frame.fadeOut("slow", function() {
 			content_frame.empty();
 			land_aside.fadeIn("slow");
+			legend.fadeIn("slow");
 		});
 		reset.addClass("hide");
 		//used when this was in the menu bar - not needed for aside
@@ -190,7 +192,8 @@
 				date = '',
 				show = '',
 				tmp = '',
-				limit = 5;
+				limit = 5,
+				closer = "</ul>";
 				success = false;
 				show = "content_frame.css('display','inline').removeClass('image-matrix')";
 		switch (id) {
@@ -212,10 +215,12 @@
         limit = 10;
         break;
       case ('flickr'):
+				html = "<div id='flickr-container'>";
+				closer = "</div><div class=\"clear-fix\">";
 				http = 'http://api.flickr.com/services/feeds/photos_public.gne?id=23019891@N00&lang=en-us&format=json&jsoncallback=?';
 				obj = 'data.items';
-				tmp = "'<a href=\"' + item.link + '\" target=\"_blank\" class=\"flickr-img\" title=\"Open Flickr page titled &#34;' + item.title + '&#34; in a new window/tab\"><img src=\"' + item.media.m + '\" /></a>'";
-				show = "content_frame.css('display','inline-block').addClass('image-matrix')";
+				tmp = "'<div><a href=\"' + item.link + '\" target=\"_blank\" class=\"flickr-img\" title=\"Open Flickr page titled &#34;' + item.title + '&#34; in a new window/tab\"><img src=\"' + item.media.m + '\" /></a></div>'";
+				show = "content_frame.css('display','block').addClass('image-matrix')";
 				limit = 20;
         break;
 			case ('meetup'): //venue=1139097 member=65732862 group=1769691 group_urlname=HTML5-Denver-Users-Group
@@ -286,6 +291,7 @@
 			//console.log(html);
 			if(reset.hasClass("hide")) {
 				land_aside.fadeOut("slow");
+				legend.fadeOut("normal");
 			} else {
 				content_frame.fadeOut("slow");
 			}
@@ -308,6 +314,9 @@
 							if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
 								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
 							}
+							if(id === 'flickr') { console.log(i);
+
+							}
 							html += eval(tmp);
 							//console.log(html);
 							if(i > limit) { return false; }
@@ -315,7 +324,7 @@
 					if(id !== 'flickr' && html.search("<li>") === -1) {
 						html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
 					}
-					html += '</ul>';
+					html += closer;
 					appendDOM(html);
 				});
 			//non-standard feed
