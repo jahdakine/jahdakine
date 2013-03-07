@@ -233,6 +233,7 @@
 			check on legacy and IE
 			bug in textlist - 40px padding-left
 			make command bar menu-able
+			rewrite js using backbone
 			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->

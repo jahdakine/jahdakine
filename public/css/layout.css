@@ -34,7 +34,7 @@ aside {
 }
 #aside {
   position: fixed;
-  bottom: 30px;
+  top: 5px;
   right: 16px;
 }
 .main {
@@ -118,7 +118,7 @@ header {
 	font-family: 'Croissant One', cursive;
 	background-image:url(/img/logoback.png);
 	background-repeat:no-repeat;
-	background-position:right;
+	background-position:center;
 	text-shadow:2px 1px 0 #fff;
 	padding: 1em;
 	margin: 0;

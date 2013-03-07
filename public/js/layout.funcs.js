@@ -9,6 +9,7 @@
 			$document = $(document),
 			link_toggle = $(".link-toggle"),
 			color_toggle = $(".color-toggle"),
+			aside = $("#aside"),
 			windowHeight = $window.height(),
 			headerHeight = $("header").height(),
 			navHeight = $("#navigation").height(),
@@ -28,12 +29,24 @@
 			$(window).scroll(function() {
 				if($(window).scrollTop() >= settings.min) {
 					el.removeClass("hide");
+					if($document.scrollTop()===0) {
+						aside.css("opacity","1");
+					} else {
+						aside.css("opacity",".1");
+					}
 				} else {
 					el.addClass("hide");
+					aside.css("opacity","1");
 				}
 			});
 		});
 	};
+	aside.on('mouseover', function(){
+		aside.css("opacity","1");
+	});
+	aside.on('mouseout', function(){
+		aside.css("opacity",".1");
+	});
 /* flexible footer */
   function resizeFooter() {
 		flexFooter = $window.height() - (headerHeight + navHeight + contentHeight + footerHeight + 108);
