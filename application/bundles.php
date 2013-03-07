@@ -36,5 +36,6 @@
 return array(
 
 	'docs' => array('handles' => 'docs'),
-
+	// 'minify' => array('handles' => 'minifier'),
+	// 'minify' => array('auto' => true),
 );

@@ -7,6 +7,7 @@
 	{{ HTML::style('css/vendor/jquery.qtip2.css') }}
 	{{ HTML::style('css/layout.css') }}	
 	{{ HTML::style('css/vendor/bootstrap.css') }} 
+	<!-- <link href="&lt;?=Minifier::make(array('//css/layout.css', '//css/vendor/bootstrap.css', '//css/vendor/jquery.qtip2.css'))?>" rel="stylesheet" type="text/css"> -->
 	@yield('header')
 </head>
 
@@ -132,9 +133,10 @@
 	{ HTML::script('js/vendor/helper-plugins/jquery.touchSwipe.min.js') }}	
 	{ HTML::script('js/vendor/jquery.center.min.js') }}	
 	google analytics code
- 	-->	
+	-->
 	{{ HTML::script('js/vendor/monolith.js') }}	
 	{{ HTML::script('js/layout.funcs.js') }}
+ 	<!--<script src="&lt;?=Minifier::make(array('//js/vendor/jquery-1.8.2.min.js','//js/vendor/jquery-ui-1.9.2.custom.min.js','//js/vendor/jquery.qtip2.min.js','//js/vendor/jquery.carouFredSel-6.2.0-packed.js','//js/vendor/helper-plugins/jquery.touchSwipe.min.js','//js/vendor/jquery.center.min.js','//js/layout.funcs.js'))?>" type="text/javascript"> -->	
 	@yield('scripts')
 </body>
 </html>

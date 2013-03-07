@@ -293,13 +293,12 @@
 				land_aside.fadeOut("slow");
 				legend.fadeOut("normal");
 			} else {
-				content_frame.fadeOut("slow");
+				content_frame.hide();
 			}
 			content_frame.fadeIn("slow", function() {
-				content_frame.html(html);
 				eval(show);
 				reset.removeClass("hide");
-			});
+			}).html(html);
     }
     //make xhr request
 		function getFeed(http, obj, tmp, html, id) {
