@@ -1,9 +1,11 @@
 <?php
-Route::get('home', 'home@index');
-Route::get('about', 'home@about');
-Route::get('contact', 'home@contact');
-Route::get('portfolio', 'home@portfolio');
-Route::get('resume', 'home@resume');
+Route::get('/', 'home@index');
+Route::get('technology/(:any?)', 'home@technology');
+Route::get('about/(:any?)', 'home@about');
+Route::get('contact/(:any?)', 'home@contact');
+Route::get('portfolio/(:any?)', 'home@portfolio');
+Route::get('resume/(:any?)', 'home@resume');
+Route::get('print/', 'home@print');
 
 Route::get('login', array('as'=>'login', 'uses'=>'users@login'));
 

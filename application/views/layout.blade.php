@@ -5,7 +5,8 @@
 	<meta charset="utf-8"> 
 	<title>@yield('title')</title>
 	{{ HTML::style('css/vendor/jquery.qtip2.css') }}
-	{{ HTML::style('css/layout.css') }} 
+	{{ HTML::style('css/layout.css') }}	
+	{{ HTML::style('css/vendor/bootstrap.css') }} 
 	@yield('header')
 </head>
 
@@ -58,58 +59,53 @@
 						<li class="current">Contact</li> 
 					@else 
 						<li>{{ HTML::link('home/contact','Contact') }}</li>
-					@endif 	
-					<li class="to-right">
-						{{ HTML::link("#", "Commands") }}
-						<ul>
-							@if(URI::is('home') || URI::is('/'))
-								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
-							@endif
-							<li>{{ HTML::link("#", "Toggle links", array("title"=>"Set external linking style", "id"=>"link-toggle")) }}</li>
-							<li>{{ HTML::link("#", "Toggle color", array("title"=>"Set link color contrast", "id"=>"color-toggle")) }}</li>
-					</ul>
-					</li>														
+					@endif 																		
 				@yield_section <!-- will yield and close section -->
 			</ul>
 		</div><!-- // navigation -->
 		<div class="clear-fix" id="content"></div>
 		@yield('top')
-		<div class="control-bg">
-			@yield('controls')
-		</div>
-		<div role="main" class="main">		
-			<aside id="aside" class="landAside">
+		@yield('controls')
+		<div role="main" class="main">
+			<aside id="legend">
 				<h4 class="to-center reset">Legend</h4>
-				<hr class="aside-sep">
+					<ul class="nolist small">
+						<li><span id="onsiteLink" class="href-aside" title="Links to web pages on this site">Onsite link</span></li>
+						<li><span class="href-aside" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
+						<li><span class="href-aside" title="Links to web pages on an external site in a new window">New window offsite link&#8663;</span></li>
+						<li><span class="href-aside" title="Links to pop-up windows">Popup&#8657;</span></li>
+						<li><span class="hover-aside" title="Link style with cursor above">Hover</span></li>
+						<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
+						<li><span class="def" title="Tooltip style">Acronym/Definition</span></li>
+					</ul>
+			</aside>
+			<aside id="aside">
+				<h4 class="to-center reset">Commands</h4>
 				<ul class="nolist">
-					<li><span id="onsiteLink" class="href-aside" title="Links to web pages on this site">Onsite link</span></li>
-					<li><span class="href-aside" title="Links to web pages on an external site in this window">This window offsite link&#8658;</span></li>
-					<li><span class="href-aside" title="Links to web pages on an external site in a new window">New window offsite link&#8663;</span></li>
-					<li><span class="href-aside" title="Links to pop-up windows">Popup&#8657;</span></li>
-					<li><span class="hover-aside" title="Link style with cursor above">Hover</span></li>
-					<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
-					<li><span class="def" title="Tooltip style">Acronym/Abbreviation/Definition</span></li>
+					<li><a href="{{URL::current();}}/print" class="href small to-bottom" title="Properly format this page and print it"><i class="icon-print"></i>&nbsp;Print</a>
+					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Contrast</a>
+					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Linking&#8663;</a>
+					@yield('index')	
+					<li><a href="#content" class="href small to-bottom hide" title="Scroll to top" id="top-link"><i class="icon-hand-up"></i>&nbsp;Top of page</a>
 				</ul>
-				@yield('aside')
 				<h4 class="to-center reset">Share</h4>
-				<hr class="aside-sep">
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style">
-					<a class="addthis_button_preferred_1"></a>
-					<a class="addthis_button_preferred_2"></a>
-					<a class="addthis_button_preferred_3"></a>
-					<a class="addthis_button_preferred_4"></a>
-					<a class="addthis_button_compact"></a>
-					<a class="addthis_counter addthis_bubble_style"></a>
+						<a class="addthis_button_preferred_1"></a>
+						<a class="addthis_button_preferred_2"></a>
+						<a class="addthis_button_preferred_3"></a>
+						<a class="addthis_button_preferred_4"></a>
+						<a class="addthis_button_compact"></a>
+						<a class="addthis_counter addthis_bubble_style"></a>
 					</div>
-					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
-					<!-- AddThis Button END -->
+				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
+				<!-- AddThis Button END -->
+				@yield('aside')
 			</aside><!-- // aside -->
 			@yield('main')
-			<a href="#content" id="top-link" class="href" title="Jump back to the top of this page">Top of Page</a>
+			<div class="clear-fix pad"></div>
 		</div><!-- // content -->
-		<div class="clear-fix"></div>
 		<footer class="flex-footer copy">
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
 				<span>
@@ -119,7 +115,7 @@
 					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="access-link white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
-			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite href pbox")) }}</div>
+			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite href pbox reset")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Dismiss player" class="access-link white">Dismiss player</a>

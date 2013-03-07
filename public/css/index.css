@@ -45,10 +45,6 @@
   display: block;
   float: left;
 }
-.clear-fix {
-  float: none;
-  clear: both;
-}
 /*
 | List Text
 */ 
@@ -121,13 +117,13 @@
   margin:0;
   margin-left: auto;
   margin-right: auto;
-  top:0; left: 50%; 
-
+  top:0; 
+  left: 50%; 
   height:30px !important;  
   padding:5px 0 0 0;
 }
 #ctrls1, #ctrls2, #ctrls3, #ctrls4, #ctrls5, #ctrls6 {   
-  display: inline-table;
+  display: inline-block;
   text-decoration:none;
   background-image:url('/img/controls-spritesheet.png');
   background-repeat: no-repeat;    
@@ -138,7 +134,7 @@
 #ctrls3 { background-position: 0 -100px; }
 #ctrls4 { background-position: 0 -150px; }
 #ctrls5 { background-position: 0 -200px; }
-#ctrls6 { background-position: 0 -248px; }
+#ctrls6 { background-position: 0 -249px; }
 
 #linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gnerdl, #carou22, #carou23, #carou24, #carou25 {   
   display: inline-table;

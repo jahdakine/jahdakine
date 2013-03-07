@@ -9,7 +9,7 @@
 //get square size from flickr
 //use carouFredSel method to resize
 
-(function() { 
+(function() {
 	//cache DOM vars
 	var list = $("#list"),
 			list_img = $(".listImg"),
@@ -31,6 +31,7 @@
 			note_flip = $("#note-flip"),
 			feed_btn = $(".feedBtn"),
 			content_frame = $("#contentFrame"),
+			aside = $("#aside"),
 			land_aside = $(".landAside"),
 			carousel_help = $("p#carouselHelp"),
 			num2Scroll = 1,
@@ -38,7 +39,7 @@
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
 /*!!!pre-load carousel images*/
-
+	aside.addClass("index-aside");
 /*setup carousel slider*/
 	function setCarousel(num2Scroll, dir2Scroll) {
 		carousel.carouFredSel({
@@ -84,8 +85,11 @@
 			block2.wrapAll('<ul id="t2"></ul>');
 			block3.wrapAll('<ul id="t3"></ul>');
 			ctrls.addClass("transparent");
-			menu_text.addClass("current").parent().addClass("current");
-			menu_graphics.removeClass("current").parent().removeClass("current");
+			//used when this was in the menu bar - not needed for aside:
+			//menu_text.addClass("current").parent().addClass("current");
+			//menu_graphics.removeClass("current").parent().removeClass("current");
+			menu_text.addClass("hide");
+			menu_graphics.removeClass("hide");
 			carousel_help.fadeOut("fast");
 			history.pushState('text','Home',url_no_params+'?state=text-list');
 		}
@@ -100,8 +104,11 @@
 			carousel_li.unwrap();
 			setCarousel(window.num2Scroll, window.dir2Scroll);
 			ctrls.removeClass("transparent").center({vertical: false});
-			menu_graphics.addClass("current").parent().addClass("current");
-			menu_text.removeClass("current").parent().removeClass("current");
+			//used when this was in the menu bar - not needed for aside:
+			//menu_graphics.addClass("current").parent().addClass("current");
+			//menu_text.removeClass("current").parent().removeClass("current");
+			menu_graphics.addClass("hide");
+			menu_text.removeClass("hide");
 			carousel_help.fadeIn(2000);
 			history.pushState('graphics','Home',url_no_params+'?state=img-list');
 		}
@@ -113,8 +120,9 @@
 			content_frame.empty();
 			land_aside.fadeIn("slow");
 		});
-		reset.addClass("current");
-		reset.parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
+		reset.addClass("hide");
+		//used when this was in the menu bar - not needed for aside
+		//reset.parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
 	});
 	/*note flipper */
 	note_flip.on('click', function(e) {
@@ -276,15 +284,15 @@
     //put html into content frame
     function appendDOM(html) {
 			//console.log(html);
-			if(reset.hasClass("current")) {
+			if(reset.hasClass("hide")) {
 				land_aside.fadeOut("slow");
-				reset.removeClass("current");
 			} else {
 				content_frame.fadeOut("slow");
 			}
 			content_frame.fadeIn("slow", function() {
 				content_frame.html(html);
 				eval(show);
+				reset.removeClass("hide");
 			});
     }
     //make xhr request
@@ -350,13 +358,3 @@
 		});
 	}
 })();
-
-function test() {
-  var Appointment = Backbone.Model.extend({
-    defaults: {
-      title: 'Checkup',
-      date: new Date()
-    }
-  });
-  return Appointment;
-}

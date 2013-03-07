@@ -7,8 +7,8 @@
 /* global vars */
 	var $window = $(window),
 			$document = $(document),
-			link_toggle = $("#link-toggle"),
-			color_toggle = $("#color-toggle");
+			link_toggle = $(".link-toggle"),
+			color_toggle = $(".color-toggle");
 /* Top link */
 	jQuery.fn.topLink = function(settings) {
 			settings = jQuery.extend({
@@ -18,12 +18,12 @@
 		return this.each(function() {
 			//listen for scroll
 			var el = $(this);
-			el.hide(); //in case the user forgot
+			//el.hide(); //in case the user forgot
 			$(window).scroll(function() {
 				if($(window).scrollTop() >= settings.min) {
-					el.fadeIn(settings.fadeSpeed);
+					el.removeClass("hide");
 				} else {
-					el.fadeOut(settings.fadeSpeed);
+					el.addClass("hide");
 				}
 			});
 		});

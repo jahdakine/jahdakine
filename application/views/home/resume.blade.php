@@ -13,7 +13,6 @@
 @endsection
 
 @section('top')
-<hr class="shim">
 @endsection
 
 @section('aside')
@@ -23,7 +22,7 @@
 	<section>
 		<div id="accordion">
 			<div class="group">
-				<h3>SUMMARY</h3>
+				<h3 class="href" title="Reveal/Hide contents">SUMMARY</h3>
 					<div>
 						<p>
 							Seeking a full-stack web/database developer position in a design environment with the opportunity for creative, challenging work. 
@@ -37,7 +36,7 @@
 					</div>
 			</div><!-- group -->
 			<div class="group">
-				<h3>EXPERIENCE</h3>
+				<h3 class="href" title="Reveal/Hide contents">EXPERIENCE</h3>
 				<div>
 					<h4>IT Professional IV - Database Application Specialist</h4>
 					<h5>NREL - National Renewable Energy Laboratory</h5>
@@ -64,7 +63,7 @@
 				</div>
 			</div><!-- group -->
 			<div class="group">
-				<h3>SKILLS &amp; EXPERTISE</h3>
+				<h3 class="href" title="Reveal contents/Hide">SKILLS &amp; EXPERTISE</h3>
 				<div>
 					<ul>
 						<li>Web Applications</li>
@@ -79,7 +78,7 @@
 				</div>
 			</div><!-- group -->
 			<div class="group">
-				<h3>EDUCATION</h3>
+				<h3 class="href" title="Reveal contents/Hide">EDUCATION</h3>
 				<div>
 					<h4>Regis University</h4>
 					<h5>BS-CIS, Computer Information Systems</h5>
@@ -91,13 +90,13 @@
 				</div>
 			</div><!-- group -->
 			<div class="group">
-				<h3>HONORS &amp; AWARDS</h3>
+				<h3 class="href" title="Reveal contents/Hide">HONORS &amp; AWARDS</h3>
 				<div>
 					<p>NREL President's Award 2010</p>
 				</div>
 			</div>
 			<div class="group">
-				<h3>RECOMMENDATIONS/REFERENCES</h3>
+				<h3 class="href" title="Reveal contents/Hide">RECOMMENDATIONS/REFERENCES</h3>
 				<div>
 					<h4>Erik Ness</h4>
 					<h5>Senior Project Leader at National Renewable Energy Laboratory</h5>

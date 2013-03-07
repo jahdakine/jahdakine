@@ -12,10 +12,14 @@
   color:#b94a48;
   border:1px #b94a48 solid;
   background-color:#fff;
+  display:inline;
+  padding: 4px;
+  vertical-align:middle;
 }
 .lorem-text {
     padding-bottom:15em;
     margin:0;
+    width:85%;
 }
 .lighter-text {
   color:#aaa;

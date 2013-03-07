@@ -13,7 +13,6 @@
 @endsection
 
 @section('top')
-<hr class="shim">
 @endsection
 
 @section('aside')
@@ -22,9 +21,7 @@
 @section('main')
 <section id="communicate">
 	<h3>Get in touch</h3>
-	<p>To use the mail facilities, please allow popups from my site 
-	<a id="help" href="#" title="Help with popups" class="access-link">Help with popups</a>	
-	(this is the only time - I promise).
+	<p>To use the mail facilities, please allow popups from my site <a id="help" href="#" title="Help with popups" class="access-link">Help with popups</a>	(this is the only time - I promise).
 	A <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr> 
 	will be displayed in a new window to help prevent spam to my inboxes and reveal my email addresses.</p>
 	<ul class="nolist">

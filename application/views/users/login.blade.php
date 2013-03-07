@@ -4,7 +4,6 @@
 
 @section('header')		
 	{{ HTML::style('css/users.css') }}
-	{{ HTML::style('css/vendor/bootstrap.css') }}
 @endsection
 
 @section('nav')
@@ -12,7 +11,7 @@
 @endsection 
 
 @section('main')
-
+<div id="content">
 	<div id="sr" class="sign-reg">
 		<fieldset>
 	  <legend>Sign On</legend>
@@ -39,7 +38,7 @@
 			{{ Form::label("persist", "Keep me signed in", array("class"=>"access-link"))}}
 			{{ Form::checkbox('persist', "1", true ,array("style"=>"vertical-align:text-top", "id"=>"persist")) }} Keep me signed in
 			</p>
-			<aside class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</aside>
+			<p class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</p>
 			{{ Form::close() }}
 		</fieldset>
 		<fieldset>
@@ -107,10 +106,10 @@
 					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('/partials/privacy-policy.html', '', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/privacy-policy.html">privacy policy (PDF 989KB)&#8657;</a>
 					<span class="help-inline" id="agree-status"></span>
 		    </div>
-	    </div>			
+	    </div>	
+	    <p class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</p><br/>
 			{{ Form::submit('Submit', array("class"=>"btn btn-primary href", "style" =>"margin-top:1em;", "id"=>"rs_sub", "title" => "Not functional - for show only")) }}
 			{{ Form::reset('Reset', array("class"=>"btn btn-warning href", "style" =>"margin-top:1em;", "title" => "Reset the form", "id"=>"rs_reset")) }}
-			<aside class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</aside>
 			{{ Form::close() }}
 		</fieldset>
 	</div>	
@@ -179,6 +178,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 </p>
+</div> <!-- content -->
 @endsection
 
 @section('footer')
@@ -186,7 +186,5 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 @endsection
 
 @section('scripts')
-	{{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}
-	{{ HTML::script('js/vendor/verimail.jquery.js') }}
 	{{ HTML::script('js/login.funcs.js') }}
 @endsection
