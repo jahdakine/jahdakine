@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Croissant+One|Special+Elite|Droid+Sans);
- /**{ border: 1px solid red !important; } useful layout tool - comment when not needed*/
+ /* *{ border: 1px solid red !important; } useful layout tool - comment when not needed */
 body
 {
 	font-family:'Droid Sans', sans-serif;
@@ -105,19 +105,17 @@ a.href-orig:hover {
 /*
 |Wrapper
 */
-header {
-  background-color: #81adcb;
-}
+header { background-color: #81adcb; }
 .wrapper {
   width:100%;
   margin: 0 auto;
   background-color: #ccc; 
 }
 .wrapper>header {
-	font-family: 'Croissant One', cursive;
-	background-image:url(/img/logoback.png);
-	background-repeat:no-repeat;
-	background-position:center;
+	font-family: 'Croissant One', cursive; 
+  background-image:url(/img/logoback.png);
+  background-repeat:no-repeat;
+  background-position: right;
 	text-shadow:2px 1px 0 #fff;
 	padding: 1em;
 	margin: 0;
