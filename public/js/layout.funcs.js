@@ -64,16 +64,20 @@
 			link_style = localStorage.getItem("link");
 		} else {
 			link_style = "same-win";
+// console.log("no storage - setting default");
 		}
-		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
+// console.log("set to: "+link_style);
+		(link_style == "new-win") ? localStorage.setItem("link", "new-win") : localStorage.setItem("link", "same-win");
 		link_toggle.trigger('click');
 		//link contrast color
 		if(localStorage.getItem("color")) {
 			link_color = localStorage.getItem("color");
 		} else {
 			link_color = "href-orig";
+// console.log("no storage - setting default");
 		}
-		(link_color === "href") ? localStorage.setItem("color", "href-orig") : localStorage.setItem("color", "href");
+// console.log("set to: "+link_color);
+		(link_color == "href") ? localStorage.setItem("color", "href") : localStorage.setItem("color", "href-orig");
 		color_toggle.trigger('click');
   });
 /* link toggle button click */
@@ -85,14 +89,15 @@
 			var $this = $(this),
 			title = $this.attr("title"),
 			link = $this.html().substr(0,$this.html().length-1);
-			// console.log(i,title,link,link_style);
-			if(link_style === "new-win") {
+// console.log(i,title,link,link_style);
+			if(link_style == "new-win") {
 				$this.removeAttr("target").attr("title","Offsite to " +link).removeClass("link-new-win").addClass("link-same-win").html(link+"&#8658;");
 			} else {
 				$this.attr('target', '_blank').attr("title", "Offsite to " +link+ " in a new window/tab").removeClass("link-same-win").addClass("link-new-win").html(link+"&#8663;");
 			}
 		});
-		(link_style === "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
+		(link_style == "new-win") ? localStorage.setItem("link", "same-win") : localStorage.setItem("link", "new-win");
+// console.log("clicked: "+ link_style);
 	});
 /* color contrast toggle button click */
 	color_toggle.on('click', function(e) {
@@ -113,7 +118,8 @@
 			href_aside_orig.removeClass('href-aside-orig').addClass('href-aside');
 			visited_link.removeClass('visited-aside-orig').addClass('visited-aside');
 		}
-		(link_color=== "href") ? localStorage.setItem("color", "href-orig") : localStorage.setItem("color", "href");
+		(link_color == "href") ? localStorage.setItem("color", "href-orig") : localStorage.setItem("color", "href");
+// console.log("clicked: "+ link_color);
 	});
 /* setup nickname pronunciation player */
 	var audio = $('<audio>', {

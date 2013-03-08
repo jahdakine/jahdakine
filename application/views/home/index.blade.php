@@ -136,7 +136,7 @@
 			<img src="/img/spacer.gif" width="2" height="1" alt=""/> 
 		</li>
 	</ul>
-	</div>
+	</div><!-- control-bg -->
 	@endsection<!-- controls -->
 @endsection<!-- top -->
 
