@@ -6,7 +6,7 @@ body
 	color:#555;
 	line-height: 25px;
   background-color: #ccc;
-  min-width: 320px;
+  min-width: 400px;
   height: 100%;
   margin:0;
 }
@@ -256,8 +256,36 @@ ul.drop li:hover > ul { visibility: visible }
   background-repeat:repeat;
 }
 
-/* end ------------------------ */
-
+/*
+| Media queries
+ */
+/* remove header image */
+@media all and (max-width: 600px) {
+  .wrapper>header {
+    background-image:none;
+  }
+  #legend {
+    display:none;
+  }
+}
+/* adjust line heights */
+@media all and (max-width : 1000px) {
+.main {
+  line-height : 1.6; 
+}
+@media all and (max-width : 800px) {
+.main {
+  line-height : 1.4; 
+}
+@media all and (max-width : 600px) {
+.main {
+  line-height : 1.2; 
+}
+@media all and (max-width : 400px) {
+.main {
+  line-height : 1; 
+}
+/* printing */
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }

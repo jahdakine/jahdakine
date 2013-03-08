@@ -224,7 +224,7 @@
 				<li><strike>restructure xhr code</strike></li>
 				<li>Cure world hunger!</li>
 			</ul>			
-			<p>{{ HTML::link("#", "more...", array("title"=>"Flip through to-do history", "id"=>"note-flip", "class"=>"to-right href" )) }}</p>	
+			<p>{{ HTML::link("#", "more notes...", array("title"=>"Flip through to-do history", "id"=>"note-flip", "class"=>"to-right href" )) }}</p>	
 			<div class="clear-fix">&nbsp;</div>	
 			<!--  
 			Preload images?

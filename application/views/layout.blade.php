@@ -13,7 +13,7 @@
 
 <body>
 	<a href="#content" class="hidden">Skip navigation</a> 
-	<div class="wrapper">
+	<div class="wrapper" id="top">
 		<header id="whats-this">
 			<h1>@yield("title")</h1>
 			<h2 id="nickName">John Chase</h2>
@@ -65,8 +65,8 @@
 						{{ HTML::link("#", "Commands") }}
 						<ul>
 							<li>{{ HTML::link(URL::current()."/print", "Print", array("title"=>"Properly format and print this page")) }}</li>
-							<li>{{ HTML::link("#", "Linking", array("title"=>"Swap between standard and lighter link colors", "class"=>"link-toggle")) }}</li>
-							<li>{{ HTML::link("#", "Contrast", array("title"=>"Swap between new and same page external linking", "class"=>"color-toggle")) }}</li>
+							<li>{{ HTML::link("#", "Link style", array("title"=>"Swap between new and same page external linking", "class"=>"link-toggle")) }}</li>
+							<li>{{ HTML::link("#", "Link contrast", array("title"=>"Swap between standard and lighter link colors", "class"=>"color-toggle")) }}</li>
 							@if(URI::is('home') || URI::is('/'))
 								<li>{{ HTML::link("#", "Image&nbsp;List", array("title"=>"Change format to rotating image links", "class"=>"menuGraphics")) }}</li>
 								<li class="current">{{ HTML::link("#", "Text List", array("title"=>"Change format to text links", "class"=>"menuText current")) }}</li>	
@@ -95,8 +95,8 @@
 				<h4 class="to-center reset">Commands</h4>
 				<ul class="nolist">
 					<li><a href="{{URL::current();}}/print" class="href small to-bottom" title="Properly format and print this page"><i class="icon-print"></i>&nbsp;Print</a>
-					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Linking<span class="offsite">&#8663;</span></a>
-					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Contrast</a>
+					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Link style<span class="offsite">&#8663;</span></a>
+					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Link contrast</a>
 					@yield('index')	
 				</ul>
 				<h4 class="to-center reset">Share</h4>
