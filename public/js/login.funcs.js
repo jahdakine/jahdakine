@@ -170,7 +170,7 @@
 	//reset
 	rs_reset.on("click", function() {
 		resetAll2();
-		bar.text("").parent().removeClass().addClass("progress");
+		bar.text("").parent().removeClass();
 		fname.focus();
 	});
 	//dont show error if connect buttons are clicked
@@ -210,11 +210,11 @@
 			}
 			el.css("width",str).text(txt);
 		}
-		console.log(strength);
+		//console.log(strength);
 		if(strength === 0) {
-			setBars(bar,"100%","easily hackable!","progress-info progress-striped");
+			setBars(bar,"100%","easily hackable!","progress-danger progress-striped");
 		} else if (strength == 1) {
-			setBars(bar,"34%","weak", "progress-danger");
+			setBars(bar,"34%","weak", "progress-info");
 		} else if (strength == 2) {
 			setBars(bar,"50%","good", "progress-warning");
 		} else if (strength == 3) {

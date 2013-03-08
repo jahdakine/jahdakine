@@ -87,7 +87,7 @@
 					{{ Form::password('password2', array("placeholder"=>"Password", "id"=>"password2", "maxlength"=>"16")) }}
 					{{ Form::password('c_password', array("placeholder"=>"Confirm password", "id"=>"c_password")) }}
 					<span class="help-inline" id="password2-status"></span>
-		  		<div id="bars" class="progress progress-info" style="width:220px;margin-bottom:0;">
+		  		<div id="bars" class="progress-info" style="width:220px;margin-bottom:0;">
 				    <div id="bar" class="bar" style="width: 0"></div>
 	  			</div>
 					<span class="small">Passwords must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters.</span>
