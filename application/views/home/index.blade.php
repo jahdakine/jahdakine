@@ -143,9 +143,8 @@
 @section('main')
 	@section('aside')
 		@section('index')
-			<li><a href="#" id="menuGraphics" class="href small to-bottom" title="Change format to rotating image links"><i class="icon-picture"></i>&nbsp;Image format</a>
-			<li><a href="#" id="menuText" class="href small to-bottom" title="Change format to text links"><i class="icon-list-alt"></i>&nbsp;Text format</a>
-			<li><a href="#" id="reset" class="href small to-bottom hide" title="Clear feed content"><i class="icon-remove"></i>&nbsp;Reset</a>	
+			<li><a href="#" id="menuGraphics" class="href small to-bottom" title="Change format to rotating image links"><i class="icon-picture"></i>&nbsp;Image list</a>
+			<li><a href="#" id="menuText" class="href small to-bottom" title="Change format to text links"><i class="icon-list-alt"></i>&nbsp;Text list</a>
 		@endsection<!-- index -->
 	@endsection<!-- aside -->
 	<div id="landing" class="landAside">

@@ -60,7 +60,20 @@
 						<li class="current">Contact</li> 
 					@else 
 						<li>{{ HTML::link('home/contact','Contact') }}</li>
-					@endif 																		
+					@endif 
+					<li class="to-right">
+						{{ HTML::link("#", "Commands") }}
+						<ul>
+							<li>{{ HTML::link(URL::current()."/print", "Print", array("title"=>"Properly format and print this page")) }}</li>
+							<li>{{ HTML::link("#", "Linking", array("title"=>"Swap between standard and lighter link colors", "class"=>"link-toggle")) }}</li>
+							<li>{{ HTML::link("#", "Contrast", array("title"=>"Swap between new and same page external linking", "class"=>"color-toggle")) }}</li>
+							@if(URI::is('home') || URI::is('/'))
+								<li>{{ HTML::link("#", "Image&nbsp;List", array("title"=>"Change format to rotating image links", "id"=>"menuGraphics")) }}</li>
+								<li class="current">{{ HTML::link("#", "Text List", array("title"=>"Change format to text links", "id"=>"menuText", "class" => "current")) }}</li>	
+								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
+							@endif
+						</ul>
+					</li>																			
 				@yield_section <!-- will yield and close section -->
 			</ul>
 		</div><!-- // navigation -->
@@ -79,15 +92,12 @@
 						<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
 						<li><span class="def" title="Tooltip style">Acronym/Definition</span></li>
 					</ul>
-			</aside>
-			<aside id="aside">
 				<h4 class="to-center reset">Commands</h4>
 				<ul class="nolist">
-					<li><a href="{{URL::current();}}/print" class="href small to-bottom" title="Properly format this page and print it"><i class="icon-print"></i>&nbsp;Print</a>
-					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Contrast</a>
+					<li><a href="{{URL::current();}}/print" class="href small to-bottom" title="Properly format and print this page"><i class="icon-print"></i>&nbsp;Print</a>
 					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Linking<span class="offsite">&#8663;</span></a>
+					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Contrast</a>
 					@yield('index')	
-					<li><a href="#content" class="href small to-bottom hide" title="Scroll to top" id="top-link"><i class="icon-hand-up"></i>&nbsp;Top of page</a>
 				</ul>
 				<h4 class="to-center reset">Share</h4>
 					<!-- AddThis Button BEGIN -->
@@ -106,6 +116,7 @@
 			</aside><!-- // aside -->
 			@yield('main')
 			<div class="clear-fix pad"></div>
+			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top of Page</a>
 		</div><!-- // content -->
 		<footer class="copy">
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 

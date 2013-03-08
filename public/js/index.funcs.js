@@ -40,7 +40,6 @@
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
 /*!!!pre-load carousel images*/
-	aside.addClass("index-aside");
 /*setup carousel slider*/
 	function setCarousel(num2Scroll, dir2Scroll) {
 		carousel.carouFredSel({
@@ -86,9 +85,8 @@
 			block2.wrapAll('<ul id="t2"></ul>');
 			block3.wrapAll('<ul id="t3"></ul>');
 			ctrls.addClass("transparent");
-			//used when this was in the menu bar - not needed for aside:
-			//menu_text.addClass("current").parent().addClass("current");
-			//menu_graphics.removeClass("current").parent().removeClass("current");
+			menu_text.addClass("current").parent().addClass("current");
+			menu_graphics.removeClass("current").parent().removeClass("current");
 			menu_text.addClass("hide");
 			menu_graphics.removeClass("hide");
 			carousel_help.fadeOut("fast");
@@ -105,9 +103,8 @@
 			carousel_li.unwrap();
 			setCarousel(window.num2Scroll, window.dir2Scroll);
 			ctrls.removeClass("transparent").center({vertical: false});
-			//used when this was in the menu bar - not needed for aside:
-			//menu_graphics.addClass("current").parent().addClass("current");
-			//menu_text.removeClass("current").parent().removeClass("current");
+			menu_graphics.addClass("current").parent().addClass("current");
+			menu_text.removeClass("current").parent().removeClass("current");
 			menu_graphics.addClass("hide");
 			menu_text.removeClass("hide");
 			carousel_help.fadeIn(2000);
@@ -122,9 +119,8 @@
 			land_aside.fadeIn("slow");
 			legend.fadeIn("slow");
 		});
-		reset.addClass("hide");
-		//used when this was in the menu bar - not needed for aside
-		//reset.parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
+		reset.addClass("current");
+		reset.parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
 	});
 	/*note flipper */
 	note_flip.on('click', function(e) {
@@ -289,15 +285,15 @@
     //put html into content frame
     function appendDOM(html) {
 			//console.log(html);
-			if(reset.hasClass("hide")) {
+			if(reset.hasClass("current")) {
+				reset.removeClass("current");
 				land_aside.fadeOut("slow");
-				legend.fadeOut("normal");
+				legend.hide();
 			} else {
 				content_frame.hide();
 			}
 			content_frame.fadeIn("slow", function() {
 				eval(show);
-				reset.removeClass("hide");
 			}).html(html);
     }
     //make xhr request
@@ -312,9 +308,6 @@
 							//console.log(item);
 							if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
 								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
-							}
-							if(id === 'flickr') { console.log(i);
-
 							}
 							html += eval(tmp);
 							//console.log(html);

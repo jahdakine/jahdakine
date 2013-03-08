@@ -9,6 +9,7 @@
 			$document = $(document),
 			link_toggle = $(".link-toggle"),
 			color_toggle = $(".color-toggle"),
+			top_link = $('#top-link'),
 			aside = $("#aside"),
 			windowHeight = $window.height(),
 			headerHeight = $("header").height(),
@@ -25,31 +26,19 @@
 		return this.each(function() {
 			//listen for scroll
 			var el = $(this);
-			//el.hide(); //in case the user forgot
+			el.hide(); //in case the user forgot
 			$(window).scroll(function() {
 				if($(window).scrollTop() >= settings.min) {
-					el.removeClass("hide");
-					if($document.scrollTop()===0) {
-						aside.css("opacity","1");
-					} else {
-						aside.css("opacity",".1");
-					}
+					el.fadeIn(settings.fadeSpeed);
 				} else {
-					el.addClass("hide");
-					aside.css("opacity","1");
+					el.fadeOut(settings.fadeSpeed);
 				}
 			});
 		});
 	};
-	aside.on('mouseover', function(){
-		aside.css("opacity","1");
-	});
-	aside.on('mouseout', function(){
-		aside.css("opacity",".1");
-	});
 /* flexible footer */
   function resizeFooter() {
-		flexFooter = $window.height() - (headerHeight + navHeight + contentHeight + footerHeight + 108);
+		flexFooter = $window.height() - (headerHeight + navHeight + contentHeight + footerHeight + 124);
 		if (flexFooter < 250) { flexFooter = 250; } //don't squish the elephant!
     $(".pad").css("min-height", flexFooter);
   }
@@ -59,14 +48,14 @@
 		clearTimeout(resizeTimer);
 		resizeTimer = setTimeout(resizeFooter, 200);
 	});
-/* store link color and style preference */
+/* store link color and style preference, activate top link */
   $document.ready(function() {
 		//top link
-		$('#top-link').topLink({
+		top_link.topLink({
 			min: 50,
 			fadeSpeed: 500
 		});
-		$('#top-link').click(function(e) {
+		top_link.click(function(e) {
 			e.preventDefault();
 			$('body,html').animate({scrollTop:0},800);
 		});

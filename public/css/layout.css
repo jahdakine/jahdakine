@@ -17,6 +17,18 @@ hr { border-radius:0; margin-top:0; }
 /*
 | Layout
 */
+#top-link {
+  display:none;
+  position:fixed;
+  right:16px;
+  bottom:35px;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  border:1px solid #e78f08;
+  background:#f6a828;
+  padding:10px;
+}
 aside {
   float: right;
   border: 1px #aaa solid;
@@ -26,16 +38,7 @@ aside {
   margin: 3px 0 10px 10px;
   border-radius: 5px;
   min-width: 140px;
-  z-index:10000;
-  
-}
-#legend  {
-  position: relative;
-}
-#aside {
-  position: fixed;
-  top: 5px;
-  right: 16px;
+  z-index:100;
 }
 .main {
   padding: 1em;
