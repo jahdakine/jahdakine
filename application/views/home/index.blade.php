@@ -143,8 +143,8 @@
 @section('main')
 	@section('aside')
 		@section('index')
-			<li><a href="#" id="menuGraphics" class="href small to-bottom" title="Change format to rotating image links"><i class="icon-picture"></i>&nbsp;Image list</a>
-			<li><a href="#" id="menuText" class="href small to-bottom" title="Change format to text links"><i class="icon-list-alt"></i>&nbsp;Text list</a>
+			<li><a href="#" class="href small to-bottom menuGraphics" title="Change format to rotating image links"><i class="icon-picture"></i>&nbsp;Image list</a>
+			<li><a href="#" class="href small to-bottom menuText" title="Change format to text links"><i class="icon-list-alt"></i>&nbsp;Text list</a>
 		@endsection<!-- index -->
 	@endsection<!-- aside -->
 	<div id="landing" class="landAside">
@@ -231,7 +231,7 @@
 			security check
 			check on legacy and IE
 			bug in textlist - 40px padding-left
-			make command bar menu-able
+			bug in LS between page loads
 			rewrite js using backbone
 			-->
 		</section><!-- // notes -->

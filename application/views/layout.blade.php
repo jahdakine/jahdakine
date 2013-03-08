@@ -68,8 +68,8 @@
 							<li>{{ HTML::link("#", "Linking", array("title"=>"Swap between standard and lighter link colors", "class"=>"link-toggle")) }}</li>
 							<li>{{ HTML::link("#", "Contrast", array("title"=>"Swap between new and same page external linking", "class"=>"color-toggle")) }}</li>
 							@if(URI::is('home') || URI::is('/'))
-								<li>{{ HTML::link("#", "Image&nbsp;List", array("title"=>"Change format to rotating image links", "id"=>"menuGraphics")) }}</li>
-								<li class="current">{{ HTML::link("#", "Text List", array("title"=>"Change format to text links", "id"=>"menuText", "class" => "current")) }}</li>	
+								<li>{{ HTML::link("#", "Image&nbsp;List", array("title"=>"Change format to rotating image links", "class"=>"menuGraphics")) }}</li>
+								<li class="current">{{ HTML::link("#", "Text List", array("title"=>"Change format to text links", "class"=>"menuText current")) }}</li>	
 								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
 							@endif
 						</ul>
