@@ -16,14 +16,25 @@
 			rs_reset = $("#rs_reset"),
 			sr_reset = $("#sr_reset"),
 			username1 = $("#username1"),
+			username1_group = $("#username1-group"),
+			username1_status = $("#username1-status"),
 			username2 = $("#username2"),
 			password1 = $("#password1"),
+			password1_group = $("#password1-group"),
+			password1_status = $("#password1-status"),
 			password2 = $("#password2"),
+			password2_status = $('#password2-status'),
 			c_password = $("#c_password"),
 			fname = $("#fname"),
+			fname_group = $("#fname-group"),
+			fname_status = $("#fname-status"),
 			lname = $("#lname"),
 			email = $("#email"),
-			agree = $("#agree");
+			agree = $("#agree"),
+			hide_error1 = $(".hide-error1"),
+			hide_error2 = $(".hide-error2"),
+			bar = $("#bar"),
+			PWD_MIN_LEN = 6;
 	if(rs.hasClass("hide")) {
 		username1.focus();
 		resetAll1();
@@ -85,7 +96,13 @@
 			showError(event.data.elem[0].id, event.data.name + event.data.msg);
 			errors = true;
 		} else {
-			resetError(event.data.elem[0].id, event.data.name, true);
+			//catch password too short which requires extra blur event
+			if (event.data.elem[0].id === 'password2' && event.data.elem.val().length < PWD_MIN_LEN) {
+				showError('password2', 'Password is too short');
+				errors = true;
+			} else {
+				resetError(event.data.elem[0].id, event.data.name, true);
+			}
 		}
 	}
 /*sign on form*/
@@ -111,13 +128,16 @@
 	fname.on("blur", {elem: fname, name: 'First name'}, chkReqd);
 	lname.on("blur", {elem: lname, name: 'Last name'}, chkReqd);
 	username2.on("blur", {elem: username2, name: 'Username'}, chkReqd);
-	password2.on("blur", {elem: password2, name: 'Password'}, chkReqd);
 	email.on("blur", {elem: email, name: 'Email address'}, chkReqd);
+	password2.on("blur", {elem: password2, name: 'Password'}, chkReqd);
 	//extended validations
 	c_password.on('blur', function(e) {
 		e.preventDefault();
-		if(password2.val() === '') {
+		if (password2.val() === '') {
 			showError('password2', 'Password is required');
+			errors = true;
+		} else if (password2.val().length < PWD_MIN_LEN) {
+			showError('password2', 'Password is too short');
 			errors = true;
 		} else if(c_password.val() === '') {
 			showError('password2', 'You must retype your password');
@@ -150,20 +170,59 @@
 	//reset
 	rs_reset.on("click", function() {
 		resetAll2();
+		bar.text("").parent().removeClass().addClass("progress");
 		fname.focus();
 	});
 	//dont show error if connect buttons are clicked
-	$(".hide-error1").on('click', function(){
-		$("#username1-group").removeClass("error success");
-		$("#username1-status").text("");
-		$("#password1-group").removeClass("error success");
-		$("#password1-status").text("");
+	hide_error1.on('click', function(){
+		username1_group.removeClass("error success");
+		username1_status.text("");
+		password1_group.removeClass("error success");
+		password1_status.text("");
 		username1.focus();
 	});
 	//dont show error if connect pdfs are clicked
-	$(".hide-error2").on('click', function(){
-		$("#fname-group").removeClass("error success");
-		$("#fname-status").text("");
+	hide_error2.on('click', function(){
+		fname_group.removeClass("error success");
+		fname_status.text("");
 		fname.focus();
-	});	
+	});
+/* Password strength checker */
+	password2.keyup(function() {
+		checkStrength(password2.val());
+	});
+
+	function checkStrength(password) {
+		var strength = 0;
+		//over 7 chars, but cant be all alpha
+		if (password.length > 7 && (password.match(/([0-9])/) || password.match(/([!,%,&,@,#,$,^,*,?,_,~])/))) strength += 1;
+		//upper and lowercase alpha
+		if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/))  strength += 1;
+		//alpha and numeric
+		if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/))  strength += 1;
+		//one special char
+		if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/))  strength += 1;
+		//two special chars
+    if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) strength += 1;
+		function setBars(el,str,txt,bar) {
+			if(bar) {
+				el.parent().removeClass().addClass('progress '+bar);
+			}
+			el.css("width",str).text(txt);
+		}
+		console.log(strength);
+		if(strength === 0) {
+			setBars(bar,"100%","easily hackable!","progress-info progress-striped");
+		} else if (strength == 1) {
+			setBars(bar,"34%","weak", "progress-danger");
+		} else if (strength == 2) {
+			setBars(bar,"50%","good", "progress-warning");
+		} else if (strength == 3) {
+			setBars(bar,"67%","good", "progress-warning");
+		} else if (strength == 4) {
+			setBars(bar,"84%","strong", "progress-success");
+		} else if (strength == 5) {
+			setBars(bar,"100%","strong!", "progress-success");
+		}
+	}
 })();

@@ -6,7 +6,7 @@ body
 	color:#555;
 	line-height: 25px;
   background-color: #ccc;
-  min-width: 400px;
+  min-width: 385px;
   height: 100%;
   margin:0;
 }
@@ -157,7 +157,7 @@ h4 {
   margin : 1em;
 }
 ul#nav{ 
-  font-size: 12px !important;
+  font-size: 10px;
   width: 100%;
   background-color: #555;
   margin:0;
@@ -259,13 +259,16 @@ ul.drop li:hover > ul { visibility: visible }
 /*
 | Media queries
  */
-/* remove header image */
+/* at phone size */
 @media all and (max-width: 600px) {
   .wrapper>header {
     background-image:none;
   }
   #legend {
     display:none;
+  }
+  #top-link {
+    bottom:60px;
   }
 }
 /* adjust line heights */

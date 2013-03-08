@@ -19,7 +19,7 @@
 			<h2 id="nickName">John Chase</h2>
 			<h3>Web Developer</h3>
 			@if(!URI::is('users/login'))
-				{{ HTML::link("users/login", "Sign-on", array("class"=>"href")) }}
+				{{ HTML::link("users/login", "Sign-on", array("title"=>"Sign on or register demonstration page", "class"=>"href")) }}
 			@endif
 		</header>
 		<div id="navigation">
@@ -64,7 +64,7 @@
 					<li class="to-right">
 						{{ HTML::link("#", "Commands") }}
 						<ul>
-							<li>{{ HTML::link(URL::current()."/print", "Print", array("title"=>"Properly format and print this page")) }}</li>
+							<!-- <li>{ HTML::link(URL::current()."/print", "Print", array("title"=>"Properly format and print this page")) }}</li> 503 dup link-->
 							<li>{{ HTML::link("#", "Link style", array("title"=>"Swap between new and same page external linking", "class"=>"link-toggle")) }}</li>
 							<li>{{ HTML::link("#", "Link contrast", array("title"=>"Swap between standard and lighter link colors", "class"=>"color-toggle")) }}</li>
 							@if(URI::is('home') || URI::is('/'))
