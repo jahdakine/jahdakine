@@ -106,7 +106,7 @@
 		}
 	}
 /*sign on form*/
-	username1.on("blur", {elem: username1, name: 'Username'}, chkReqd);//!!!fires if user clicks service button
+	username1.on("blur", {elem: username1, name: 'Username'}, chkReqd);
 	password1.on("blur", {elem: password1, name: 'Password'}, chkReqd);
 	//submit
 	sr_sub.on("click", function(e) {
@@ -148,6 +148,7 @@
 		} else {
 			resetError('password2', 'Password', true);
 		}
+		//add more...
 	});
 	//submit
 	rs_sub.on("click", function(e) {
