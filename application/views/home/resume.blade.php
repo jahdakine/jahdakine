@@ -27,12 +27,12 @@
 						<p>
 							Seeking a full-stack web/database developer position in a design environment with the opportunity for creative, challenging work. 
 							Would enjoy developing on a team with new technologies, in a positive learning atmosphere, to create innovative software products geared to the web.
-							<ul>
-								<li>15 years application programming</li>
-								<li>12 years database maintenance and development, software design and testing</li>
-								<li>8 years mechanical design/drafting</li>
-							</ul>
 						</p>
+						<ul>
+							<li>15 years application programming</li>
+							<li>12 years database maintenance and development, software design and testing</li>
+							<li>8 years mechanical design/drafting</li>
+						</ul>
 					</div>
 			</div><!-- group -->
 			<div class="group">

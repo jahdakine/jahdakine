@@ -108,7 +108,7 @@
 				</li>		
 
 				<li class="block3">
-					{{ HTML::link("http://www.gnerdl.com", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href", "return"=>"false")) }}
+					{{ HTML::link("http://www.gnerdl.com", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}
 					{{ HTML::link('#', 'Futuristic site - placeholder only', array('id' => 'gnerdl', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}				
 				</li>	
 				<li class="block3">
