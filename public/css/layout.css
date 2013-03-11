@@ -64,14 +64,14 @@ abbr[title], dfn, .def {
   border-radius: 3px 3px 0 0;
 } 
 .href {
-  color: blue;
+  color: #0000c1;
 }
 .href-orig {
   color: #3dc1ff;
 }
 .href-aside {
-  color: blue;
-  border-bottom: 1px solid blue;
+  color: #0000c1;
+  border-bottom: 1px solid #0000c1;
 }
 .href-aside-orig {
   color: #3dc1ff;
