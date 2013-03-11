@@ -122,20 +122,18 @@ header { background-color: #81adcb; }
 	text-shadow:2px 1px 0 #fff;
 	padding: 1em;
 	margin: 0;
+  color:#444;
 }
 .wrapper>header h1 {
 	font-size: 32pt;
 	margin: 40px 0 12px 0;
 	letter-spacing: 2px;
-	color:#666;
 }
 .wrapper>header h2 {
-	color:#444;
 	letter-spacing: 2px;
 	margin: 20px 0 10px 0;
 }
 .wrapper>header h3 {
-  color:#222;
 	letter-spacing: 2px;
 	margin: 12px 0 10px 0;
 }

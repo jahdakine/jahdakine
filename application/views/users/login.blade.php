@@ -44,8 +44,8 @@
 		<fieldset>
 			<legend>-or-</legend>
 			Connect using a service:<br/>
-			<a href="#" id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Sign in with Google+" return false;>Sign in with Google+</a>
-			<a href="#" id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Sign in with Facebook" return false;>Sign in with Facebook</a><br/>
+			<a href="#" id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Google+ account instead of supplying a new set of credentials" return false;>Sign in with Google+</a>
+			<a href="#" id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Facebook account instead of supplying a new set of credentials" return false;>Sign in with Facebook</a><br/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">

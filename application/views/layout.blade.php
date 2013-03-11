@@ -124,13 +124,13 @@
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>
 				</span>)
 				<span id="nickSpan">
-					<a href="#" id="nickButton" title="Play nickname pronunciation audio (wav)" class="access-link white">Play nickname pronunciation audio (wav)</a>
+					<a href="#" id="nickButton" title="Show the nickname audio player " class="access-link white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
 			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite href pbox reset")) }}</div>
 			<div class="to-center">
 				<div id="audioWrap" class="hide">
-					<a id="nickHide" href="#" title="Dismiss player" class="access-link white">Dismiss player</a>
+					<a id="nickHide" href="#" title="Hide the nickname audio player" class="access-link white">Dismiss player</a>
 				</div>			
 				<div><time datetime="2013-03-05T09:43">March 5th, 2013</time></div>
 			</div>

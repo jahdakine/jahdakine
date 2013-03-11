@@ -92,7 +92,7 @@
 	<div class="wrapper">
 		<div class="error-spacer"></div>
 		<div role="main" class="main">
-			<img src="img/404.png" class="bg" onerror="this.style.display='none'"/>
+			<img src="img/404.png" class="bg" onerror="this.style.display='none'" alt="Scary eyes on  a back background - don't want to hang out here..."/>
 			<div class="eyelids" id="eyes1"></div>
 			<div class="eyelids" id="eyes2"></div>
 			<div class="eyelids" id="eyes3"></div>
