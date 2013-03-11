@@ -109,7 +109,7 @@
 
 				<li class="block3">
 					{{ HTML::link("http://www.gnerdl.com", "Gnerdl&#8663;", array("title"=>"Open Gnerdl site soon in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href", "return"=>"false")) }}
-					{{ HTML::link('#', 'Futuristic site - placeholder only', array('id' => 'gnerdl', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}				
+					{{ HTML::link('#', 'Futuristic site - placeholder only', array('id' => 'gnerdl', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}				
 				</li>	
 				<li class="block3">
 					{{ HTML::link("https://www.icloud.com/", "iCloud&#8663;", array("title"=>"Open iCloud site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}
@@ -196,33 +196,33 @@
 			<ul id="note1" class="show">
 				<li>Research remaining API calls</li>
 				<li>Facility for adding icons/sites</li>
-				<li><strike>503 accessibility check</strike></li>
+				<li class="strike">503 accessibility check</li>
 				<li>Package (minify, optimize, modernizr)</li>
-				<li><strike>Back to Top floater</strike></li>
+				<li class="strike">Back to Top floater</li>
 				<li>Arrive at energy independence!</li>
 			</ul>	
 			<ul id="note2" class="hide">
-				<li><strike>Create link contrast switcher</strike></li>
-				<li><strike>Build out login area</strike></li>
-				<li><strike>Manage social sites list in dB</strike></li>	
-				<li><strike>Create external link switcher</strike></li>
-				<li><strike>W3C check</strike></li>
-				<li>Give peace a chance!</li>
+				<li class="strike">Create link contrast switcher</li>
+				<li class="strike">Build out login area</li>
+				<li class="strike">Manage social sites list in dB</li>	
+				<li class="strike">Create external link switcher</li>
+				<li class="strike">W3C check</li>
+				<li class="strike">Give peace a chance!</li>
 			</ul>	
 			<ul id="note3" class="hide">
-				<li><strike>Add smooth transitions</strike></li>
-				<li><strike>Gradient background header</strike></li>
-				<li><strike>Move legend to sidebar</strike></li>
-				<li><strike>Add carousel controls</strike></li>
-				<li><strike>Animate logo with Canvas JS</strike></li>
-				<li>Make the web safer!</li>
+				<li class="strike">Add smooth transitions</li>
+				<li class="strike">Gradient background header</li>
+				<li class="strike">Move legend to sidebar</li>
+				<li class="strike">Add carousel controls</li>
+				<li class="strike">Animate logo with Canvas JS</li>
+				<li class="strike">Make the web safer!</li>
 			</ul>	
 			<ul id="note4" class="hide">
-				<li><strike>Add login area</strike></li>	
-				<li><strike>ySlow check</strike></li>
-				<li><strike>Spitesheet all graphics</strike></li>
-				<li><strike>Soliloquy blog</strike></li>
-				<li><strike>restructure xhr code</strike></li>
+				<li class="strike">Add login area</li>	
+				<li class="strike">ySlow check</li>
+				<li class="strike">Spitesheet all graphics</li>
+				<li class="strike">Soliloquy blog</li>
+				<li class="strike">restructure xhr code</li>
 				<li>Cure world hunger!</li>
 			</ul>			
 			<p>{{ HTML::link("#", "more notes...", array("title"=>"Flip through to-do history", "id"=>"note-flip", "class"=>"to-right href" )) }}</p>	

@@ -270,6 +270,9 @@
 			case ('fandango'):
 				http="false";
 				break;
+			case ('gnerdl'):
+				http="false";
+				break;
 			case ('google'):
 				http = 'https://www.googleapis.com/plus/v1/people/114704033710627861845/activities/public?key=AIzaSyC7qL3rj2BltH6GV6WOjovK3zuuS5sy024';
 				obj = 'data.items';

@@ -11,7 +11,7 @@
 @endsection 
 
 @section('main')
-<div id="content">
+<div>
 	<div id="sr" class="sign-reg">
 		<fieldset>
 	  <legend>Sign On</legend>
@@ -44,8 +44,8 @@
 		<fieldset>
 			<legend>-or-</legend>
 			Connect using a service:<br/>
-			<a href="#" id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Google+ account instead of supplying a new set of credentials" return false;>Sign in with Google+</a>
-			<a href="#" id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Facebook account instead of supplying a new set of credentials" return false;>Sign in with Facebook</a><br/>
+			<a id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Google+ account instead of supplying a new set of credentials">Sign in with Google+</a>
+			<a id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Facebook account instead of supplying a new set of credentials">Sign in with Facebook</a><br/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">
@@ -105,9 +105,9 @@
 	    <div class="control-group" id="agree-group">				
 		    <div class="controls">
 					{{ Form::checkbox('agree', "1", false, array("style"=>"vertical-align:text-top", "id"=>"agree")) }} I agree to the terms of the <i class="icon-file"></i>
-					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('/partials/user-agreement.html', '', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/user-agreement.html">user agreement (PDF 1.2MB)&#8657;</a>
+					<a class="hide-error2 popup" title="Open PDF in a popup window" onclick="window.open('/partials/user-agreement.html', '', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/user-agreement.html">user agreement (PDF 1.2MB)&#8657;</a>
 					and <i class="icon-file"></i>
-					<a href="#" class="hide-error2" title="Open PDF in a popup window" class="popup" onclick="window.open('/partials/privacy-policy.html', '', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/privacy-policy.html">privacy policy (PDF 989KB)&#8657;</a>
+					<a class="hide-error2 popup" title="Open PDF in a popup window" onclick="window.open('/partials/privacy-policy.html', '', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=860,height=600,left=100,top=100'); return false;" href="/partials/privacy-policy.html">privacy policy (PDF 989KB)&#8657;</a>
 					<span class="help-inline" id="agree-status"></span>
 		    </div>
 	    </div>	

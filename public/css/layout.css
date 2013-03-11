@@ -223,6 +223,7 @@ ul.drop li:hover > ul { visibility: visible }
   float: none;
   clear: both;
 }
+.strike {text-decoration: line-through;}
 .pad{ 
   background-image:url(/img/logoback.png);
   background-repeat: no-repeat;
