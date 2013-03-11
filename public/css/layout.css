@@ -115,13 +115,17 @@ header { background-color: #81adcb; }
   background-color: #ccc; 
 }
 .wrapper>header {
-	font-family: 'Croissant One', cursive; 
-  background-image:url(/img/logoback.png);
+  background-image: url(/img/logoback.png), -webkit-linear-gradient(top,  #81adcb,  #ccc);
+  background-image: url(/img/logoback.png), -moz-linear-gradient(top,  #81adcb,  #ccc);
+  background-image: url(/img/logoback.png), -o-linear-gradient(top,  #81adcb,  #ccc);
+  background-image: url(/img/logoback.png), -ms-linear-gradient(top,  #81adcb,  #ccc);
+  background-image: url(/img/logoback.png), linear-gradient(top,  #81adcb,  #ccc);
+  font-family: 'Croissant One', cursive;
   background-repeat:no-repeat;
   background-position: right;
-	text-shadow:2px 1px 0 #fff;
-	padding: 1em;
-	margin: 0;
+  text-shadow:2px 1px 0 #fff;
+  padding: 1em;
+  margin: 0;
   color:#444;
 }
 .wrapper>header h1 {
