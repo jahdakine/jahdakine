@@ -127,12 +127,12 @@
 	<ul>
 		<li id="ctrls" class="controls transparent bg-dark">
 			<img src="/img/spacer.gif" width="3" height="1" alt=""/>
-			{{ HTML::link("#", "Slow down carousel scroll rate", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"access-link white")) }}
-			{{ HTML::link("#", "Scroll backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"access-link white")) }}
-			{{ HTML::link("#", "Pause the carousel", array("title"=>"Pause the carousel", "id"=>"ctrls3", "class"=>"access-link white")) }}
-			{{ HTML::link("#", "Restart the carousel", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"access-link white")) }}
-			{{ HTML::link("#", "Scroll forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"access-link white")) }}
-			{{ HTML::link("#", "Speed up carousel scroll rate", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"access-link white")) }} 
+			{{ HTML::link("#", "Slower", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Backward", array("title"=>"Scroll backward", "id"=>"ctrls2", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Pause", array("title"=>"Pause the carousel", "id"=>"ctrls3", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Restart", array("title"=>"Restart the carousel", "id"=>"ctrls4", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Forward", array("title"=>"Scroll forward", "id"=>"ctrls5", "class"=>"access-link white")) }}
+			{{ HTML::link("#", "Faster", array("title"=>"Speed up carousel scroll rate", "id"=>"ctrls6", "class"=>"access-link white")) }} 
 			<img src="/img/spacer.gif" width="2" height="1" alt=""/> 
 		</li>
 	</ul>
@@ -152,7 +152,7 @@
 			<h4>Welcome</h4> 
 			This is my online <abbr title="Curriculum Vitae">CV</abbr>.
 			Select from any of the menu items above to explore more of my interests 
-			and accomplishments, or {{ HTML::link("home/contact", "contact", array("title"=>"Get in touch", "class"=>"href")) }} me if you have a dream front-end web programming job 
+			and accomplishments, or {{ HTML::link("home/contact", "contact", array("class"=>"href")) }} me if you have a dream front-end web programming job 
 			opening! This website is powered by jQuery, <abbr title="PHP: Hypertext Preprocessor">PHP</abbr>, and 
 			{{ HTML::link("http://laravel.com/docs", "Laravel&#8663;", array("title"=>"Offsite to Laravel Documentation in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}, the 
 			<abbr title="Model View Controller">MVC</abbr>
@@ -166,7 +166,7 @@
 			{{ HTML::link("http://caroufredsel.dev7studios.com/", "carouFred&#8663;", array("title"=>"Offsite to carouFred in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
 			<abbr title="Javascript Object Notation">jSON</abbr> request examples are documented within the  
 			{{ HTML::link("http://api.jquery.com/jQuery.getJSON/", "jQuery API&#8663;", array("title"=>"Offsite to jQuery API in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
-			Mail reveal utility demonstrated on {{ HTML::link("contact", "Contact page", array("title"=>"Contact page", "class"=>"href")) }} courtesy of Google's 
+			Mail reveal utility demonstrated on {{ HTML::link("contact", "Contact page", array("class"=>"href")) }} courtesy of Google's 
 			{{ HTML::link("http://www.google.com/recaptcha/mailhide/", "reCAPTCHA&#8663;", array("title"=>"Offsite to Mail Hide in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}. 
 			Slick icons from the folks at {{ HTML::link("http://www.iconarchive.com/", "IconArchive&#8663;", array("title"=>"Offsite to IconArchive in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }},
 			and {{ HTML::link("http://www.glyphicons.com/", "Glyphicons&#8663;", array("title"=>"Offsite to Glyphicons in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
@@ -182,7 +182,7 @@
 				(this does not pass Section 503 contrast standards). While you're poking around, check out my interactive  
 				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun (audio event - 
 				<img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-middle"/>volume alert) or jump over to the 
-				{{ HTML::link("home/technology", "Technology page", array("title"=>"Technology page", "class"=>"href")) }} to see more of what makes
+				{{ HTML::link("home/technology", "Technology page", array("class"=>"href")) }} to see more of what makes
 				this site tick.
 			</p>
 			<p id="carouselHelp" class="hide">
