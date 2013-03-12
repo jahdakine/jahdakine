@@ -1,6 +1,6 @@
 /*
 | login.blade.php functions
-| for login only
+| for login only - of course in a real situation, all this must be backed by server-side validation
 | !!! tab on error capture
 */
 

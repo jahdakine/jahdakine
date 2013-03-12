@@ -98,37 +98,58 @@
 				<li><a href="#courses-3">Projects</a></li>
 			</ul>
 			<div id="courses-1">
-				<h4>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h4>
-				<ul>
-					<li>Hands-On: Build a Practical Web Application with Laravel</li>
-					<li>Laravel Essentials</li>
-					<li>Advanced JavaScript Fundamentals</li>
-					<li>Your Obedient Assistant: Yeoman</li>
-					<li>Are You Using CoffeeScript?</li>
-					<li>JavaScript Fundamentals 101</li>
-					<li>Easy Development With jQuery Mobile</li>
-					<li>30 Days to Learn jQuery</li>
-					<li>WordPress Plugin Development Essentials</li>
-					<li>Regular Expressions: Up and Running</li>
-					<li>Perfect Workflow in Sublime Text 2</li>
-					<li>The Joy of FirePHP: A Crash-Course</li>
-					<li>PHP Fundamentals</li>
-					<li>HTML5 Fundamentals</li>
-					<li>CSS3 Essentials</li>					
-				</ul>
+				<div>
+					<h4>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h4>
+					<ul>
+						<li>Learning MongoDB</li>
+						<li>Hands-On: Build a Practical Web Application with Laravel</li>
+						<li>Laravel Essentials</li>
+						<li>Advanced JavaScript Fundamentals</li>
+						<li>Your Obedient Assistant: Yeoman</li>
+						<li>Are You Using CoffeeScript?</li>
+						<li>JavaScript Fundamentals 101</li>
+						<li>Easy Development With jQuery Mobile</li>
+						<li>30 Days to Learn jQuery</li>
+						<li>WordPress Plugin Development Essentials</li>
+						<li>Regular Expressions: Up and Running</li>
+						<li>Perfect Workflow in Sublime Text 2</li>
+						<li>The Joy of FirePHP: A Crash-Course</li>
+						<li>PHP Fundamentals</li>
+						<li>HTML5 Fundamentals</li>
+						<li>CSS3 Essentials</li>					
+					</ul>
+				</div>
+				<div>
+					<h4>{{ HTML::link("http://www.codeschool.com/", "Code School&#8663;", array("title"=>"Open Code School in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h4>	
+					<ul>
+						<li>Try Ruby</li>
+						<li>Try jQuery</li>
+						<li>Try Git</li>
+						<li>Rails for Zombies</li>
+					</ul> 
+				</div>				
 			</div><!-- // courses-1 -->
 			<div id="courses-2">
-				<h4>Tuts Premium</h4>	
-				<ul>
-					<li>Rails or Laravel: Building an App Twice</li>
-					<li>Connected to the Backbone</li>
-					<li>jQuery Plugin Development: Best Practices</li>
-					<li>Venture Into Vim</li>
-					<li>How To Customize Your Terminal</li>
-					<li>Build a Canvas Image Editor with Canvas</li>
-					<li>Object-Oriented JavaScript</li>
-					<li>Learning MongoDB</li>
-				</ul> 
+				<div>
+					<h4>Tuts Premium</h4>	
+					<ul>
+						<li>Connected to the Backbone</li>
+						<li>jQuery Plugin Development: Best Practices</li>
+						<li>Venture Into Vim</li>
+						<li>How To Customize Your Terminal</li>
+						<li>Build a Canvas Image Editor with Canvas</li>
+						<li>Object-Oriented JavaScript</li>
+					</ul> 
+				</div>
+				<div>
+					<h4>Code School</h4>	
+					<ul>
+						<li>Try R</li>
+						<li>CSS Cross Country</li>
+						<li>The Anatomy of Backbone</li>
+						<li>Git Real</li>
+					</ul> 
+				</div>
 			</div><!-- // courses-2 -->
 			<div id="courses-3">
 			  <ul>

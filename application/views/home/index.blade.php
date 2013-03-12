@@ -56,7 +56,7 @@
 				<li class="block2">
 					{{ HTML::link("http://www.linkedin.com/profile/view?id=14123195", "Linkedin&#8663;", array("title"=>"Open my LinkedIn profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}
 					{{ HTML::link('#', 'Latest Linkedin recommendations - coming soon', array('id' => 'linkedin', 'class' => 'feedBtn listImg access-link', 'title' => 'Coming soon')) }}
-					<!-- 
+					<!--
 					<script>
 						recosHTML = '';
 					  function onLinkedInLoad() {
@@ -76,7 +76,7 @@
 							return recosHTML;
 						}
 					</script>
-					 -->			
+					--> 			
 				</li>		
 				<li class="block2">
 					{{ HTML::link("https://github.com/jahdakine", "GitHub&#8663;", array("title"=>"Open my Github page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}
