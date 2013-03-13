@@ -81,6 +81,7 @@
 		@yield('top')
 		@yield('controls')
 		<div role="main" class="main" id="main">
+			<a href="#main" class="hidden">Skip legend</a> 
 			<aside id="legend">
 				<h4 class="to-center reset">Legend</h4>
 					<ul class="nolist small">
@@ -116,7 +117,7 @@
 				@yield('aside')
 			</aside><!-- // aside -->
 			@yield('main')
-			<div class="clear-fix pad"></div>
+			<div id="main" class="clear-fix pad"></div>
 			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top of Page</a>
 		</div><!-- // content -->
 		<footer class="copy">

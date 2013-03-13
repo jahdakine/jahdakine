@@ -19,16 +19,22 @@
 			{{ Form::open('login','POST',array("class" => "form-inline")) }}
 			{{ Form::token() }}
 			<div class="control-group" id="username1-group">
-		    <div class="controls">
+		    <div class="controls">  	
 		    	{{ Form::label("username1", "Username", array("class"=>"access-link"))}}
-					{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1")) }}
+					<div class="input-append">
+						{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1")) }}
+						<span class="add-on"><a href="#" title="USERNAME must be between 4 and 16 chars and may not begin with a number."><i class="icon-question-sign"></i></a></span>
+					</div>
 					<span class="help-inline" id="username1-status"></span>
 		    </div>
 		  </div>
 			<div class="control-group" id="password1-group">
 		    <div class="controls">
 		    	{{ Form::label("password1", "Password", array("class"=>"access-link"))}}
-					{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1")) }}					
+		    	<div class="input-append">
+						{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1")) }}		
+						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
+					</div>			
 					<span class="help-inline" id="password1-status"></span>
 		    </div>
 		  </div>
@@ -90,7 +96,7 @@
 		  		<div id="bars" class="progress-info" style="width:220px;margin-bottom:0;">
 				    <div id="bar" class="bar" style="width: 0"></div>
 	  			</div>
-					<span class="small">Passwords must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters.</span>
+					<span class="small">Password must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters.</span>
 		    </div>
 		  </div>	
 		  <div class="control-group" id="email-group">				
