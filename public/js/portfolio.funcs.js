@@ -4,8 +4,15 @@
 */
 
 (function() {
-	/*setup tabs*/
-	$("#projects").tabs();
+/*cache DOM vars*/
+	h5nojs = $(".h5nojs"),
+	projects = $("#projects"),
+	tab_links = $("#tab-links");
+/*address noscripts*/
+	h5nojs.remove();
+	tab_links.removeClass('hide');
+/*setup tabs*/
+	projects.tabs();
 /*cache DOM vars*/
 	var project = $(".project"),
 			clients = $(".clients"),

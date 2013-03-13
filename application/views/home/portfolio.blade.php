@@ -41,7 +41,7 @@
 		</article>
 		<div id="tabs">
 			<div id="projects">
-				<ul>
+				<ul id="tab-links" class="hide">
 					<li><a class="clients href" href="#contracts">Contracts&nbsp;</a></li>
 					<li><a class="clients href" href="#nrel">NREL&nbsp;<abbr title="National Renewable Energy Laboratory">(?)</abbr></a></li>
 					<li><a class="clients href" href="#eere">EERE&nbsp;<abbr title="Energy Efficiency and Renewable Energy Network">(?)</abbr></a></li>
@@ -50,6 +50,7 @@
 					<li><a class="clients href" href="#volunteer">Volunteer&nbsp;</a></li>	
 				</ul>
 				<div id="contracts">
+				<h5 class="h5nojs">Contracts</h5>
 				<ul>
 					<li><a href="project/treasury/null/" title="Show description and screenshots" class="project href">Treasury</a></li>
 					<li><a href="project/solar_decathlon/null/" title="Show description and screenshots" class="project href">Solar Decathlon</a></li>
@@ -61,6 +62,7 @@
 				<section id="contractsFrame" class="box hide"></section>
 				</div><!-- // contracts -->			
 				<div id="nrel">
+					<h5 class="h5nojs">NREL (National Renewable Energy Laboratory)</h5>
 					<ul>
 						<li><a href="project/jedi_model_downloads/caps" title="Show description and screenshots" class="project href">JEDI Model Downloads</a></li>
 						<li><a href="project/basic_sciences/null/" title="Show description and screenshots" class="project href">Basic Sciences</a></li>
@@ -73,6 +75,7 @@
 					<section id="nrelFrame" class="box hide"></section> 		
 				</div><!-- // nrel -->
 				<div id="eere">
+					<h5 class="h5nojs">EERE (Energy Efficiency and Renewable Energy Network)</h5>
 				  <ul>
 						<li><a href="project/energy_plus_example_file_generator/null/" title="Show description and screenshots" class="project href">Energy Plus Example File Generator</a></li>
 						<li><a href="project/energy_plus_weather_data/null/" title="Show description and screenshots" class="project href">Energy Plus Weather Data</a></li>
@@ -83,6 +86,7 @@
 				</div><!-- // eere -->
 				<section id="eereFrame" class="box hide"></section>
 				<div id="source">
+					<h5 class="h5nojs">Source (NREL's Intranet)</h5>
 				  <ul>
 						<li><a href="project/nrel_now/capsnoimg" title="Show description and screenshots" class="project no-image href">NREL Now</a></li>
 						<li><a href="project/library/noimg" title="Show description and screenshots" class="project no-image href">Library</a></li>
@@ -90,12 +94,14 @@
 					<section id="sourceFrame" class="box hide"></section>
 				</div><!-- // source -->		
 				<div id="doe">
+					<h5 class="h5nojs">DOE (Department of Energy)</h5>
 				  <ul>
 						<li><a href="project/hydrogen_and_fuel_cells_program/null/" title="Show description and screenshots" class="project href">Hydrogen and Fuel Cells Program</a></li>
 					</ul>
 					<section id="doeFrame" class="box hide"></section>
 				</div><!-- // doe -->		
 				<div id="volunteer">
+					<h5 class="h5nojs">Volunteer (Pro Bono)</h5>
 				  <ul>
 						<!-- <li><a href="project/" title="Show description and screenshots" class="project">One Voice ~ Many Paths</a></li> -->										
 						<li><a href="project/gnerdl/noimg" title="Show description and screenshots" class="project no-image href">Gnerdl</a></li>										
