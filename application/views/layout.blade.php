@@ -19,7 +19,7 @@
 			<h2 id="nickName">John Chase</h2>
 			<h3>Web Developer</h3>
 			@if(!URI::is('users/login'))
-				{{ HTML::link("users/login", "Sign-on", array("title"=>"Sign on or register demonstration page", "class"=>"href hide", "id"=>"signon")) }}
+				{{ HTML::link("users/login", "Sign-on", array("title"=>"Sign on or register demonstration page", "class"=>"href hide signon", "id"=>"signon")) }}
 			@endif
 		</header>
 		<div id="navigation">
