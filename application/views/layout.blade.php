@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<a href="#content" >Skip navigation</a> <!-- class="hidden" -->
+	<a href="#content" class="hidden">Skip navigation</a>
 	<div class="wrapper" id="top">
 		<header id="whats-this">
 			<h1>@yield("title")</h1>
@@ -81,7 +81,7 @@
 		@yield('top')
 		@yield('controls')
 		<div role="main" class="main" id="main">
-			<a href="#main">Skip legend</a><!--  class="hidden" -->
+			<a href="#main" class="hidden">Skip legend</a>
 			<aside id="legend">
 				<h4 class="to-center reset">Legend</h4>
 					<ul class="nolist small">
@@ -125,13 +125,13 @@
 				<span>
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>
 				</span>)
-				<span id="nickSpan" class=""><!--!!! hide-->
+				<span id="nickSpan" class="hide">
 					<a href="#" id="nickButton" title="Show the nickname audio player " class="access-link white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>
 			<div class="to-right">Hosted by {{ HTML::link("https://pagodabox.com/", "Pagoda Box&#8663;", array("title"=>"Open Pagoda Box in a new window", "target"=>"_blank", "class"=>"offsite href pbox reset")) }}</div>
 			<div class="to-center">
-				<div id="audioWrap" class=""><!--!!! hide-->
+				<div id="audioWrap" class="hide">
 					<a id="nickHide" href="#" title="Hide the nickname audio player" class="access-link white">Dismiss player</a>
 				</div>			
 				<div><time datetime="2013-03-13T09:43">March 13th, 2013</time></div>
