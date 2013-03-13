@@ -91,7 +91,7 @@
 						<li><span class="hover-aside" title="Link style with cursor above">Hover</span></li>
 						<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
 						<li><span class="def" title="Tooltip style">Acronym/Definition</span></li>
-						<li><span class="js" title="Highlighted functionality is dependant on Javascript">Requires Javascript!</span></li>
+						@yield('nojs')
 					</ul>
 				<h4 class="to-center reset">Commands</h4>
 				<ul class="nolist">

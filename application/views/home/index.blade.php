@@ -142,6 +142,9 @@
 
 @section('main')
 	@section('aside')
+		@section('nojs')
+			<li><span id="nojs" class="nojs" title="Highlighted functionality is dependant on Javascript">Requires Javascript!</span></li>
+		@endsection
 		@section('index')
 			<li><a href="#" id="menuGraphics" class="hide href small to-bottom menuGraphics" title="Change format to rotating image links"><i class="icon-picture"></i>&nbsp;Image list</a>
 			<li><a href="#" id="menuText" class="hide href small to-bottom menuText" title="Change format to text links"><i class="icon-list-alt"></i>&nbsp;Text list</a>
@@ -156,15 +159,15 @@
 			opening! This website is powered by jQuery, <abbr title="PHP: Hypertext Preprocessor">PHP</abbr>, and 
 			{{ HTML::link("http://laravel.com/docs", "Laravel&#8663;", array("title"=>"Offsite to Laravel Documentation in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}, the 
 			<abbr title="Model View Controller">MVC</abbr>
-			framework that I'm gravitating to at the moment. It is responsive, accessible, and includes an ever popular <span class="js" title="Requires Javascript!">scrolling style jQuery menu carousel
+			framework that I'm gravitating to at the moment. It is responsive, accessible, and includes an ever popular <span class="nojs" title="Requires Javascript!">scrolling style jQuery menu carousel
 			<em>(Commands|Image format)</em></span> that I'm thinking I'll call my social parade. It is basically my playground to spend time trying out new technologies and learning 
-			about what works and what doesn't in the fine art and science of internet programming and design. <span class="js" title="Requires Javascript!">Tabs</span> and other user interface goodies can be found at
+			about what works and what doesn't in the fine art and science of internet programming and design. <span class="nojs" title="Requires Javascript!"><em>Tabs</em></span> and other user interface goodies can be found at
 			{{ HTML::link("http://jqueryui.com/", "jQuery UI&#8663;", array("title"=>"Offsite to jQuery UI in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
-			<span class="js">Customizable tooltips</span>:
+			<span class="nojs"><em>Customizable tooltips</em></span>:
 			{{ HTML::link("http://craigsworks.com/projects/qtip2/", "qTips2&#8663;", array("title"=>"Offsite to qTips2 in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
-			<span class="js">Image carousel</span> is available at 
+			<span class="nojs"><em>Image carousel</em></span> is available at 
 			{{ HTML::link("http://caroufredsel.dev7studios.com/", "carouFred&#8663;", array("title"=>"Offsite to carouFred in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
-			<span class="js"><abbr title="Javascript Object Notation">jSON</abbr> request examples</span> are documented within the  
+			<span class="nojs"><abbr title="Javascript Object Notation">jSON</abbr> request examples</span> are documented within the  
 			{{ HTML::link("http://api.jquery.com/jQuery.getJSON/", "jQuery API&#8663;", array("title"=>"Offsite to jQuery API in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
 			Mail reveal utility demonstrated on {{ HTML::link("contact", "Contact page", array("class"=>"href")) }} courtesy of Google's 
 			{{ HTML::link("http://www.google.com/recaptcha/mailhide/", "reCAPTCHA&#8663;", array("title"=>"Offsite to Mail Hide in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}. 
@@ -177,8 +180,8 @@
 			<p>
 				This is as much a launching pad for me as it is a showcase of what I care about and can do. The default external hyperlink style opens sites in a new 
 				window/tab because I keep this page open during my surfing day. This is quicker than using the right-click open option. If you prefer opening new sites 
-				in the current window, use the <span class="js"><em>Commands|Linking</em> function</span> and your setting will be saved for future visits thanks to Local Storage. I originally designed 
-				this site with lower contrast, color coordinated links. If you don't mind that, try the <span class="js"><em>Commands|Contrast</em> function</span> to get a nicer look 
+				in the current window, use the <span class="nojs"><em>Commands|Linking</em> function</span> and your setting will be saved for future visits thanks to Local Storage. I originally designed 
+				this site with lower contrast, color coordinated links. If you don't mind that, try the <span class="nojs"><em>Commands|Contrast</em> function</span> to get a nicer look 
 				(this does not pass Section 503 contrast standards). While you're poking around, check out my interactive  
 				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun (audio event - 
 				<img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-middle"/>volume alert) or jump over to the 

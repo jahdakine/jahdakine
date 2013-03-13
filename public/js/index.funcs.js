@@ -34,6 +34,8 @@
 			feed_btn = $(".feedBtn"),
 			content_frame = $("#contentFrame"),
 			aside = $("#aside"),
+			nojs = $("#nojs"),
+			no_js = $(".nojs"),
 			land_aside = $(".landAside"),
 			legend = $("#legend"),
 			carousel_help = $("p#carouselHelp"),
@@ -42,6 +44,8 @@
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
 /*address noscripts*/
+	nojs.remove();
+	no_js.children().unwrap();
 	note_flip.attr("href", "#");
 	menutext.removeClass('hide');
 	menugraphics.removeClass('hide');
