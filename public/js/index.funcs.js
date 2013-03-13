@@ -109,6 +109,7 @@
 		e.preventDefault();
 		if(list_img.css("display") !== "inline-table") {
 			list_img.css("display","inline-table"); //displays hidden images embedded in links
+			list_img.removeClass('hidden');
 			list.removeClass("list-text");
 			list.addClass("list-carousel");
 			carousel_li.unwrap();
