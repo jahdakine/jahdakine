@@ -32,3 +32,7 @@ header h3 {
 .to-right { float:right !important; }
 .to-left { float:left !important; }
 .to-center { text-align: center; }
+.clear-fix {
+  float: none;
+  clear: both;
+}
