@@ -7,7 +7,7 @@
 	<li class="strike">Back to Top floater</li>
 	<li>Arrive at energy independence!</li>
 </ul>	
-<ul id="note2" class=@if(URI::is('home/notes')) show @else hide @endif>
+<ul id="note2" class=@if(URI::is('home/tasks')) show @else hide @endif>
 	<li class="strike">Create link contrast switcher</li>
 	<li class="strike">Build out login area</li>
 	<li class="strike">Manage social sites list in dB</li>	
@@ -15,7 +15,7 @@
 	<li class="strike">W3C check</li>
 	<li class="strike">Give peace a chance!</li>
 </ul>	
-<ul id="note3" class=@if(URI::is('home/notes')) show @else hide @endif>
+<ul id="note3" class=@if(URI::is('home/tasks')) show @else hide @endif>
 	<li class="strike">Add smooth transitions</li>
 	<li class="strike">Gradient background header</li>
 	<li class="strike">Move legend to sidebar</li>
@@ -23,7 +23,7 @@
 	<li class="strike">Animate logo with Canvas JS</li>
 	<li class="strike">Make the web safer!</li>
 </ul>	
-<ul id="note4" class=@if(URI::is('home/notes')) show @else hide @endif>
+<ul id="note4" class=@if(URI::is('home/tasks')) show @else hide @endif>
 	<li class="strike">Add login area</li>	
 	<li class="strike">ySlow check</li>
 	<li class="strike">Spitesheet all graphics</li>

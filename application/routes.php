@@ -1,5 +1,6 @@
 <?php
 Route::get('/', 'home@index');
+Route::get('tasks/(:any?)', 'home@tasks');
 Route::get('technology/(:any?)', 'home@technology');
 Route::get('about/(:any?)', 'home@about');
 Route::get('contact/(:any?)', 'home@contact');

@@ -47,4 +47,11 @@ class Home_Controller extends Base_Controller {
    		return View::make('home.resume');
    	}
 	}
+  public function action_tasks($type = '') {
+    if($type==='print') {
+      $this->layout->nest('content', 'home.tasks');
+    } else {
+      return View::make('home.tasks');
+    }
+  }
 }

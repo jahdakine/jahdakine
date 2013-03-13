@@ -39,7 +39,10 @@
 			dir2Scroll = "right",
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
+/*address noscripts*/
+note_flip.attr("href", "#");
 /*!!!pre-load carousel images*/
+
 /*setup carousel slider*/
 	function setCarousel(num2Scroll, dir2Scroll) {
 		carousel.carouFredSel({
