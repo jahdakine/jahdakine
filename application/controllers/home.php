@@ -8,7 +8,7 @@ class Home_Controller extends Base_Controller {
    		return View::make('home.index');
    	}
   }
-  //hack b/c /(:any) intercepts all other routes
+  //index print hack b/c /(:any) intercepts all other routes
   public function action_print() {
    		$this->layout->nest('content', 'home.index');
   }
@@ -27,11 +27,18 @@ class Home_Controller extends Base_Controller {
    	}
 	}
 	public function action_portfolio($type = '') {
-		if($type==='print') {
-   		$this->layout->nest('content', 'home.portfolio');
-   	} else {
-   		return View::make('home.portfolio');
-   	}
+    if($type==='print') {
+      $this->layout->nest('content', 'home.portfolio');
+    } else {
+      return View::make('home.portfolio');
+    }
+  }
+  public function action_project($name, $params = '', $type= '') {
+    if($type==='print') {
+      $this->layout->nest('content', 'home.project', array('name'=>$name, 'params'=>$params));
+    } else {
+   	  return View::make('home.project')->with('name',$name)->with('params', $params);
+    }
 	}
 	public function action_technology($type = '') {
 		if($type==='print') {

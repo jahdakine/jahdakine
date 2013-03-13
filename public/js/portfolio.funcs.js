@@ -6,19 +6,21 @@
 (function() {
 	/*setup tabs*/
 	$("#projects").tabs();
-	//cache DOM vars
+/*cache DOM vars*/
 	var project = $(".project"),
 			clients = $(".clients"),
 			tabs = $("#tabs"),
 			box = $(".box"),
 			body = $('html, body');
-	//client tab clicks
+/*address noscripts*/
+project.attr("href","#");
+/*client tab clicks*/
 	clients.on('click', function() {
 		var tmp = this.innerHTML.replace(/\&.+/g, '').toLowerCase(),
 				contentFrame = $(eval(tmp + "Frame"));
 		box.empty();
 	});
-	//project clicks !!!use template for HTML
+/*project clicks !!!use template for HTML*/
 	project.on('click', function(e) {
 		e.preventDefault();
 		box.empty();
@@ -35,7 +37,7 @@
 			frag = "'</h3><div><img style=\"max-width:800px;\" src=\"/img/portfolio/'+ filename +'.jpg\" alt=\"Screenshot of '+ title +' project\"/ align=\"right\" class=\"project-img\"></div><div id=\"project-desc\">' + data + '</div>'";
 		}
 		$.ajax({
-			url: '/partials/' + filename + '.html',
+			url: '/partials/' + filename + '.php',
 			cache: false
 			}).done(function(data) {
 				contentFrame.html(eval(frag));

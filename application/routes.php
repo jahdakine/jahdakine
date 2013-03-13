@@ -5,6 +5,7 @@ Route::get('technology/(:any?)', 'home@technology');
 Route::get('about/(:any?)', 'home@about');
 Route::get('contact/(:any?)', 'home@contact');
 Route::get('portfolio/(:any?)', 'home@portfolio');
+Route::get('project/(:any)/(:any?)/(:any?)', 'home@project');
 Route::get('resume/(:any?)', 'home@resume');
 Route::get('print/', 'home@print');
 
