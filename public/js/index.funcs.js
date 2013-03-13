@@ -20,6 +20,8 @@
 			block3 = $(".block3"),
 			menu_text = $(".menuText"),
 			menu_graphics = $(".menuGraphics"),
+			menutext = $("#menuText"),
+			menugraphics = $("#menuGraphics"),
 			c1 = $("#ctrls1"),
 			c2 = $("#ctrls2"),
 			c3 = $("#ctrls3"),
@@ -40,7 +42,9 @@
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
 /*address noscripts*/
-note_flip.attr("href", "#");
+	note_flip.attr("href", "#");
+	menutext.removeClass('hide');
+	menugraphics.removeClass('hide');
 /*!!!pre-load carousel images*/
 
 /*setup carousel slider*/

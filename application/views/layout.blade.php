@@ -61,7 +61,7 @@
 					@else 
 						<li>{{ HTML::link('home/contact','Contact') }}</li>
 					@endif 
-					<li class="to-right">
+					<li id="menu-commands" class="hide to-right">
 						{{ HTML::link("#", "Commands") }}
 						<ul>
 							<!-- <li>{ HTML::link(URL::current()."/print", "Print", array("title"=>"Properly format and print this page")) }}</li> 503 dup link-->
@@ -95,8 +95,8 @@
 				<h4 class="to-center reset">Commands</h4>
 				<ul class="nolist">
 					<li><a href="{{URL::current();}}/print" class="href small to-bottom" title="Properly format and print this page"><i class="icon-print"></i>&nbsp;Print</a>
-					<li><a href="#" class="href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Link style<span class="offsite">&#8663;</span></a>
-					<li><a href="#" class="href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Link contrast</a>
+					<li><a href="#" id="link-toggle" class="hide href small to-bottom link-toggle" title="Swap between new and same page external linking"><i class="icon-filter"></i>&nbsp;Link style<span class="offsite">&#8663;</span></a>
+					<li><a href="#" id="color-toggle" class="hide href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Link contrast</a>
 					@yield('index')	
 				</ul>
 				<h4 class="to-center reset">Share</h4>

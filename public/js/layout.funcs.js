@@ -9,7 +9,10 @@
 			$document = $(document),
 			link_toggle = $(".link-toggle"),
 			color_toggle = $(".color-toggle"),
+			linktoggle = $("#link-toggle"),
+			colortoggle = $("#color-toggle"),
 			top_link = $('#top-link'),
+			menu_commands = $('#menu-commands'),
 			aside = $("#aside"),
 			windowHeight = $window.height(),
 			headerHeight = $("header").height(),
@@ -17,6 +20,10 @@
 			contentHeight = $("#main").height(),
 			footerHeight = $("footer").height(),
 			flexFooter = 0;
+/*address noscripts*/
+	linktoggle.removeClass('hide');
+	colortoggle.removeClass('hide');
+	menu_commands.removeClass('hide');
 /* Top link */
 	jQuery.fn.topLink = function(settings) {
 			settings = jQuery.extend({
