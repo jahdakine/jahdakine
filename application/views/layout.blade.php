@@ -91,6 +91,7 @@
 						<li><span class="hover-aside" title="Link style with cursor above">Hover</span></li>
 						<li><span id="visitedLink" class="visited-aside" title="Links that have been followed">Visited</span></li>
 						<li><span class="def" title="Tooltip style">Acronym/Definition</span></li>
+						<li><span class="js" title="Highlighted functionality is dependant on Javascript">Requires Javascript!</span></li>
 					</ul>
 				<h4 class="to-center reset">Commands</h4>
 				<ul class="nolist">
@@ -99,7 +100,7 @@
 					<li><a href="#" id="color-toggle" class="hide href small to-bottom color-toggle" title="Swap between standard and lighter link colors"><i class="icon-adjust"></i>&nbsp;Link contrast</a>
 					@yield('index')	
 				</ul>
-				<h4 class="to-center reset">Share</h4>
+				<h4 id="aside-share" class="to-center reset hide">Share</h4>
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style">
 						<a class="addthis_button_preferred_1"></a>

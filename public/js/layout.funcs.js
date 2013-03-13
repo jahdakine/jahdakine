@@ -14,6 +14,7 @@
 			top_link = $('#top-link'),
 			menu_commands = $('#menu-commands'),
 			aside = $("#aside"),
+			aside_share = $("#aside-share"),
 			nick_span = $("#nickSpan"),
 			windowHeight = $window.height(),
 			headerHeight = $("header").height(),
@@ -26,6 +27,7 @@
 	colortoggle.removeClass('hide');
 	menu_commands.removeClass('hide');
 	nick_span.removeClass('hide');
+	aside_share.removeClass('hide');
 /* Top link */
 	jQuery.fn.topLink = function(settings) {
 			settings = jQuery.extend({
