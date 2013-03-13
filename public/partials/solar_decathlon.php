@@ -1,0 +1,1 @@
+../../application/views/home/partials/solar_decathlon.php

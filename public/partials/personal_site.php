@@ -1,0 +1,1 @@
+../../application/views/home/partials/personal_site.php

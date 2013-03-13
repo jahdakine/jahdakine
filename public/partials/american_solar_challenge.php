@@ -1,0 +1,1 @@
+../../application/views/home/partials/american_solar_challenge.php

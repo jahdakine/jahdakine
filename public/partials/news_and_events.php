@@ -1,0 +1,1 @@
+../../application/views/home/partials/news_and_events.php
