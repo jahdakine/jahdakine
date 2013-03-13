@@ -123,7 +123,7 @@
 				<span>
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>
 				</span>)
-				<span id="nickSpan">
+				<span id="nickSpan" class="hide">
 					<a href="#" id="nickButton" title="Show the nickname audio player " class="access-link white">Play nickname pronunciation audio (wav)</a>
 				</span>
 			</div>

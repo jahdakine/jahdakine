@@ -4,7 +4,7 @@
 | common across site
 */
 
-/* global vars */
+/* cache DOM vars */
 	var $window = $(window),
 			$document = $(document),
 			link_toggle = $(".link-toggle"),
@@ -14,6 +14,7 @@
 			top_link = $('#top-link'),
 			menu_commands = $('#menu-commands'),
 			aside = $("#aside"),
+			nick_span = $("#nickSpan"),
 			windowHeight = $window.height(),
 			headerHeight = $("header").height(),
 			navHeight = $("#navigation").height(),
@@ -24,6 +25,7 @@
 	linktoggle.removeClass('hide');
 	colortoggle.removeClass('hide');
 	menu_commands.removeClass('hide');
+	nick_span.removeClass('hide');
 /* Top link */
 	jQuery.fn.topLink = function(settings) {
 			settings = jQuery.extend({

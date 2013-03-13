@@ -10,7 +10,7 @@
 //use carouFredSel method to resize
 
 (function() {
-	//cache DOM vars
+/*cache DOM vars*/
 	var list = $("#list"),
 			list_img = $(".listImg"),
 			carousel = $("#carousel"),

@@ -4,12 +4,19 @@
 */
 
 (function() {
-	/*hide/show popup help*/
-	$("#help").on('click', function(e) {
+/*cache DOM vars*/
+	var helper = $("#helper"),
+			help = $("#help");
+/*address noscripts*/
+helper.addClass("hide");
+help.removeClass("hide");
+/*hide/show popup help*/
+	help.on('click', function(e) {
 		e.preventDefault();
-		$("#helper").removeClass("hidden");
-		$("#helper").addClass("displayed");
+		helper.removeClass("hide");
+		helper.addClass("displayed");
 	});
+/*popup helper*/
 	var popWin = "";
 	function openwin(url, strWidth, strHeight) {
 		if (popWin !== "") { popWin.close(); }
