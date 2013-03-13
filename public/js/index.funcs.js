@@ -92,7 +92,7 @@
 			list.addClass("list-text");
 			carousel.removeAttr("style");
 			//add 3 col lis back in
-			block1.wrapAll('<ul id="t1"></ul>');
+			block1.wrapAll('<ul id="t1" class="reset"></ul>');
 			block2.wrapAll('<ul id="t2"></ul>');
 			block3.wrapAll('<ul id="t3"></ul>');
 			ctrls.addClass("transparent");

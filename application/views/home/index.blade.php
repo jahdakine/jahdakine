@@ -124,7 +124,7 @@
 	</div><!-- // list -->
 	@section('controls')
 	<div class="control-bg">
-	<ul>
+	<ul class="reset">
 		<li id="ctrls" class="controls transparent bg-dark">
 			<img src="/img/spacer.gif" width="3" height="1" alt=""/>
 			{{ HTML::link("#", "Slower", array("title"=>"Slow down carousel scroll rate", "id"=>"ctrls1", "class"=>"access-link white")) }}
