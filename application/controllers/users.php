@@ -2,6 +2,7 @@
 
 class Users_Controller extends Base_Controller {
 	public $restful = true;
+	public $layout = 'print';
 	public function get_index() {
 		
 	}
@@ -36,8 +37,12 @@ class Users_Controller extends Base_Controller {
 	public function delete_destroy() {
 		
 	}
-	public function get_login() {
-		return View::make('users.login');
+	public function get_login($type = '') {
+		if($type==='print') {
+   		$this->layout->nest('content', 'users.login');
+   	} else {
+			return View::make('users.login');
+   	}
 	}
 	public function post_login() {
 		$user = array(

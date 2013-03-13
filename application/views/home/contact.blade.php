@@ -41,7 +41,7 @@
 	<p>Thanks for stopping by!</p>
 </section><!-- // communicate -->
 <section id="helper">
-	<h3>*Popup Help</h3>
+	<h4>*Popup Help</h4>
 	<ul class="nolist">
 		<li>
 			<a class="to-top offsite href" id="chrome" target="_blank" href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95472" title="Open help for Chrome popups in a new window/tab">&nbsp;Chrome&#8663;</a>

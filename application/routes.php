@@ -9,7 +9,7 @@ Route::get('project/(:any)/(:any?)/(:any?)', 'home@project');
 Route::get('resume/(:any?)', 'home@resume');
 Route::get('print/', 'home@print');
 
-Route::get('login', array('as'=>'login', 'uses'=>'users@login'));
+Route::get('login/(:any?)', array('as'=>'login', 'uses'=>'users@login'));
 
 //Detect automatically
 Route::controller(Controller::detect());

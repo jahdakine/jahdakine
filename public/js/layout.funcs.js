@@ -13,6 +13,7 @@
 			colortoggle = $("#color-toggle"),
 			top_link = $('#top-link'),
 			menu_commands = $('#menu-commands'),
+			signon = $('#signon'),
 			aside = $("#aside"),
 			aside_share = $("#aside-share"),
 			nick_span = $("#nickSpan"),
@@ -24,6 +25,7 @@
 			flexFooter = 0;
 /*address noscripts*/
 	linktoggle.removeClass('hide');
+	signon.removeClass('hide');
 	colortoggle.removeClass('hide');
 	menu_commands.removeClass('hide');
 	nick_span.removeClass('hide');
