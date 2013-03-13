@@ -44,12 +44,13 @@
 	<h4>Skills</h4>
 	<div id="wrapper1">
 		<div id="skills">
-			<ul>
+			<ul id="skills-links" class="hide">
 				<li><a href="#skills-1">Solid Experience</a></li>
 				<li><a href="#skills-2">Training</a></li>
 				<li><a href="#skills-3">Some familiarity</a></li>
 			</ul>
 			<div id="skills-1">
+			<h5 class="h5nojs">Solid Experience</h5>
 			<ul>
 				<li>ColdFusion (3-10)</li>
 				<li>Database Design</li>
@@ -62,6 +63,7 @@
 			</ul>
 			</div><!-- // skills-1 -->
 			<div id="skills-2">
+				<h5 class="h5nojs">Training</h5>
 				<ul>
 					<li>PHP (4 &amp; 5)</li>
 					<li>MAMP</li>
@@ -76,6 +78,7 @@
 				</ul> 
 			</div><!-- // skills-2 -->
 			<div id="skills-3">
+				<h5 class="h5nojs">Some familiarity</h5>
 			  <ul>
 					<li>BASH</li>
 					<li>Backbone</li>
@@ -92,14 +95,15 @@
 	<h4>Current Training</h4>
 	<div id="wrapper2">
 		<div id="courses">
-			<ul>
+			<ul id="courses-links" class="hide">
 				<li><a href="#courses-1">Completed Courses</a></li>
 				<li><a href="#courses-2">Current Courses</a></li>
 				<li><a href="#courses-3">Projects</a></li>
 			</ul>
 			<div id="courses-1">
+				<h5 class="h5nojs">Completed Courses</h5>
 				<div>
-					<h4>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h4>
+					<h6>{{ HTML::link("https://tutsplus.com/", "Tuts+ Premium&#8663;", array("title"=>"Open Tuts+ Premium in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h6>
 					<ul>
 						<li>Learning MongoDB</li>
 						<li>Hands-On: Build a Practical Web Application with Laravel</li>
@@ -120,7 +124,7 @@
 					</ul>
 				</div>
 				<div>
-					<h4>{{ HTML::link("http://www.codeschool.com/", "Code School&#8663;", array("title"=>"Open Code School in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h4>	
+					<h6>{{ HTML::link("http://www.codeschool.com/", "Code School&#8663;", array("title"=>"Open Code School in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h6>	
 					<ul>
 						<li>Try Ruby</li>
 						<li>Try jQuery</li>
@@ -130,8 +134,9 @@
 				</div>				
 			</div><!-- // courses-1 -->
 			<div id="courses-2">
+				<h5 class="h5nojs">Current Courses</h5>
 				<div>
-					<h4>Tuts Premium</h4>	
+					<h6>Tuts Premium</h6>	
 					<ul>
 						<li>Connected to the Backbone</li>
 						<li>jQuery Plugin Development: Best Practices</li>
@@ -142,7 +147,7 @@
 					</ul> 
 				</div>
 				<div>
-					<h4>Code School</h4>	
+					<h6>Code School</h6>	
 					<ul>
 						<li>Try R</li>
 						<li>CSS Cross Country</li>
@@ -152,6 +157,7 @@
 				</div>
 			</div><!-- // courses-2 -->
 			<div id="courses-3">
+				<h5 class="h5nojs">Projects</h5>
 			  <ul>
 					<li>Online CV (this site)</li>
 					<li>Gnerdl (consulting - requirements gathering)</li>
