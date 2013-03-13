@@ -9,7 +9,7 @@
 			help = $("#help");
 /*address noscripts*/
 helper.addClass("hide");
-help.removeClass("hide");
+help.removeClass("hidden");
 /*hide/show popup help*/
 	help.on('click', function(e) {
 		e.preventDefault();

@@ -191,7 +191,7 @@ ul.drop li:hover > ul { visibility: visible }
   height:1px;
   overflow:hidden;
 }
-.hide { display:none !important; }
+.hide { display:none; }
 .display{ position:relative; }
 .transparent { opacity: 0 }
 .to-right { float:right !important; }
