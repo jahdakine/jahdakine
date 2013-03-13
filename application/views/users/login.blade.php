@@ -21,7 +21,8 @@
 			<div class="control-group" id="username1-group">
 		    <div class="controls">  	
 		    	{{ Form::label("username1", "Username", array("class"=>"access-link"))}}
-					<div class="input-append">
+					<div class="input-append input-prepend">
+						<span class="add-on"><i class="icon-user"></i></span>
 						{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1")) }}
 						<span class="add-on"><a href="#" title="USERNAME must be between 4 and 16 chars and may not begin with a number."><i class="icon-question-sign"></i></a></span>
 					</div>
@@ -31,7 +32,8 @@
 			<div class="control-group" id="password1-group">
 		    <div class="controls">
 		    	{{ Form::label("password1", "Password", array("class"=>"access-link"))}}
-		    	<div class="input-append">
+		    	<div class="input-append input-prepend">
+		  			<span class="add-on"><i class="icon-lock"></i></span>
 						{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1")) }}		
 						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
 					</div>			
@@ -69,29 +71,44 @@
 		  {{ Form::label("agree", "I agree to the terms of the user-agreement and privacy policy", array("class"=>"access-link"))}}		    	
 			<div class="control-group" id="fname-group">
 		    <div class="controls">
-		    	{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname")) }}
+		    	<div class="input-append">
+			    	{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname")) }}
+			    	<span class="add-on"><a href="#" title="FIRST NAME must be between 2 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
+					</div>	
 					<span class="help-inline" id="fname-status"></span>
 		    </div>
 		  </div>
 			<div class="control-group" id="lname-group">
 		    <div class="controls">
-					{{ Form::text('lname', Input::old('lname'), array("placeholder"=>"Last name", "id"=>"lname")) }}
+		    	<div class="input-append">
+						{{ Form::text('lname', Input::old('lname'), array("placeholder"=>"Last name", "id"=>"lname")) }}
+						<span class="add-on"><a href="#" title="LAST NAME must be between 2 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
+					</div>	
 					<span class="help-inline" id="lname-status"></span>
 		    </div>
 		  </div>		  
 			<div class="control-group" id="username2-group">
 		    <div class="controls">
-			    <div class="input-append">
+			    <div class="input-append input-prepend">
+			    	<span class="add-on"><i class="icon-user"></i></span>
 						{{ Form::text('username2', Input::old('username'), array("placeholder"=>"Username", "id"=>"username2")) }}
-						<span class="add-on"><i class="icon-user"></i></span>
+						<span class="add-on"><a href="#" title="USERNAME must be between 6 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 					<span class="help-inline" id="username2-status"></span>
 		    </div>
 		  </div>
 		  <div class="control-group" id="password2-group">
 		  	<div class="controls">
-					{{ Form::password('password2', array("placeholder"=>"Password", "id"=>"password2", "maxlength"=>"16")) }}
-					{{ Form::password('c_password', array("placeholder"=>"Confirm password", "id"=>"c_password")) }}
+		  		<div class="input-append input-prepend">
+		  			<span class="add-on"><i class="icon-lock"></i></span>
+						{{ Form::password('password2', array("placeholder"=>"Password", "id"=>"password2", "maxlength"=>"16")) }}
+						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
+			    </div>
+			    <div class="input-append input-prepend">
+			    	<span class="add-on"><i class="icon-ok"></i></span>
+						{{ Form::password('c_password', array("placeholder"=>"Confirm password", "id"=>"c_password")) }}
+						<span class="add-on"><a href="#" title="CONFIRM PASSWORD must exactly match PASSWORD."><i class="icon-question-sign"></i></a></span>
+			    </div>
 					<span class="help-inline" id="password2-status"></span>
 		  		<div id="bars" class="progress-info" style="width:220px;margin-bottom:0;">
 				    <div id="bar" class="bar" style="width: 0"></div>
@@ -101,9 +118,10 @@
 		  </div>	
 		  <div class="control-group" id="email-group">				
 		    <div class="controls">
-			    <div class="input-append">
-				    {{ Form::text('email', '', array("placeholder"=>"Email address", "class"=>"input-xlarge", "id"=>"email")) }} 
+			    <div class="input-append input-prepend">
 				    <span class="add-on"><i class="icon-envelope"></i></span>
+				    {{ Form::text('email', '', array("placeholder"=>"Email address", "class"=>"input-xlarge", "id"=>"email")) }} 
+				    <span class="add-on"><a href="#" title="EMAIL ADDRESS must be between 7 and 100 characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 			    <span class="help-inline" id="email-status"></span>
 		    </div>

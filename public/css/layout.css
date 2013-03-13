@@ -115,10 +115,13 @@ a.href-orig:hover {
 }  
 .signon { 
   text-decoration:none;
-  background-color:#3dc1ff;
-  color: #000;
+  background: -webkit-linear-gradient(bottom, #81adcb, #ccc 70%);
+  background: -moz-linear-gradient(bottom, #81adcb, #ccc 70%);
+  background: -o-linear-gradient(bottom, #81adcb, #ccc 70%);
+  background: -ms-linear-gradient(bottom, #81adcb, #ccc 70%);
+  background: linear-gradient(bottom, #81adcb, #ccc 70%);    
   padding:1px 9px;
-  border: 2px solid #2972A3;
+  border: 2px solid #3dc1ff;
   border-radius: 15px;
   -webkit-box-shadow: 6px 6px 10px #a72331;
   box-shadow: 4px 4px 4px #2972A3;
