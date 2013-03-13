@@ -1,0 +1,1 @@
+../../application/views/home/partials/thin_film_partnerships.php

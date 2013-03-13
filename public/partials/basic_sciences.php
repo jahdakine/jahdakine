@@ -1,0 +1,1 @@
+../../application/views/home/partials/basic_sciences.php

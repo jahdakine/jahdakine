@@ -1,0 +1,1 @@
+../../application/views/home/partials/one_voice_~_many_paths.php

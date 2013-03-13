@@ -1,0 +1,1 @@
+../../application/views/home/partials/nrel_now.php
