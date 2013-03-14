@@ -183,8 +183,8 @@
 				in the current window, use the <span class="nojs" title="Requires Javascript!"><em>Commands|Linking</em> function</span> and your setting will be saved for future visits thanks to Local Storage. I originally designed 
 				this site with lower contrast, color coordinated links. If you don't mind that, try the <span class="nojs" title="Requires Javascript!"><em>Commands|Contrast</em> function</span> to get a nicer look 
 				(this does not pass Section 503 contrast standards). While you're poking around, check out my interactive  
-				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun (audio event - 
-				<img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-middle"/>volume alert) or jump over to the 
+				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun (audio event - volume alert
+				<img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-ttop"/>) or jump over to the 
 				{{ HTML::link("home/technology", "Technology page", array("class"=>"href")) }} to see more of what makes
 				this site tick.
 			</p>
@@ -234,9 +234,9 @@
 			Preload images?
 			security check
 			check on legacy and IE
-			bug in textlist - 40px padding-left
-			bug in LS between page loads
-			rewrite js using backbone
+			rewrite JS using backbone
+			rewrite CSS using SASS or LESS
+			write a test harness for PHP and JS
 			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->

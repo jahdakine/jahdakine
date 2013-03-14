@@ -207,7 +207,7 @@
     if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) strength += 1;
 		function setBars(el,str,txt,bar) {
 			if(bar) {
-				el.parent().removeClass().addClass('progress '+bar);
+				el.parent().removeClass().addClass('progress '+bar).css({'width':'549px','height':'26px','margin-bottom':'0'});
 			}
 			el.css("width",str).text(txt);
 		}

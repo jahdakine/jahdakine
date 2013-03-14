@@ -216,6 +216,7 @@ ul.drop li:hover > ul { visibility: visible }
 .to-left { float:left !important; }
 .to-center { text-align: center; }
 .to-top { vertical-align: top; }
+.to-ttop { vertical-align: text-top; }
 .to-middle { vertical-align: middle; }
 .to-bottom { vertical-align: bottom; }
 .to-tbottom { vertical-align: text-bottom; }

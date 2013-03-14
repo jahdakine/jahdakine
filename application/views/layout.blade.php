@@ -109,7 +109,7 @@
 						<a class="addthis_button_preferred_3"></a>
 						<a class="addthis_button_preferred_4"></a>
 						<a class="addthis_button_compact"></a>
-						<a class="addthis_counter addthis_bubble_style"></a>
+						<a class="addthis_counter addthis_bubble_style" style="margin-bottom: 12px;"></a>
 					</div>
 				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>

@@ -20,10 +20,9 @@
 			{{ Form::token() }}
 			<div class="control-group" id="username1-group">
 		    <div class="controls">  	
-		    	{{ Form::label("username1", "Username", array("class"=>"access-link"))}}
 					<div class="input-append input-prepend">
 						<span class="add-on"><i class="icon-user"></i></span>
-						{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1")) }}
+						{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1", "autocomplete"=>"off")) }}
 						<span class="add-on"><a href="#" title="USERNAME must be between 4 and 16 chars and may not begin with a number."><i class="icon-question-sign"></i></a></span>
 					</div>
 					<span class="help-inline" id="username1-status"></span>
@@ -31,10 +30,9 @@
 		  </div>
 			<div class="control-group" id="password1-group">
 		    <div class="controls">
-		    	{{ Form::label("password1", "Password", array("class"=>"access-link"))}}
 		    	<div class="input-append input-prepend">
 		  			<span class="add-on"><i class="icon-lock"></i></span>
-						{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1")) }}		
+						{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1", "autocomplete"=>"off")) }}		
 						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
 					</div>			
 					<span class="help-inline" id="password1-status"></span>
@@ -46,14 +44,16 @@
 			{{ Form::label("persist", "Keep me signed in", array("class"=>"access-link"))}}
 			{{ Form::checkbox('persist', "1", true ,array("style"=>"vertical-align:text-top", "id"=>"persist")) }} Keep me signed in
 			</p>
-			<p class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</p>
+			<p class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom" />&nbsp;All fields are required</p>
+			{{ Form::label("username1", "Username", array("class"=>"access-link"))}}
+			{{ Form::label("password1", "Password", array("class"=>"access-link"))}}
 			{{ Form::close() }}
 		</fieldset>
 		<fieldset>
 			<legend>-or-</legend>
 			Connect using a service:<br/>
 			<a id="so-google" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Google+ account instead of supplying a new set of credentials">Sign in with Google+</a>
-			<a id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Facebook account instead of supplying a new set of credentials">Sign in with Facebook</a><br/>
+			<a id="so-facebook" onClick="alert('CLICK STATUS ALERT:\n\nNot really');" class="hide-error1 access-link href" title="Use your Facebook account instead of supplying a new set of credentials">Sign in with Facebook</a><br style="margin-bottom:1em;"/>
 		</fieldset>
 	</div>
 	<div id="rs" class="hide sign-reg">
@@ -61,18 +61,11 @@
 	  <legend>Register</legend>
 			<p style="margin-top:0;">Already registered? {{ HTML::link("#", "Sign on!", array("title"=>"Switch to sign on form", "id" => "reg-sign", "class"=>"href")) }}&nbsp;<i class="icon-pencil"></i></p>
 			{{ Form::open('404','POST',array("class" => "")) }}
-			{{ Form::token() }}
-			{{ Form::label("fname", "First name", array("class"=>"access-link"))}}
-			{{ Form::label("lname", "Last name", array("class"=>"access-link"))}}
-			{{ Form::label("username2", "Username", array("class"=>"access-link"))}}		    	
-		  {{ Form::label("password2", "Password", array("class"=>"access-link"))}}		    	
-		  {{ Form::label("c_password", "Confirm password", array("class"=>"access-link"))}}		    	
-			{{ Form::label("email", "Email", array("class"=>"access-link"))}}		    	
-		  {{ Form::label("agree", "I agree to the terms of the user-agreement and privacy policy", array("class"=>"access-link"))}}		    	
+			{{ Form::token() }}	    	
 			<div class="control-group" id="fname-group">
 		    <div class="controls">
 		    	<div class="input-append">
-			    	{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname")) }}
+			    	{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname", "autocomplete"=>"off")) }}
 			    	<span class="add-on"><a href="#" title="FIRST NAME must be between 2 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
 					</div>	
 					<span class="help-inline" id="fname-status"></span>
@@ -81,7 +74,7 @@
 			<div class="control-group" id="lname-group">
 		    <div class="controls">
 		    	<div class="input-append">
-						{{ Form::text('lname', Input::old('lname'), array("placeholder"=>"Last name", "id"=>"lname")) }}
+						{{ Form::text('lname', Input::old('lname'), array("placeholder"=>"Last name", "id"=>"lname", "autocomplete"=>"off")) }}
 						<span class="add-on"><a href="#" title="LAST NAME must be between 2 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
 					</div>	
 					<span class="help-inline" id="lname-status"></span>
@@ -91,7 +84,7 @@
 		    <div class="controls">
 			    <div class="input-append input-prepend">
 			    	<span class="add-on"><i class="icon-user"></i></span>
-						{{ Form::text('username2', Input::old('username'), array("placeholder"=>"Username", "id"=>"username2")) }}
+						{{ Form::text('username2', Input::old('username'), array("placeholder"=>"Username", "id"=>"username2", "autocomplete"=>"off")) }}
 						<span class="add-on"><a href="#" title="USERNAME must be between 6 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 					<span class="help-inline" id="username2-status"></span>
@@ -101,17 +94,17 @@
 		  	<div class="controls">
 		  		<div class="input-append input-prepend">
 		  			<span class="add-on"><i class="icon-lock"></i></span>
-						{{ Form::password('password2', array("placeholder"=>"Password", "id"=>"password2", "maxlength"=>"16")) }}
+						{{ Form::password('password2', array("placeholder"=>"Password", "id"=>"password2", "maxlength"=>"16", "autocomplete"=>"off")) }}
 						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 			    <div class="input-append input-prepend">
 			    	<span class="add-on"><i class="icon-ok"></i></span>
-						{{ Form::password('c_password', array("placeholder"=>"Confirm password", "id"=>"c_password")) }}
+						{{ Form::password('c_password', array("placeholder"=>"Confirm password", "id"=>"c_password", "autocomplete"=>"off")) }}
 						<span class="add-on"><a href="#" title="CONFIRM PASSWORD must exactly match PASSWORD."><i class="icon-question-sign"></i></a></span>
 			    </div>
 					<span class="help-inline" id="password2-status"></span>
-		  		<div id="bars" class="progress-info" style="width:220px;margin-bottom:0;">
-				    <div id="bar" class="bar" style="width: 0"></div>
+		  		<div id="bars" class="progress-info">
+				    <div id="bar" class="bar"></div>
 	  			</div>
 					<span class="small">Password must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters.</span>
 		    </div>
@@ -120,7 +113,7 @@
 		    <div class="controls">
 			    <div class="input-append input-prepend">
 				    <span class="add-on"><i class="icon-envelope"></i></span>
-				    {{ Form::text('email', '', array("placeholder"=>"Email address", "class"=>"input-xlarge", "id"=>"email")) }} 
+				    {{ Form::text('email', '', array("placeholder"=>"Email address", "class"=>"input-xlarge", "id"=>"email", "autocomplete"=>"off")) }} 
 				    <span class="add-on"><a href="#" title="EMAIL ADDRESS must be between 7 and 100 characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 			    <span class="help-inline" id="email-status"></span>
@@ -138,6 +131,13 @@
 	    <p class="required"><img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-tbottom"/>&nbsp;All fields are required</p><br/>
 			{{ Form::submit('Submit', array("class"=>"btn btn-primary href", "style" =>"margin-top:1em;", "id"=>"rs_sub", "title" => "Not functional - for show only")) }}
 			{{ Form::reset('Reset', array("class"=>"btn btn-warning href", "style" =>"margin-top:1em;", "title" => "Reset the form", "id"=>"rs_reset")) }}
+			{{ Form::label("fname", "First name", array("class"=>"access-link"))}}
+			{{ Form::label("lname", "Last name", array("class"=>"access-link"))}}
+			{{ Form::label("username2", "Username", array("class"=>"access-link"))}}		    	
+		  {{ Form::label("password2", "Password", array("class"=>"access-link"))}}		    	
+		  {{ Form::label("c_password", "Confirm password", array("class"=>"access-link"))}}		    	
+			{{ Form::label("email", "Email", array("class"=>"access-link"))}}		    	
+		  {{ Form::label("agree", "I agree to the terms of the user-agreement and privacy policy", array("class"=>"access-link"))}}	
 			{{ Form::close() }}
 		</fieldset>
 	</div>	

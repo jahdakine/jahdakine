@@ -43,10 +43,10 @@
 			<div id="projects">
 				<ul id="tab-links" class="hide">
 					<li><a class="clients href" href="#contracts">Contracts&nbsp;</a></li>
-					<li><a class="clients href" href="#nrel">NREL&nbsp;<abbr title="National Renewable Energy Laboratory">(?)</abbr></a></li>
-					<li><a class="clients href" href="#eere">EERE&nbsp;<abbr title="Energy Efficiency and Renewable Energy Network">(?)</abbr></a></li>
-					<li><a class="clients href" href="#source">Source&nbsp;<abbr title="NREL's Intranet">(?)</abbr></a></li>				
-					<li><a class="clients href" href="#doe">DOE&nbsp;<abbr title="Department of Energy">(?)</abbr></a></li>	
+					<li><a class="clients href" href="#nrel">NREL&nbsp;<abbr title="National Renewable Energy Laboratory"><i class="icon-question-sign"></i></abbr></a></li>
+					<li><a class="clients href" href="#eere">EERE&nbsp;<abbr title="Energy Efficiency and Renewable Energy Network"><i class="icon-question-sign"></i></abbr></a></li>
+					<li><a class="clients href" href="#source">Source&nbsp;<abbr title="NREL's Intranet"><i class="icon-question-sign"></i></abbr></a></li>				
+					<li><a class="clients href" href="#doe">DOE&nbsp;<abbr title="Department of Energy"><i class="icon-question-sign"></i></abbr></a></li>	
 					<li><a class="clients href" href="#volunteer">Volunteer&nbsp;</a></li>	
 				</ul>
 				<div id="contracts">
@@ -57,7 +57,7 @@
 					<li><a href="project/usda/capsnoimg" title="Show description and screenshots" class="project no-image href">USDA</a></li>
 					<li><a href="project/american_solar_challenge/null/" title="Show description and screenshots" class="project href">American Solar Challenge</a></li>
 					<li><a href="project/denver_public_library/noimg" title="Show description and screenshots" class="project no-image href">Denver Public Library</a></li>
-					<li><a href="project/aia/capsnoimg" title="Show description and screenshots" class="project no-image href">AIA</a>&nbsp;<abbr title="American Institute of Architects">(?)</abbr></li>
+					<li><a href="project/aia/capsnoimg" title="Show description and screenshots" class="project no-image href">AIA</a>&nbsp;<abbr title="American Institute of Architects"><i class="icon-question-sign"></i></abbr></li>
 				</ul>
 				<section id="contractsFrame" class="box hide"></section>
 				</div><!-- // contracts -->			
