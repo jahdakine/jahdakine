@@ -97,7 +97,7 @@
 						</tbody>
 					</table>
 					<table>							
-						<caption class="heading"><span class="tool" id="mac"></span>Mac OSX Snow Leopard</caption>
+						<caption class="heading"><span class="tool mac"></span>Mac OSX Snow Leopard</caption>
 						<thead>
 							<tr>
 								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
@@ -110,7 +110,7 @@
 						</tbody>
 					</table>
 					<table>							
-						<caption class="heading"><span class="tool" id="mac"></span>Mac OSX Lion</caption>
+						<caption class="heading"><span class="tool mac"></span>Mac OSX Lion</caption>
 						<thead>
 							<tr>
 								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
@@ -123,7 +123,7 @@
 						</tbody>
 					</table>
 					<table>							
-						<caption class="heading"><span class="tool" id="mac"></span>Mac OSX Mountain Lion</caption>
+						<caption class="heading"><span class="tool mac"></span>Mac OSX Mountain Lion</caption>
 						<thead>				
 							<tr>
 								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>

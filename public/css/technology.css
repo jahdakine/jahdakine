@@ -11,7 +11,7 @@
   -ms-box-align: center;
   box-align: center; 
 }
-#wxp, #w7, #w8, #mac, .ff, .saf, .chr, .ie, .op, .iem {
+#wxp, #w7, #w8, .mac, .ff, .saf, .chr, .ie, .op, .iem {
   text-decoration:none;
   background-image:url('/img/browser-spritesheet.png');
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 #wxp { background-position: 0 -339px; width:33px; height:25px; text-indent: 4px;}
 #w7 { background-position: 0 -313px; width:33px; height:25px; text-indent: 4px;}
 #w8 { background-position: 0 -257px; width:33px; height:25px; text-indent: 4px;}
-#mac { background-position: 0 -286px; width:33px; height:25px; text-indent: 4px;}
+.mac { background-position: 0 -286px; width:33px; height:25px; text-indent: 4px;}
 .ff { background-position: 0 -123px; width:33px; height:33px; text-indent: 4px;}
 .saf { background-position: 0 -220px; width:33px; height:33px; text-indent: 4px;}
 .chr { background-position: 0 -93px; width:33px; height:33px; text-indent: 4px;}
