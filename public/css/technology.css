@@ -38,7 +38,7 @@
 }
 
 table { border:0; width: 100%;}
-caption { font-size: 120%; font-weight: bold; margin-top:1em; color:#111; }
-th { font-size: 80%; text-align: left; background-color:#aaa; }
+caption { font-size: 120%; font-weight: bold; margin-top:1em; }
+th { font-size: 80%; text-align: left; background-color:#aaa; color:#111; }
 td { background-color:#eee; font-size: 120%; padding:3px;}
 .border { background-color:#ccc; border: 1px solid #999; width:35%; padding:1em; }
