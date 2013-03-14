@@ -1,7 +1,7 @@
 /*
 | Tools images
 */
-#yslow, #w3c, #html5, #wave {
+#yslow, #w3c, #html5, #wave, #bstack {
   text-decoration:none;
   background-image:url('/img/tools-spritesheet.png');
   background-repeat: no-repeat;
@@ -11,11 +11,34 @@
   -ms-box-align: center;
   box-align: center; 
 }
+#wxp, #w7, #w8, #mac, #ff, #saf, #chr, #ie, #op {
+  text-decoration:none;
+  background-image:url('/img/browser-spritesheet.png');
+  background-repeat: no-repeat;
+  display: -webkit-box; display: -moz-box; display: box;
+  vertical-align: middle;
+}
 #yslow { background-position: 0 0; width:42px; height:28px; text-indent: 40px;}
 #w3c { background-position: 0 -32px; width:87px; height:28px; text-indent: 85px;}
 #html5 { background-position: 0 -65px; width:87px; height:34px; text-indent: 95px;}
 #wave { background-position: 0 -111px; width:164px; height:34px; text-indent: 165px;}
+#bstack { background-position: 0 -149px; width:42px; height:36px; text-indent: 44px;}
+#wxp { background-position: 0 -339px; width:33px; height:25px; text-indent: 4px;}
+#w7 { background-position: 0 -313px; width:33px; height:25px; text-indent: 4px;}
+#w8 { background-position: 0 -257px; width:33px; height:25px; text-indent: 4px;}
+#mac { background-position: 0 -286px; width:33px; height:25px; text-indent: 4px;}
+#ff { background-position: 0 -123px; width:33px; height:33px; text-indent: 4px;}
+#saf { background-position: 0 -220px; width:33px; height:33px; text-indent: 4px;}
+#chr { background-position: 0 -93px; width:33px; height:33px; text-indent: 4px;}
+#ie { background-position: 0 -188px; width:33px; height:33px; text-indent: 4px;}
+#op { background-position: 0 -155px; width:33px; height:33px; text-indent: 4px;}
 
 .bottom-shim {
   padding-bottom: 10px;
 }
+
+table { border:0; width: 100%;}
+caption { font-size: 120%; font-weight: bold; margin-top:1em; }
+th { font-size: 80%; text-align: left; background-color:#aaa; }
+td { background-color: #eee; font-size: 120%; padding:3px;}
+.border { background-color: #ccc; border: 1px solid #999; width: 35%; padding: 1em;}
