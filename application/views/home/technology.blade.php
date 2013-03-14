@@ -28,7 +28,7 @@
 				<li>
 					{{ HTML::link("http://yslow.org/", "YSlow&#8663;", array("id"=>"yslow", "title"=>"Open YSlow in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }} 
 					<ul>
-						<li class="bottom-shim">Score: 88 (B grade)</li>
+						<li class="bottom-shim">Score: 90 (A grade)</li>
 					</ul>
 				</li>
 				<li>
@@ -56,86 +56,86 @@
 					</ul>	
 				</li>		
 			  <li class="nolist">
-			  	<div align="center" class="border">
-					<table border="0" summary="Windows XP tested browsers and versions">
+			  	<div class="border">
+					<table>
 						<caption class="heading"><span class="tool" id="wxp"></span>Windows XP</caption>
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool" id="ff"></span>Firefox</th><th scope="col"><span class="tool" id="saf"></span>Safari</th><th scope="col"><span class="tool" id="chr"></span>Chrome</th><th scope="col"><span class="tool" id="ie"></span>IE</th><th scope="col"><span class="tool" id="op"></span>Opera</th>
+								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th scope="col"><span class="tool ie"></span>IE</th><th scope="col"><span class="tool op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>
 							<tr>
-								<td scope="row">14-18</td><td>4*,5.1</td><td>All*</td><td><strike>6-8</strike></td><td>11-12.11*</td>
+								<td>14-18</td><td>4*,5.1</td><td>All*</td><td><span class="inop">6-8</span></td><td>11-12.11*</td>
 							</tr>
 						</tbody>
 					</table>
-					<table border="0" summary="Windows 7 tested browsers and versions">
+					<table>
 						<caption class="heading"><span class="tool" id="w7"></span>Windows 7</caption>							
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool" id="ff"></span>Firefox</th><th scope="col"><span class="tool" id="saf"></span>Safari</th><th scope="col"><span class="tool" id="chr"></span>Chrome</th><th scope="col"><span class="tool" id="ie"></span>IE</th><th scope="col"><span class="tool" id="op"></span>Opera</th>
+								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th scope="col"><span class="tool ie"></span>IE</th><th scope="col"><span class="tool op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>							
 							<tr>
-								<td scope="row">15-18</td><td>4*,5.1</td><td>All*</td><td><strike>8,9</strike></td><td>10-11.6*,12.1,12.11</td>
+								<td>15-18</td><td>4*,5.1</td><td>All*</td><td><span class="inop">8,9</span></td><td>10-11.6*,12.1,12.11</td>
 							</tr>							
 						</tbody>
 					</table>
-					<table border="0" summary="Windows 8 tested browsers and versions">
+					<table>
 						<caption class="heading"><span class="tool" id="w8"></span>Windows 8</caption>
 						<thead>													
 							<tr>
-								<th scope="col"><span class="tool" id="ff"></span>Firefox</th><th scope="col"><span class="tool" id="saf"></span>Safari</th><th scope="col"><span class="tool" id="chr"></span>Chrome</th><th scope="col"><span class="tool" id="ie"></span>IE</th><th scope="col"><span class="tool" id="op"></span>Opera</th>
+								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th scope="col"><span class="tool ie"></span>IE</th><th scope="col"><span class="tool op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>							
 							<tr>
-								<td scope="row">16-19</td><td>5.1</td><td>22*</td><td><strike>10</strike></td><td><strike>12,12.1</strike></td>
+								<td>16-19</td><td>5.1</td><td>22*</td><td><span class="inop">10</span></td><td><span class="inop">12,12.1</span></td>
 							</tr>
 						</tbody>
 					</table>
-					<table border="0" summary="Mac OSX Snow Leopard tested browsers and versions">							
+					<table>							
 						<caption class="heading"><span class="tool" id="mac"></span>Mac OSX Snow Leopard</caption>
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool" id="ff"></span>Firefox</th><th scope="col"><span class="tool" id="saf"></span>Safari</th><th scope="col"><span class="tool" id="chr"></span>Chrome</th><th scope="col"><span class="tool" id="op"></span>Opera</th>
+								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>									
 							<tr>
-								<td scope="row">19</td><td>4-5.1*</td><td><strike>25</strike></td><td>?</td>
+								<td>19</td><td>4-5.1*</td><td><span class="inop">25</span></td><td>?</td><td>?</td>
 							</tr>		
 						</tbody>
 					</table>
-					<table border="0" summary="Mac OSX Lion tested browsers and versions">							
+					<table>							
 						<caption class="heading"><span class="tool" id="mac"></span>Mac OSX Lion</caption>
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool" id="ff"></span>Firefox</th><th scope="col"><span class="tool" id="saf"></span>Safari</th><th scope="col"><span class="tool" id="chr"></span>Chrome</th><th scope="col"><span class="tool" id="op"></span>Opera</th>
+								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>
 							<tr>
-								<td scope="row">19</td><td>6*</td><td>25*</td><td>?</td>								
+								<td>19</td><td>6*</td><td>25*</td><td>?</td><td>12.5*</td>								
 							</tr>					
 						</tbody>
 					</table>
-					<table border="0" summary="Mac OSX Mountain Lion tested browsers and versions">							
+					<table>							
 						<caption class="heading"><span class="tool" id="mac"></span>Mac OSX Mountain Lion</caption>
 						<thead>				
 							<tr>
-								<th scope="col"><span class="tool" id="ff"></span>Firefox</th><th scope="col"><span class="tool" id="saf"></span>Safari</th><th scope="col"><span class="tool" id="chr"></span>Chrome</th><th scope="col"><span class="tool" id="op"></span>Opera</th>
+								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>									
 							<tr>
-								<td scope="row">?</td><td>?</td><td>?</td><td>?</td>
+								<td>?</td><td>?</td><td>?</td><td>?</td><td>?</td>
 							</tr>																						
 							</tbody>
 					</table>
-					<p>Key: *minor acceptable issue(s), <strike>inoperable</strike>, choose another browser or version. ? not tested.</p>
+					<p>Key: *minor acceptable issue(s), <span class="inop">inoperable</span>, choose another browser or version. ? not tested.</p>
 				</div>
 				</li>
 			</ul>

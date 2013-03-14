@@ -81,7 +81,7 @@
 		@yield('top')
 		@yield('controls')
 		<div role="main" class="main" id="main">
-			<a href="#main" class="hidden">Skip legend</a>
+			<a href="#skipto" class="hidden">Skip legend</a>
 			<aside id="legend">
 				<h4 class="to-center reset">Legend</h4>
 					<ul class="nolist small">
@@ -111,13 +111,11 @@
 						<a class="addthis_button_compact"></a>
 						<a class="addthis_counter addthis_bubble_style" style="margin-bottom: 12px;"></a>
 					</div>
-				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
 				<!-- AddThis Button END -->
 				@yield('aside')
 			</aside><!-- // aside -->
 			@yield('main')
-			<div id="main" class="clear-fix pad"></div>
+			<div id="skipto" class="clear-fix pad"></div>
 			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top of Page</a>
 		</div><!-- // content -->
 		<footer class="copy">
@@ -149,6 +147,8 @@
 	-->
 	{{ HTML::script('js/vendor/monolith.js') }}	
 	{{ HTML::script('js/layout.funcs.js') }}
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
  	<!--<script src="&lt;?=Minifier::make(array('//js/vendor/jquery-1.8.2.min.js','//js/vendor/jquery-ui-1.9.2.custom.min.js','//js/vendor/jquery.qtip2.min.js','//js/vendor/jquery.carouFredSel-6.2.0-packed.js','//js/vendor/helper-plugins/jquery.touchSwipe.min.js','//js/vendor/jquery.center.min.js','//js/layout.funcs.js'))?>" type="text/javascript"> -->	
 	@yield('scripts')
 </body>

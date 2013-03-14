@@ -11,7 +11,7 @@
   -ms-box-align: center;
   box-align: center; 
 }
-#wxp, #w7, #w8, #mac, #ff, #saf, #chr, #ie, #op {
+#wxp, #w7, #w8, #mac, .ff, .saf, .chr, .ie, .op, .iem {
   text-decoration:none;
   background-image:url('/img/browser-spritesheet.png');
   background-repeat: no-repeat;
@@ -27,18 +27,20 @@
 #w7 { background-position: 0 -313px; width:33px; height:25px; text-indent: 4px;}
 #w8 { background-position: 0 -257px; width:33px; height:25px; text-indent: 4px;}
 #mac { background-position: 0 -286px; width:33px; height:25px; text-indent: 4px;}
-#ff { background-position: 0 -123px; width:33px; height:33px; text-indent: 4px;}
-#saf { background-position: 0 -220px; width:33px; height:33px; text-indent: 4px;}
-#chr { background-position: 0 -93px; width:33px; height:33px; text-indent: 4px;}
-#ie { background-position: 0 -188px; width:33px; height:33px; text-indent: 4px;}
-#op { background-position: 0 -155px; width:33px; height:33px; text-indent: 4px;}
+.ff { background-position: 0 -123px; width:33px; height:33px; text-indent: 4px;}
+.saf { background-position: 0 -220px; width:33px; height:33px; text-indent: 4px;}
+.chr { background-position: 0 -93px; width:33px; height:33px; text-indent: 4px;}
+.ie { background-position: 0 -187px; width:33px; height:33px; text-indent: 4px;}
+.op { background-position: 0 -155px; width:33px; height:33px; text-indent: 4px;}
+.iem { background-position: 0 -365px; width:33px; height:33px; text-indent: 4px;}
 
 .bottom-shim {
   padding-bottom: 10px;
 }
 
-table { border:0; width: 100%;}
+table { width: 100%;}
 caption { font-size: 120%; font-weight: bold; margin-top:1em; }
 th { font-size: 80%; text-align: left; background-color:#aaa; color:#111; }
-td { background-color:#eee; font-size: 120%; padding:3px;}
-.border { background-color:#ccc; border: 1px solid #999; width:35%; padding:1em; }
+td { background-color:#fff; font-size: 120%; padding:3px; width:20%;}
+.border { background-color:#ddd; border: 1px solid #999; width:50%; padding:1em; min-width: 450px; text-align: center; }
+.inop { text-decoration: line-through; }
