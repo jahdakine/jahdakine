@@ -21,7 +21,7 @@
 			<p>
 				I have made every effort to create a smooth experience during your site visit. Here are some of the metrics and tools I've used to test various aspects of 
 				browser compatibility, page load times, accessibility, and responsiveness. This site is designed for a modern browser audience and works best with the latest Firefox, Safari, and Chrome browsers. 
-				It has not been tested and is not recommended for lower than Internet Explorer versions under 10.0. This is a free hosted environment and therefore the site is limited to 200 MB of RAM per instance
+				It has not been tested and is not recommended for Internet Explorer, but I am working on the issues. This is a free hosted environment and therefore the site is limited to 200 MB of RAM per instance
 				and 1 gigabyte of output for outbound data transfers. 
 			</p>
 			<ul class="nolist">
