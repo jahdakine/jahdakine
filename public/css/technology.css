@@ -42,5 +42,5 @@ table { width: 100%;}
 caption { font-size: 120%; font-weight: bold; margin-top:1em; }
 th { font-size: 80%; text-align: left; background-color:#aaa; color:#111; }
 td { background-color:#fff; font-size: 120%; padding:3px; width:20%;}
-.border { background-color:#ddd; border: 1px solid #999; width:97.5%; padding:1em; min-width: 320px; text-align: center; }
+.border { background-color:#ddd; border: 1px solid #999; margin-left:auto; margin-right:auto; width:80%; padding:1em; min-width: 320px; text-align: center; }
 .inop { text-decoration: line-through; }

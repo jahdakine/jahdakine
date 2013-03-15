@@ -87,19 +87,15 @@
 		e.preventDefault();
 		if(!ctrls.hasClass("transparent")) {
 			list_img.hide(); //hides images embedded in links
-			carousel.trigger("destroy", "origOrder");
-			list.removeClass("list-carousel");
-			list.addClass("list-text");
-			carousel.removeAttr("style");
+			carousel.trigger("destroy", "origOrder").removeAttr("style");
+			list.removeClass("list-carousel").addClass("list-text");
 			//add 3 col lis back in
 			block1.wrapAll('<ul id="t1" class="reset"></ul>');
 			block2.wrapAll('<ul id="t2"></ul>');
 			block3.wrapAll('<ul id="t3"></ul>');
 			ctrls.addClass("transparent");
 			menu_text.addClass("current hide").parent().addClass("current");
-			//menu_text.addClass("hide");
 			menu_graphics.removeClass("current hide").parent().removeClass("current");
-			// menu_graphics.removeClass("hide");
 			carousel_help.fadeOut("fast");
 			history.pushState('text','Home',url_no_params+'?state=text-list');
 		}
@@ -108,16 +104,13 @@
 	menu_graphics.on('click', function(e, num2Scroll, dir2Scroll) {
 		e.preventDefault();
 		if(list_img.css("display") !== "inline-table") {
-			list_img.css("display","inline-table"); //displays hidden images embedded in links
-			list_img.removeClass('hidden');
+			list_img.css("display","inline-table").removeClass('hidden'); //displays hidden images embedded in links
 			list.removeClass("list-text").addClass("list-carousel");
 			carousel_li.unwrap();
 			setCarousel(window.num2Scroll, window.dir2Scroll);
 			ctrls.removeClass("transparent").center({vertical: false});
 			menu_graphics.addClass("current hide").parent().addClass("current");
-			//menu_graphics.addClass("hide");
 			menu_text.removeClass("current hide").parent().removeClass("current");
-			//menu_text.removeClass("hide");
 			carousel_help.fadeIn(2000);
 			history.pushState('graphics','Home',url_no_params+'?state=img-list');
 		}
@@ -130,8 +123,7 @@
 			land_aside.fadeIn("slow");
 			legend.fadeIn("slow");
 		});
-		reset.addClass("current");
-		reset.parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
+		reset.addClass("current").parent().addClass("current"); //sets the parent li - otherwise hover color bleeds thru padding
 	});
 	/*note flipper */
 	note_flip.on('click', function(e) {
@@ -156,14 +148,12 @@
 	c1.on('click', function(e, num2Scroll, dir2Scroll) { //slow down num2Scroll
 		e.preventDefault();
 		if(window.num2Scroll > 1) {
-			carousel.trigger("configuration", ["scroll", window.num2Scroll-=1]);
-			carousel.trigger("play");
+			carousel.trigger("configuration", ["scroll", window.num2Scroll-=1], "play");
 		}
 	});
 	c2.on('click', function(e, num2Scroll, dir2Scroll) { //scroll backward
 		e.preventDefault();
-		carousel.trigger("configuration", ["direction", "left"]);
-		carousel.trigger("play");
+		carousel.trigger("configuration", ["direction", "left"], "play");
 	});
 	c3.on('click', function(e, num2Scroll, dir2Scroll) { //pause scroll
 		e.preventDefault();
@@ -179,15 +169,13 @@
 	});
 	c5.on('click', function(e) { //scroll forward
 		e.preventDefault();
-		carousel.trigger("configuration", ["direction", "right"]);
-		carousel.trigger("play");
+		carousel.trigger("configuration", ["direction", "right"], "play");
 	});
 	c6.on('click', function(e, num2Scroll, dir2Scroll) { //speed up scroll
 		e.preventDefault();
 		var numVisible = carousel.triggerHandler("configuration", "items.visible");
 		if(window.num2Scroll < numVisible) {
-			carousel.trigger("configuration", ["scroll", window.num2Scroll+=1]);
-			carousel.trigger("play");
+			carousel.trigger("configuration", ["scroll", window.num2Scroll+=1], "play");
 		}
 	});
 	/*!!!feed click handler - I'm sure there's a better way*/
