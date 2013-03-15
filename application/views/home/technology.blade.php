@@ -61,7 +61,7 @@
 						<caption class="heading"><span class="tool" id="wxp"></span>Windows XP</caption>
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th scope="col"><span class="tool ie"></span>IE</th><th scope="col"><span class="tool op"></span>Opera</th>
+								<th scope="col"><span class="ff"></span>Firefox</th><th scope="col"><span class="saf"></span>Safari</th><th scope="col"><span class="chr"></span>Chrome</th><th scope="col"><span class="ie"></span>IE</th><th scope="col"><span class="op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>
@@ -74,12 +74,12 @@
 						<caption class="heading"><span class="tool" id="w7"></span>Windows 7</caption>							
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th scope="col"><span class="tool ie"></span>IE</th><th scope="col"><span class="tool op"></span>Opera</th>
+								<th scope="col"><span class="ff"></span>Firefox</th><th scope="col"><span class="saf"></span>Safari</th><th scope="col"><span class="chr"></span>Chrome</th><th scope="col"><span class="ie"></span>IE</th><th scope="col"><span class="op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>							
 							<tr>
-								<td>15-18</td><td>4*,5.1</td><td>All*</td><td><span class="inop">8,9</span></td><td>10-11.6*,12.11</td>
+								<td>15-18</td><td>4*,5.1</td><td>All*</td><td><span class="inop">8,9</span></td><td>10-11.6*,<br/>12.11</td>
 							</tr>							
 						</tbody>
 					</table>
@@ -87,7 +87,7 @@
 						<caption class="heading"><span class="tool" id="w8"></span>Windows 8</caption>
 						<thead>													
 							<tr>
-								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th scope="col"><span class="tool ie"></span>IE</th><th scope="col"><span class="tool op"></span>Opera</th>
+								<th scope="col"><span class="ff"></span>Firefox</th><th scope="col"><span class="saf"></span>Safari</th><th scope="col"><span class="chr"></span>Chrome</th><th scope="col"><span class="ie"></span>IE</th><th scope="col"><span class="op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>							
@@ -97,10 +97,10 @@
 						</tbody>
 					</table>
 					<table>							
-						<caption class="heading"><span class="tool mac"></span>Mac OSX Snow Leopard</caption>
+						<caption class="heading"><span class="mac"></span>Mac OSX Snow Leopard</caption>
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
+								<th scope="col"><span class="ff"></span>Firefox</th><th scope="col"><span class="saf"></span>Safari</th><th scope="col"><span class="chr"></span>Chrome</th><th><span class="iem"></span>IE:Mac</th><th scope="col"><span class="op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>									
@@ -110,10 +110,10 @@
 						</tbody>
 					</table>
 					<table>							
-						<caption class="heading"><span class="tool mac"></span>Mac OSX Lion</caption>
+						<caption class="heading"><span class="mac"></span>Mac OSX Lion</caption>
 						<thead>
 							<tr>
-								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
+								<th scope="col"><span class="ff"></span>Firefox</th><th scope="col"><span class="saf"></span>Safari</th><th scope="col"><span class="chr"></span>Chrome</th><th><span class="iem"></span>IE:Mac</th><th scope="col"><span class="op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>
@@ -123,10 +123,10 @@
 						</tbody>
 					</table>
 					<table>							
-						<caption class="heading"><span class="tool mac"></span>Mac OSX Mountain Lion</caption>
+						<caption class="heading"><span class="mac"></span>Mac OSX Mountain Lion</caption>
 						<thead>				
 							<tr>
-								<th scope="col"><span class="tool ff"></span>Firefox</th><th scope="col"><span class="tool saf"></span>Safari</th><th scope="col"><span class="tool chr"></span>Chrome</th><th><span class="tool iem"></span>IE:Mac</th><th scope="col"><span class="tool op"></span>Opera</th>
+								<th scope="col"><span class="ff"></span>Firefox</th><th scope="col"><span class="saf"></span>Safari</th><th scope="col"><span class="chr"></span>Chrome</th><th><span class="iem"></span>IE:Mac</th><th scope="col"><span class="op"></span>Opera</th>
 							</tr>
 						</thead>						
 						<tbody>									

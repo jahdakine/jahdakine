@@ -96,10 +96,10 @@
 			block2.wrapAll('<ul id="t2"></ul>');
 			block3.wrapAll('<ul id="t3"></ul>');
 			ctrls.addClass("transparent");
-			menu_text.addClass("current").parent().addClass("current");
-			menu_graphics.removeClass("current").parent().removeClass("current");
-			menu_text.addClass("hide");
-			menu_graphics.removeClass("hide");
+			menu_text.addClass("current hide").parent().addClass("current");
+			//menu_text.addClass("hide");
+			menu_graphics.removeClass("current hide").parent().removeClass("current");
+			// menu_graphics.removeClass("hide");
 			carousel_help.fadeOut("fast");
 			history.pushState('text','Home',url_no_params+'?state=text-list');
 		}
@@ -110,15 +110,14 @@
 		if(list_img.css("display") !== "inline-table") {
 			list_img.css("display","inline-table"); //displays hidden images embedded in links
 			list_img.removeClass('hidden');
-			list.removeClass("list-text");
-			list.addClass("list-carousel");
+			list.removeClass("list-text").addClass("list-carousel");
 			carousel_li.unwrap();
 			setCarousel(window.num2Scroll, window.dir2Scroll);
 			ctrls.removeClass("transparent").center({vertical: false});
-			menu_graphics.addClass("current").parent().addClass("current");
-			menu_text.removeClass("current").parent().removeClass("current");
-			menu_graphics.addClass("hide");
-			menu_text.removeClass("hide");
+			menu_graphics.addClass("current hide").parent().addClass("current");
+			//menu_graphics.addClass("hide");
+			menu_text.removeClass("current hide").parent().removeClass("current");
+			//menu_text.removeClass("hide");
 			carousel_help.fadeIn(2000);
 			history.pushState('graphics','Home',url_no_params+'?state=img-list');
 		}
@@ -163,7 +162,7 @@
 	});
 	c2.on('click', function(e, num2Scroll, dir2Scroll) { //scroll backward
 		e.preventDefault();
-		carousel.trigger("configuration", ["direction", "right"]);
+		carousel.trigger("configuration", ["direction", "left"]);
 		carousel.trigger("play");
 	});
 	c3.on('click', function(e, num2Scroll, dir2Scroll) { //pause scroll
@@ -180,7 +179,7 @@
 	});
 	c5.on('click', function(e) { //scroll forward
 		e.preventDefault();
-		carousel.trigger("configuration", ["direction", "left"]);
+		carousel.trigger("configuration", ["direction", "right"]);
 		carousel.trigger("play");
 	});
 	c6.on('click', function(e, num2Scroll, dir2Scroll) { //speed up scroll
