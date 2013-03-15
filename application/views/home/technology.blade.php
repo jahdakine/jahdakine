@@ -79,7 +79,7 @@
 						</thead>						
 						<tbody>							
 							<tr>
-								<td>15-18</td><td>4*,5.1</td><td>All*</td><td><span class="inop">8,9</span></td><td>10-11.6*,12.1,12.11</td>
+								<td>15-18</td><td>4*,5.1</td><td>All*</td><td><span class="inop">8,9</span></td><td>10-11.6*,12.11</td>
 							</tr>							
 						</tbody>
 					</table>
@@ -135,7 +135,7 @@
 							</tr>																						
 							</tbody>
 					</table>
-					<p>Key: *minor acceptable issue(s), <span class="inop">inoperable</span>, choose another browser or version. ? not tested.</p>
+					<p>Key - *:minor acceptable issue(s), <span class="inop">inoperable</span>: choose another browser or version. ?: not tested.</p>
 				</div>
 				</li>
 			</ul>
