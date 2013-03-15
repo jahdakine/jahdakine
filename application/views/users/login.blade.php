@@ -23,7 +23,7 @@
 					<div class="input-append input-prepend">
 						<span class="add-on"><i class="icon-user"></i></span>
 						{{ Form::text('username1', Input::old('username'), array("placeholder"=>"Username", "id"=>"username1", "autocomplete"=>"off")) }}
-						<span class="add-on"><a href="#" title="USERNAME must be between 4 and 16 chars and may not begin with a number."><i class="icon-question-sign"></i></a></span>
+						<span class="add-on"><a href="#" title="USERNAME must be between 4 and 16 letters."><i class="icon-question-sign"></i></a></span>
 					</div>
 					<span class="help-inline" id="username1-status"></span>
 		    </div>
@@ -33,7 +33,7 @@
 		    	<div class="input-append input-prepend">
 		  			<span class="add-on"><i class="icon-lock"></i></span>
 						{{ Form::password('password1', array("placeholder"=>"Password", "id"=>"password1", "autocomplete"=>"off")) }}		
-						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
+						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 (and should contain a mix of upper and lowercase letters, numbers, and special) characters."><i class="icon-question-sign"></i></a></span>
 					</div>			
 					<span class="help-inline" id="password1-status"></span>
 		    </div>
@@ -66,7 +66,7 @@
 		    <div class="controls">
 		    	<div class="input-append">
 			    	{{ Form::text('fname', Input::old('fname'), array("placeholder"=>"First name", "id"=>"fname", "autocomplete"=>"off")) }}
-			    	<span class="add-on"><a href="#" title="FIRST NAME must be between 2 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
+			    	<span class="add-on"><a href="#" title="FIRST NAME must be between 2 and 25 letters."><i class="icon-question-sign"></i></a></span>
 					</div>	
 					<span class="help-inline" id="fname-status"></span>
 		    </div>
@@ -75,7 +75,7 @@
 		    <div class="controls">
 		    	<div class="input-append">
 						{{ Form::text('lname', Input::old('lname'), array("placeholder"=>"Last name", "id"=>"lname", "autocomplete"=>"off")) }}
-						<span class="add-on"><a href="#" title="LAST NAME must be between 2 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
+						<span class="add-on"><a href="#" title="LAST NAME must be between 2 and 25 letters."><i class="icon-question-sign"></i></a></span>
 					</div>	
 					<span class="help-inline" id="lname-status"></span>
 		    </div>
@@ -85,7 +85,7 @@
 			    <div class="input-append input-prepend">
 			    	<span class="add-on"><i class="icon-user"></i></span>
 						{{ Form::text('username2', Input::old('username'), array("placeholder"=>"Username", "id"=>"username2", "autocomplete"=>"off")) }}
-						<span class="add-on"><a href="#" title="USERNAME must be between 6 and 25 alphabetical characters."><i class="icon-question-sign"></i></a></span>
+						<span class="add-on"><a href="#" title="USERNAME must be between 4 and 16 letters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 					<span class="help-inline" id="username2-status"></span>
 		    </div>
@@ -95,7 +95,7 @@
 		  		<div class="input-append input-prepend">
 		  			<span class="add-on"><i class="icon-lock"></i></span>
 						{{ Form::password('password2', array("placeholder"=>"Password", "id"=>"password2", "maxlength"=>"16", "autocomplete"=>"off")) }}
-						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters."><i class="icon-question-sign"></i></a></span>
+						<span class="add-on"><a href="#" title="PASSWORD must be between 6 and 16 (and should contain a mix of upper and lowercase letters, numbers, and special) characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 			    <div class="input-append input-prepend">
 			    	<span class="add-on"><i class="icon-ok"></i></span>
@@ -106,7 +106,7 @@
 		  		<div id="bars" class="progress-info">
 				    <div id="bar" class="bar"></div>
 	  			</div>
-					<span class="small">Password must be between 6 and 16 and should contain a mix of upper and lowercase letters, numbers, and special characters.</span>
+					<span class="small">Password must be between 6 and 16 (and should contain a mix of upper and lowercase letters, numbers, and special) characters.</span>
 		    </div>
 		  </div>	
 		  <div class="control-group" id="email-group">				

@@ -213,7 +213,7 @@
 		}
 		//console.log(strength);
 		if(strength === 0) {
-			setBars(bar,"100%","easily hackable!","progress-danger progress-striped");
+			setBars(bar,"100%","easily hacked!","progress-danger progress-striped");
 		} else if (strength == 1) {
 			setBars(bar,"34%","weak", "progress-info");
 		} else if (strength == 2) {
