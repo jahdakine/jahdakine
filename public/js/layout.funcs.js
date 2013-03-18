@@ -135,16 +135,20 @@
 // console.log("clicked: "+ link_color);
 	});
 /* setup nickname pronunciation player */
-	var afile = '';
-	if($.browser.msie === true) {
+	var afile = '',
+			atype = '';
+	if($.browser.msie) {
 		afile = "/audio/jahdakine.mp3";
+		atype="audio/mpeg";
 	} else {
 		afile = "/audio/jahdakine.wav";
+		atype="audio/wav";
 	}
 	var audio = $('<audio>', {
 				id	: "nickSound",
 				src : afile,
 				//autoPlay : 'autoPlay',
+				type: atype,
 				controls : 'controls'
 			}),
 			nick_button = $("#nickButton"),
