@@ -6,14 +6,14 @@
   background-image:url('/img/browser-spritesheet.png');
   background-repeat: no-repeat;
   width:32px;
-  height:32px;
+  height:32px !important;
   padding-left: 38px;
-  padding-bottom: 10px;
-  display: -webkit-box; display: -moz-box; display: box;
+  display: block;
+  /*display: -webkit-box; display: -moz-box; display: box;
   -webkit-box-align: center;
   -moz-box-align: center;
   -ms-box-align: center;
-  box-align: center;  
+  box-align: center;*/  
 }
 #gmail { background-position: 0 0; }
 #macmail { background-position: 0 -32px; }
