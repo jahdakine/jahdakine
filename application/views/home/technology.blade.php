@@ -21,8 +21,7 @@
 			<p>
 				I have made every effort to create a smooth experience during your site visit. Here are some of the metrics and tools I've used to test various aspects of 
 				browser compatibility, page load times, accessibility, and responsiveness. This site is designed for a modern browser audience and works best with the latest Firefox, Safari, and Chrome browsers. 
-				It is not recommended for Internet Explorer at this time, but I am working on the issues. This is a free hosted environment and therefore the site is limited to 200 MB of RAM per instance
-				and 1 gigabyte of output for outbound data transfers. 
+				This is a free hosted environment and therefore the site is limited to 200 MB of RAM per instance and 1 gigabyte of output for outbound data transfers.
 			</p>
 			<ul class="nolist">
 				<li>
@@ -92,7 +91,7 @@
 						</thead>						
 						<tbody>							
 							<tr>
-								<td>16-19</td><td>5.1</td><td>22*</td><td><span class="inop">10</span></td><td><span class="inop">12,12.1</span></td>
+								<td>16-19</td><td>5.1</td><td>22*</td><td><span>10*</span></td><td><span class="inop">12,12.1</span></td>
 							</tr>
 						</tbody>
 					</table>

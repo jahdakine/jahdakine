@@ -112,12 +112,16 @@
 	//submit
 	sr_sub.on("click", function(e) {
 		e.preventDefault();
-		username1.trigger('blur');
-		password1.trigger('blur');
-		if(!errors) {
+		if($.browser.msie) {
 			alert(SUBMSG);
+		} else {
+			username1.trigger('blur');
+			password1.trigger('blur');
+			if(!errors) {
+				alert(SUBMSG);
+			}
+			errors=false;
 		}
-		errors=false;
 	});
 	//reset
 	sr_reset.on("click", function() {
