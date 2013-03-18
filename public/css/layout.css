@@ -311,6 +311,12 @@ ul.drop li:hover > ul { visibility: visible }
 .main {
   line-height : 1; 
 }
+@media all and (max-width : 400px) {
+#top-link {
+  padding:2px;
+  font-size:70%;
+  content: attr(href,''); /*!!!remove text*/
+}
 /* printing */
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }

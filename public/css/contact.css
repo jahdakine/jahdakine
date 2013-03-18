@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   width:32px;
   height:32px;
-  text-indent: 38px;
+  padding-left: 38px;
   display: -webkit-box; display: -moz-box; display: box;
   -webkit-box-align: center;
   -moz-box-align: center;
