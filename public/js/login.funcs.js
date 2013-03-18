@@ -34,7 +34,8 @@
 			hide_error1 = $(".hide-error1"),
 			hide_error2 = $(".hide-error2"),
 			bar = $("#bar"),
-			PWD_MIN_LEN = 6;
+			PWD_MIN_LEN = 6,
+			SUBMSG = 'CLICK STATUS ALERT:\n\nThis is purely for demonstration purposes only. No one can register or sign on.';
 	if(rs.hasClass("hide")) {
 		username1.focus();
 		resetAll1();
@@ -114,7 +115,7 @@
 		username1.trigger('blur');
 		password1.trigger('blur');
 		if(!errors) {
-			alert('CLICK STATUS ALERT:\n\nThis is purely for demonstration purposes only. No one can register or sign on.');
+			alert(SUBMSG);
 		}
 		errors=false;
 	});
@@ -153,20 +154,24 @@
 	//submit
 	rs_sub.on("click", function(e) {
 		e.preventDefault();
-		if(!agree.is(':checked')) {
-			showError('agree','You must agree');
-			errors = true;
+		if($.browser.msie) {
+			alert(SUBMSG);
 		} else {
-			resetError('agree', '', true);
+			if(!agree.is(':checked')) {
+				showError('agree','You must agree');
+				errors = true;
+			} else {
+				resetError('agree', '', true);
+			}
+			fname.trigger('blur');
+			lname.trigger('blur');
+			username2.trigger('blur');
+			email.trigger('blur');
+			password2.trigger('blur');
+			c_password.trigger('blur');
+			if(!errors){ alert(SUBMSG); }
+			errors=false;
 		}
-		fname.trigger('blur');
-		lname.trigger('blur');
-		username2.trigger('blur');
-		email.trigger('blur');
-		password2.trigger('blur');
-		c_password.trigger('blur');
-		if(!errors){ alert('CLICK STATUS ALERT:\n\nThis is purely for demonstration purposes only. No one can register or sign on.'); }
-		errors=false;
 	});
 	//reset
 	rs_reset.on("click", function() {
