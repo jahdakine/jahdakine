@@ -135,9 +135,15 @@
 // console.log("clicked: "+ link_color);
 	});
 /* setup nickname pronunciation player */
+	var afile = '';
+	if($.browser.msie === true) {
+		afile = "/audio/jahdakine.mp3";
+	} else {
+		afile = "/audio/jahdakine.wav";
+	}
 	var audio = $('<audio>', {
 				id	: "nickSound",
-				src : "/audio/jahdakine.wav",
+				src : afile,
 				//autoPlay : 'autoPlay',
 				controls : 'controls'
 			}),
