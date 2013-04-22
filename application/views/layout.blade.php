@@ -73,7 +73,7 @@
 								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
 							@endif
 							@if(URI::is('home/resume'))
-								<li>{{ HTML::link("/partials/resume.doc", "Download", array("title"=>"Download Resume (Word 19KB)")) }}</li>	
+								<li>{{ HTML::link("/partials/Resume.doc", "Download", array("title"=>"Download Resume (Word 19KB)")) }}</li>	
 							@endif
 						</ul>
 					</li>																			
