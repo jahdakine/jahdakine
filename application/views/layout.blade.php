@@ -72,6 +72,9 @@
 								<li class="current">{{ HTML::link("#", "Text List", array("title"=>"Change format to text links", "class"=>"menuText current")) }}</li>	
 								<li class="current">{{ HTML::link("#", "Reset", array("title"=>"Clear dynamic content area", "id"=>"reset", "class" => "current")) }}</li>
 							@endif
+							@if(URI::is('home/resume'))
+								<li>{{ HTML::link("/partials/resume.doc", "Download", array("title"=>"Download Resume (Word 19KB)")) }}</li>	
+							@endif
 						</ul>
 					</li>																			
 				@yield_section <!-- will yield and close section -->

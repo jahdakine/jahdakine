@@ -30,4 +30,4 @@
 	<li class="strike">Soliloquy blog</li>
 	<li class="strike">restructure xhr code</li>
 	<li>Cure world hunger!</li>
-</ul>	
+</ul>
