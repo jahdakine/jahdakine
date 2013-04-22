@@ -40,7 +40,7 @@
 				<div>
 					<h4>IT Professional IV - Database Application Specialist</h4>
 					<h5>NREL - National Renewable Energy Laboratory</h5>
-					<h6>June 2000 – April 2011 (10 years 11 months) Golden, Colorado</h6>
+					<h6>June 2000 – April 2012 (11 years 11 months) Golden, Colorado</h6>
 					<ul>
 						<li>Analyzed requirements</li>
 						<li>Built and designed databases</li>
@@ -77,11 +77,11 @@
 						<li>Web Applications</li>
 						<li>ColdFusion</li>
 						<li>PHP</li>
-						<li>JavaScript</li>
-						<li>jQuery</li>
-						<li>MySQL</li>
-						<li>SQL Server</li>
-						<li>phpMyAdmin</li>
+						<li>HTML4.01/XHTML/HTML5</li>
+						<li>CSS/CSS3</li>
+						<li>JavaScript/jQuery</li>
+						<li>MySQL/SQL Server/Postgres</li>
+						<li>Unix Shell</li>
 					</ul>
 				</div>
 			</div><!-- group -->
@@ -91,9 +91,7 @@
 					<h4>Regis University</h4>
 					<h5>BS-CIS, Computer Information Systems</h5>
 					<h6>1995 – 1997</h6>
-					<p>
-						Magna Cum Laude
-					</p>
+					<br>
 					<h4>Boulder Valley Vocational Technical</h4>
 					<h5>Drafting Certification, Drafting Tecnology</h5>
 					<h6>1987 – 1989</h6>
@@ -103,7 +101,10 @@
 				<h3 class="accord-link" title="Reveal contents/Hide">HONORS &amp; AWARDS</h3>
 				<div>
 					<p>
-						NREL President's Award 2010
+						Regis University - Magna Cum Laude 1997
+					</p>
+					<p>
+						NREL - President's Award 2010
 					</p>
 				</div>
 			</div>

@@ -13,7 +13,7 @@
 	<li class="strike">Manage social sites list in dB</li>	
 	<li class="strike">Create external link switcher</li>
 	<li class="strike">W3C check</li>
-	<li class="strike">Give peace a chance!</li>
+	<li>Give peace a chance!</li>
 </ul>	
 <ul id="note3" class=@if(URI::is('home/tasks')) show @else hide @endif>
 	<li class="strike">Add smooth transitions</li>
@@ -21,7 +21,7 @@
 	<li class="strike">Move legend to sidebar</li>
 	<li class="strike">Add carousel controls</li>
 	<li class="strike">Animate logo with Canvas JS</li>
-	<li class="strike">Make the web safer!</li>
+	<li>Make the web safer!</li>
 </ul>	
 <ul id="note4" class=@if(URI::is('home/tasks')) show @else hide @endif>
 	<li class="strike">Add login area</li>	

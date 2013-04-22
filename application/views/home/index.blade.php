@@ -191,7 +191,7 @@
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 
 			 the default text list <em>(Commands|Text format)</em> are accessible above the site logos. Note: I participate in some social networking sites more that others. 
-			 Some hardly at all. The purpose of displaying some of them may be more of an excersize in learning their APIs than in participation.
+			 Some hardly at all. The purpose of displaying some of them may be more of an exercise in learning their APIs than in participation.
 			</p>
 		</article>	
 		<section class="notes">

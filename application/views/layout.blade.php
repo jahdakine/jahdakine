@@ -22,7 +22,7 @@
 				{{ HTML::link("users/login", "Sign-on", array("title"=>"Sign on or register demonstration page", "class"=>"href hide signon", "id"=>"signon")) }}
 			@endif
 		</header>
-		<div id="navigation">
+		<nav>
 			<ul class="drop" id="nav">
 				@section('nav')
 					@if(URI::is('home') || URI::is('/'))
@@ -76,11 +76,11 @@
 					</li>																			
 				@yield_section <!-- will yield and close section -->
 			</ul>
-		</div><!-- // navigation -->
+		</nav>
 		<div class="clear-fix" id="content"></div>
 		@yield('top')
 		@yield('controls')
-		<div role="main" class="main" id="main">
+		<section role="main" class="main" id="main">
 			<a href="#skipto" class="hidden">Skip legend</a>
 			<aside id="legend">
 				<h4 class="to-center reset">Legend</h4>
@@ -113,11 +113,11 @@
 					</div>
 				<!-- AddThis Button END -->
 				@yield('aside')
-			</aside><!-- // aside -->
+			</aside>
 			@yield('main')
 			<div id="skipto" class="clear-fix pad"></div>
 			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top of Page</a>
-		</div><!-- // content -->
+		</section>
 		<footer class="copy">
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
 				<span>

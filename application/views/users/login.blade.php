@@ -113,7 +113,7 @@
 		    <div class="controls">
 			    <div class="input-append input-prepend">
 				    <span class="add-on"><i class="icon-envelope"></i></span>
-				    {{ Form::text('email', '', array("placeholder"=>"Email address", "class"=>"input-xlarge", "id"=>"email", "autocomplete"=>"off")) }} 
+				    {{ Form::email('email', '', array("placeholder"=>"Email address", "class"=>"input-xlarge", "id"=>"email", "autocomplete"=>"off")) }} 
 				    <span class="add-on"><a href="#" title="EMAIL ADDRESS must be between 7 and 100 characters."><i class="icon-question-sign"></i></a></span>
 			    </div>
 			    <span class="help-inline" id="email-status"></span>

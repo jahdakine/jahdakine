@@ -131,7 +131,14 @@
 						<li>Try Git</li>
 						<li>Rails for Zombies</li>
 					</ul> 
-				</div>				
+				</div>	
+				<div>
+					<h6>{{ HTML::link("http://www.lynda.com/", "Lynda.com&#8663;", array("title"=>"Open Lynda.com in a new window/tab", "target"=>"_blank", "class" => "offsite href")) }}</h6>	
+					<ul>
+						<li>PHP with MySQL Essential Training</li>
+						<li>PHP with MySQL Beyond the Basics</li>
+					</ul> 
+				</div>							
 			</div><!-- // courses-1 -->
 			<div id="courses-2">
 				<h5 class="h5nojs">Current Courses</h5>
@@ -155,6 +162,18 @@
 						<li>Git Real</li>
 					</ul> 
 				</div>
+				<div>
+					<h6>Lynda</h6>	
+					<ul>
+						<li>Object-Oriented Programming with PHP</li>
+					</ul> 
+				</div>				
+				<div>
+					<h6>Udemy</h6>	
+					<ul>
+						<li>Learn Backbone.js + StackMob</li>
+					</ul> 
+				</div>					
 			</div><!-- // courses-2 -->
 			<div id="courses-3">
 				<h5 class="h5nojs">Projects</h5>

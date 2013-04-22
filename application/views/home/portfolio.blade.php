@@ -104,6 +104,7 @@
 					<h5 class="h5nojs">Volunteer (Pro Bono)</h5>
 				  <ul>
 						<!-- <li><a href="project/" title="Show description and screenshots" class="project">One Voice ~ Many Paths</a></li> -->										
+						<!-- <li><a href="project/medusa/noimg/" title="Show description and screenshots" class="project href">Medusa</a></li> -->
 						<li><a href="project/gnerdl/noimg" title="Show description and screenshots" class="project no-image href">Gnerdl</a></li>										
 						<li><a href="project/corin_design/null/" title="Show description and screenshots" class="project href">Corin Design</a></li>
 						<li><a href="project/personal_site/null/" title="Show description and screenshots" class="project href">Personal Site</a></li>
