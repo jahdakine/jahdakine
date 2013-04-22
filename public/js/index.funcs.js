@@ -115,6 +115,11 @@
 			history.pushState('graphics','Home',url_no_params+'?state=img-list');
 		}
 	});
+	list.on('click', function(e) {
+		e.preventDefault();
+		var quit = confirm("Jane, stop this crazy thing!");
+		if(quit) { menu_text.trigger('click'); }
+	});
 	/*reset button click*/
 	reset.on('click', function(e) {
 		e.preventDefault();
