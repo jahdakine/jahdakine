@@ -137,10 +137,10 @@
 #ctrls5 { background-position: 0 -200px; }
 #ctrls6 { background-position: 0 -249px; }
 
-#linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #evernote, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gnerdl, #carou22, #carou23, #carou24, #carou25 {   
+#linkedin, #github, #google, #stackoverflow, #youtube, #twitter , #flickr, #blogger, #zazzle, #ebay, #grooveshark, #meetup, #coderbits, #picassa, #fandango, #yelp, #icloud, #vimeo, #netflix, #skype, #gnerdl, #carou22, #carou23, #carou24, #carou25 {   
   display: inline-table;
   text-decoration:none;
-  background-image:url('/img/carousel-spritesheet.png');
+  background-image:url('/img/carousel-spritesheet2.png');
   background-repeat: no-repeat;  
   width:128px; height:128px;
 }
@@ -148,7 +148,7 @@
 #fandango { background-position: 0 -128px; }
 #ebay { background-position: 0 -256px; }
 #blogger { background-position: 0 -386px; }
-#evernote { background-position: 0 -512px; }
+#coderbits { background-position: 0 -512px; }
 #flickr { background-position: -128px 0; }
 #github { background-position: -128px -128px; }
 #google { background-position: -128px -256px; }

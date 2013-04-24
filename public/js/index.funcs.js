@@ -115,11 +115,6 @@
 			history.pushState('graphics','Home',url_no_params+'?state=img-list');
 		}
 	});
-	list.on('click', function(e) {
-		e.preventDefault();
-		var quit = confirm("Jane, stop this crazy thing!");
-		if(quit) { menu_text.trigger('click'); }
-	});
 	/*reset button click*/
 	reset.on('click', function(e) {
 		e.preventDefault();
@@ -244,6 +239,13 @@
 				obj = "data.feed.entry";
 				tmp = "'<li><time datetime=\"' + item.updated.$t + '\">' +item.updated.$t.substr(0,10) + '</time>: <a href=\"' +item.link[0].href+ '\" title=\"Open' +item.title.$t+ 'in a new window\" target=\"_blank\">' +item.title.$t+ '</a></li>'";
 				break;
+			case ('coderbits'):
+				//http="https://coderbits.com/username.json?callback=?";
+				http = "false";
+				obj = "data";
+				//tmp = "'<li>' + data.badges + '</li>'";
+				limit = 5;
+				break;
 			case ('stackoverflow'):
 				http="false";
 				break;
@@ -310,16 +312,16 @@
 			if(http !== '') {
 				return $.getJSON(http, function(data) {
 					success = true;
-					//console.log("data: " + data);
+					//console.log("data: " + JSON.stringify(data));
 					$.each(eval(obj), function(i,item) {
-							//console.log(item);
-							if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
-								tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
-							}
-							html += eval(tmp);
-							//console.log(html);
-							if(i > limit) { return false; }
-						});
+						//console.log(item);
+						if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
+							tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
+						}
+						html += eval(tmp);
+						//console.log(html);
+						if(i > limit) { return false; }
+					});
 					if(id !== 'flickr' && html.search("<li>") === -1) {
 						html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
 					}
@@ -348,6 +350,13 @@
 			}
 		}, 2000);
 	});
+	// list.on('click', function(e) {
+	// 	if(list_img.css("display") === "inline-table") {
+	// 		e.preventDefault();
+	// 		var quit = confirm("Jane, stop this crazy thing!");
+	// 		if(quit) { menu_text.trigger('click'); }
+	// 	}
+	// });
 /* Check for state */
 	if(url === '?state=img-list') {
 		menu_graphics.trigger('click');

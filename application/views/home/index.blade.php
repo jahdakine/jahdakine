@@ -96,7 +96,7 @@
 				</li>		
 				<li class="block3">
 					{{ HTML::link("http://myworld.ebay.com/specrun/", "eBay&#8663;", array("title"=>"Open my eBay profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Latest Ebay feedback -coming soon', array('id' => 'ebay', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon')) }}
+					{{ HTML::link('#', 'Latest Ebay feedback - coming soon', array('id' => 'ebay', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon')) }}
 				</li>
 				<li class="block3">
 					{{ HTML::link("http://grooveshark.com/#!/jahdakine", "Grooveshark&#8663;", array("title"=>"Open my GrooveShark profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
@@ -116,9 +116,13 @@
 					{{ HTML::link('#', 'Private iCloud link', array('id' => 'icloud', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}				
 				</li>				
 				<li class="block3">
-					{{ HTML::link("http://evernote.com/", "Evernote&#8663;", array("title"=>"Open Evernote site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Private Evernote link', array('id' => 'evernote', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}								
-				</li>			
+					{{ HTML::link("http://coderbits.com/", "Coderbits&#8663;", array("title"=>"Open Coderbits site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
+					{{ HTML::link('#', 'Latest Coderbits activity - coming soon', array('id' => 'coderbits', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}	<!-- Show latest Coderbits activity on this page -->
+				</li>
+				<!-- <li class="block3">
+					{HTML::link("http://evernote.com/", "Evernote&#8663;", array("title"=>"Open Evernote site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
+					{HTML::link('#', 'Private Evernote link', array('id' => 'evernote', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'You must be logged in to access private account', "onclick" => "return false;")) }}								
+				</li> -->			
 			</ul><!-- // t3 -->
 		</div><!-- // carousel -->
 	</div><!-- // list -->
