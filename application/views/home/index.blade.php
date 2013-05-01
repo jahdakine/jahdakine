@@ -164,7 +164,7 @@
 			{{ HTML::link("http://laravel.com/docs", "Laravel&#8663;", array("title"=>"Offsite to Laravel Documentation in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}, the 
 			<abbr title="Model View Controller">MVC</abbr>
 			framework that I'm gravitating to at the moment. It is responsive, accessible, and includes an ever popular <span class="nojs" title="Requires Javascript!">scrolling style jQuery menu carousel
-			<em>(Commands|Image format)</em></span> that I'm thinking I'll call my social parade. It is basically my playground to spend time trying out new technologies and learning 
+			<em>(Commands|Image List)</em></span> that I'm thinking I'll call my social parade. It is basically my playground to spend time trying out new technologies and learning 
 			about what works and what doesn't in the fine art and science of internet programming and design. <span class="nojs" title="Requires Javascript!"><em>Tabs</em></span> and other user interface goodies can be found at
 			{{ HTML::link("http://jqueryui.com/", "jQuery UI&#8663;", array("title"=>"Offsite to jQuery UI in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
 			<span class="nojs" title="Requires Javascript!"><em>Customizable tooltips</em></span>:
@@ -190,7 +190,7 @@
 				{{ HTML::link("404", "404 (page not found)", array("title"=>"Oops!", "class"=>"href")) }} for fun (audio event - volume alert
 				<img src="/img/warning-icon.png" height="16" width="16" alt="" class=" to-ttop"/>) or jump over to the 
 				{{ HTML::link("home/technology", "Technology page", array("class"=>"href")) }} to see more of what makes
-				this site tick.
+				this site tick. To view a color breakdown of this site, head on over to {{ HTML::link("http://webcolourdata.com/profile/15876", "Web Colour Data&#8663;",  array("title"=>"Offsite to Web Colour Data in a new window", "target"=>"_blank", "class" => "offsite link-new-win href")) }}.
 			</p>
 			<p id="carouselHelp" class="hide">
 			 Included on selected items in the image list carousel are jSON feeds, via logo links. All external links available in 
@@ -205,7 +205,6 @@
 			<!--  
 			Preload images?
 			security check
-			check on legacy and IE
 			rewrite JS using backbone
 			rewrite CSS using SASS or LESS
 			write a test harness for PHP and JS
