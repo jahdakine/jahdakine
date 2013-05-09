@@ -31,13 +31,22 @@
 						<ul>
 							<li>15 years application programming</li>
 							<li>12 years database maintenance and development, software design and testing</li>
-							<li>8 years mechanical design/drafting</li>
 						</ul>
 					</div>
 			</div><!-- group -->
 			<div class="group">
 				<h3 class="accord-link" title="Reveal/Hide contents">EXPERIENCE</h3>
 				<div>
+					<h4>Consultant</h4>
+					<h5>GNERDL</h5>
+					<h6>February 2013 – Present</h6>
+					<ul>
+						<li>Analyzed requirements</li>
+						<li>Built and designed prototypes</li>
+					</ul>
+					<p>
+						Helped create requirement definitions and prototypes for a venture capital startup. Designed relationship diagrams, user storyboards, and functional prototypes.
+					</p>					
 					<h4>IT Professional IV - Database Application Specialist</h4>
 					<h5>NREL - National Renewable Energy Laboratory</h5>
 					<h6>June 2000 – April 2012 (11 years 11 months) Golden, Colorado</h6>
@@ -62,12 +71,6 @@
 					<p>
 						Responsible for maintaining database consistency for mission critical Oracle RDBMS order entry system. Worked with a team of developers to support design, testing, and production environments. Developed import, processing, and test code using common tools on a UNIX platform.
 					</p>
-					<h4>Verification/Validation Tester</h4>
-					<h5>Colorado MEDtech</h5>
-					<h6>October 1997 – June 1998 (9 months) Gunbarrel, Colorado</h6>
-					<p>
-						Maintained software functional specification and created test scripts for precision medical product manufacturer using Borland C++, Requisite Pro, and company designed tools. Assisted team with product testing in accordance with ISO and FDA standards.
-					</p>	
 				</div>
 			</div><!-- group -->
 			<div class="group">
@@ -91,10 +94,6 @@
 					<h4>Regis University</h4>
 					<h5>BS-CIS, Computer Information Systems</h5>
 					<h6>1995 – 1997</h6>
-					<br>
-					<h4>Boulder Valley Vocational Technical</h4>
-					<h5>Drafting Certification, Drafting Tecnology</h5>
-					<h6>1987 – 1989</h6>
 				</div>
 			</div><!-- group -->
 			<div class="group">
