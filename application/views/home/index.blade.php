@@ -43,7 +43,7 @@
 				</li>								
 				<li class="block2">
 					{{ HTML::link("http://stackoverflow.com/users/1997909/jahdakine", "Stackoverflow&#8663;", array("title"=>"Open my stackoverflow+ profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Latest Stackoverflow activity - coming soon', array('id' => 'stackoverflow', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon')) }}
+					{{ HTML::link('#', 'Latest Stackoverflow activity', array('id' => 'stackoverflow', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Show updated status from Stack Overflow on this page')) }}
 				</li>
 				<li class="block2">
 					{{ HTML::link("www.yelp.com/", "Yelp&#8663;", array("title"=>"Open Yelp site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
@@ -80,7 +80,7 @@
 				</li>		
 				<li class="block2">
 					{{ HTML::link("https://github.com/jahdakine", "GitHub&#8663;", array("title"=>"Open my Github page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Latest GitHub repository activity - coming soon', array('id' => 'github', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon')) }}
+					{{ HTML::link('#', 'Latest GitHub repository activity', array('id' => 'github', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Show latest Github commits on this page')) }}
 				</li>					
 				<li class="block2">
 					{{ HTML::link("http://picasa.google.com/", "Picassa&#8663;", array("title"=>"Open Picassa site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
@@ -104,7 +104,7 @@
 				</li>	
 				<li class="block3">
 					{{ HTML::link("http://www.meetup.com/HTML5-Denver-Users-Group/members/65732862/", "Meetup&#8663;", array("title"=>"Open my Meetup profile page in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Last Meetup attendance  - coming soon', array('id' => 'meetup', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon')) }}				
+					{{ HTML::link('#', 'Latest Meetup activity', array('id' => 'meetup', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Show latest Meetup group activity on this page')) }}				
 				</li>		
 
 				<li class="block3">
@@ -117,7 +117,7 @@
 				</li>				
 				<li class="block3">
 					{{ HTML::link("http://coderbits.com/", "Coderbits&#8663;", array("title"=>"Open Coderbits site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Latest Coderbits badges', array('id' => 'coderbits', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Show latest Coderbits activity on this page', "onclick" => "return false;")) }}	
+					{{ HTML::link('#', 'Latest Coderbits badges', array('id' => 'coderbits', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Show latest Coderbits badges on this page', "onclick" => "return false;")) }}	
 				</li>
 				<!-- <li class="block3">
 					{HTML::link("http://evernote.com/", "Evernote&#8663;", array("title"=>"Open Evernote site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
