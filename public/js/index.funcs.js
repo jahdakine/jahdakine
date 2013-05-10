@@ -40,7 +40,7 @@
 			legend = $("#legend"),
 			carousel_help = $("p#carouselHelp"),
 			num2Scroll = 1,
-			dir2Scroll = "right",
+			dir2Scroll = "left",
 			url = window.location.search,
 			url_no_params = url.split("?")[0];
 /*address noscripts*/
@@ -153,7 +153,7 @@
 	});
 	c2.on('click', function(e, num2Scroll, dir2Scroll) { //scroll backward
 		e.preventDefault();
-		carousel.trigger("configuration", ["direction", "left"], "play");
+		carousel.trigger("configuration", ["direction", "right"], "play");
 	});
 	c3.on('click', function(e, num2Scroll, dir2Scroll) { //pause scroll
 		e.preventDefault();
@@ -167,9 +167,9 @@
 			carousel.trigger("resume");
 		}
 	});
-	c5.on('click', function(e) { //scroll forward
+	c5.on('click', function(e, num2Scroll, dir2Scroll) { //scroll forward
 		e.preventDefault();
-		carousel.trigger("configuration", ["direction", "right"], "play");
+		carousel.trigger("configuration", ["direction", "left"], "play");
 	});
 	c6.on('click', function(e, num2Scroll, dir2Scroll) { //speed up scroll
 		e.preventDefault();
@@ -192,11 +192,6 @@
 				success = false;
 				show = "content_frame.css('display','inline').removeClass('image-matrix')";
 		switch (id) {
-			case ('linkedin'):
-				http='';
-				//html += '<h3 class="to-center">Recommendations</h3>';
-				//tmp=recosHTML;
-				break;
 			case ('blogger'):
 				http = 'https://www.googleapis.com/blogger/v3/blogs/2575251403540723939/posts?key=AIzaSyC4Zhv-nd_98_9Vn8Ad3U6TjY99Pd2YzOQ';
 				obj = 'data.items';
@@ -219,19 +214,15 @@
 				limit = 20;
         break;
 			case ('meetup'): //venue=1139097 member=65732862 group=1769691 group_urlname=HTML5-Denver-Users-Group
-				http="false";
-				// http = 'http://api.meetup.com/activity?_=1361290215235&member_id=65732862&format=json&sig_id=65732862&sig=7be5cdcf1093d70515959c1b785e75c67f9c642f';
-				// obj = 'data';
-				// tmp = "'<li><li>'";
-				// limit = 3;
-				break;
-			case ('grooveshark'):
-				http="false";
+				http = 'http://api.meetup.com/activity?_=1361290215235&member_id=65732862&format=json&sig_id=65732862&sig=7be5cdcf1093d70515959c1b785e75c67f9c642f';
+				obj = 'data.results';
+				tmp = "'<li>' +item.updated+ ': <a href=\"' +item.link+ '\" title=\"Open' +item.title+ ' in a new window\" target=\"_blank\">' +item.title+ '</a><li>'";
+				limit = 3;
 				break;
 			case ('github'):
-				http="false";
-				//http = "https://api.github.com/repos/jahdakine/jahdakine/commits?callback=getFeed";
-				obj = 'data';
+				http = "https://api.github.com/repos/jahdakine/jahdakine/commits?callback=?";
+				obj = 'data.data';
+				tmp = "'<li>' +item.commit.author.date.substr(0,10)+ ' ' +item.commit.author.date.substr(11,8)+ ': <a href=\"' +item.html_url+ '\" title=\"Open Github commit log in a new window\" target=\"_blank\">' +item.commit.message+ '</a></li>'";
 				limit = 5;
 				break;
 			case ('youtube'):
@@ -240,22 +231,35 @@
 				tmp = "'<li><time datetime=\"' + item.updated.$t + '\">' +item.updated.$t.substr(0,10) + '</time>: <a href=\"' +item.link[0].href+ '\" title=\"Open' +item.title.$t+ 'in a new window\" target=\"_blank\">' +item.title.$t+ '</a></li>'";
 				break;
 			case ('coderbits'):
-				//http="https://coderbits.com/username.json?callback=?";
-				http = "false";
-				obj = "data";
-				//tmp = "'<li>' + data.badges + '</li>'";
-				limit = 5;
+				http="https://coderbits.com/jahdakine.json";
+				obj="data.badges";
+				tmp = "'<li>' + item + '</li>'";
+				break;
+			case ('google'):
+				http = 'https://www.googleapis.com/plus/v1/people/114704033710627861845/activities/public?key=AIzaSyC7qL3rj2BltH6GV6WOjovK3zuuS5sy024';
+				obj = 'data.items';
+				tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\">' + item.object.attachments[0].content.substr(0,50) + '...</a></li>'";
+        limit = 5;
+				break;
+			case ('zazzle'):
+				tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
+						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
+						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117631920418883930\" FlashVars=\"feedId=117631920418883930\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>"];
 				break;
 			case ('stackoverflow'):
+				http="http://api.stackoverflow.com/1.0/users/1997909/?jsonp=?";
+				obj = 'data.users';
+				tmp = "'<li><strong>Reputation</strong>:<br>' +item.reputation+ '<br><strong>Badges</strong>:<br> Gold-' +item.badge_counts.gold+ ' <br>Silver-' +item.badge_counts.silver+ ' <br>Bronze-' +item.badge_counts.bronze+ '</li>'";
+				break;
+
+
+			case ('grooveshark'):
 				http="false";
 				break;
 			case ('yelp'):
 				http="false";
 				break;
 			case ('ebay'):
-				http="false";
-				break;
-			case ('gmail'):
 				http="false";
 				break;
 			case ('icloud'):
@@ -271,7 +275,8 @@
 				http="false";
 				break;
 			case ('picassa'):
-				http="false";
+				http="https://picasaweb.google.com/data/feed/api/user/114704033710627861845/albumid/5807772905643040065?callback=?";
+				obj='data';
 				break;
 			case ('fandango'):
 				http="false";
@@ -279,17 +284,11 @@
 			case ('gnerdl'):
 				http="false";
 				break;
-			case ('google'):
-				http = 'https://www.googleapis.com/plus/v1/people/114704033710627861845/activities/public?key=AIzaSyC7qL3rj2BltH6GV6WOjovK3zuuS5sy024';
-				obj = 'data.items';
-				tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\">' + item.object.attachments[0].content.substr(0,50) + '...</a></li>'";
-        limit = 5;
-				break;
-			case ('zazzle'):
-				tmp = ["<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117573488824205121\" FlashVars=\"feedId=117573488824205121\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
-						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117453752667062082\" FlashVars=\"feedId=117453752667062082\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>",
-						"<embed wmode=\"transparent\" src=\"http://www.zazzle.com/utl/getpanel?zp=117631920418883930\" FlashVars=\"feedId=117631920418883930\" width=\"450\" height=\"300\" type=\"application/x-shockwave-flash\"></embed>"];
-				break;
+			case ('linkedin'):
+				http='';
+				//html += '<h3 class="to-center">Recommendations</h3>';
+				//tmp=recosHTML;
+				break;	
     }
     //put html into content frame
     function appendDOM(html) {
@@ -310,23 +309,50 @@
 			//console.log(http);
 			//!!!cache? Would need to use local storage or DB or jquery-json.2.4.0
 			if(http !== '') {
-				return $.getJSON(http, function(data) {
-					success = true;
-					//console.log("data: " + JSON.stringify(data));
-					$.each(eval(obj), function(i,item) {
-						//console.log(item);
-						if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
-							tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
+				$.ajax({
+					dataType: "jsonp",
+					jsonp: "callback",
+					url: http,
+					success: function(data) {
+						console.log("Data received via test: " + JSON.stringify(data));
+						if(id==="coderbits") {
+							var unique=0, total=0, content={"name":"", "amount":0, "img":""};
+							$.each(eval(obj), function(i,item) {
+								if(item.earned) {
+									content.name=item.name;
+									content.amount=item.level;
+									content.img=item.image_link;
+									total++;
+									if(item.level===1) {
+										unique++;
+									}
+								}
+								if(item.level===64 && content.amount>0) {
+									tmp = '<p id="coderbits-badges"><img class="to-middle" src="' +content.img+ '" title="' +content.name+ ' badge" height="40" width="40" />&nbsp;' +content.amount+ ' bit ' +content.name+ '</p>';
+									html += tmp;
+									content={"name":"", "amount":0, "img":""};
+								}
+							});
+							var totals = '<p>' +total+ ' badges earned, ' +unique+ ' shown represent the highest achievement in category.</p>';
+							html += totals;
+						//main handler
+						} else {
+							$.each(eval(obj), function(i,item) {
+								console.log(item);
+								if(id === 'google' && item.object.attachments[0].content.substr(-4) === '.jpg') {
+									tmp = "'<li><img src=\"' +item.actor.image.url+ '\" alt=\"\" height=\"25\" width=\"25\"/>&nbsp;<time datetime=\"' + item.updated + '\">' + item.updated.substr(0,10) + '</time>: <a href=\"' + item.url + '\" target=\"_blank\"><img src=\"' + item.object.attachments[0].fullImage.url + '\" height=\"150\" width=\"150\" alt=\"\" class=\"feedStyle\"/></a></li>'";
+								}
+								html += eval(tmp);
+								if(i > limit) { return false; }
+							});
+							if(id !== 'flickr' && html.search("<li>") === -1) {
+								html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
+							}
 						}
-						html += eval(tmp);
-						//console.log(html);
-						if(i > limit) { return false; }
-					});
-					if(id !== 'flickr' && html.search("<li>") === -1) {
-						html+='<li><img src="/img/warning-icon.png" height="16" width="16" alt=""/>&nbsp;Sorry, nothing today!</li>';
+						html += closer;
+						success = true;
+						appendDOM(html);
 					}
-					html += closer;
-					appendDOM(html);
 				});
 			//non-standard feed
 			} else {
@@ -337,7 +363,6 @@
 				} else {
 					html += tmp;
 				}
-				//console.log(html);
 				appendDOM(html);
 			}
 		}

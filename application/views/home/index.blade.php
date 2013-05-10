@@ -117,7 +117,7 @@
 				</li>				
 				<li class="block3">
 					{{ HTML::link("http://coderbits.com/", "Coderbits&#8663;", array("title"=>"Open Coderbits site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
-					{{ HTML::link('#', 'Latest Coderbits activity - coming soon', array('id' => 'coderbits', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Coming soon', "onclick" => "return false;")) }}	<!-- Show latest Coderbits activity on this page -->
+					{{ HTML::link('#', 'Latest Coderbits badges', array('id' => 'coderbits', 'class' => 'hidden feedBtn listImg access-link', 'title' => 'Show latest Coderbits activity on this page', "onclick" => "return false;")) }}	
 				</li>
 				<!-- <li class="block3">
 					{HTML::link("http://evernote.com/", "Evernote&#8663;", array("title"=>"Open Evernote site in a new window/tab", "target"=>"_blank", "class" => "offsite link-new-win href")) }}<br/>
