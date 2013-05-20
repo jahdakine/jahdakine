@@ -10,6 +10,9 @@
 	@parent
 @endsection 
 @section('top')
+<div>
+	<gcse:search></gcse:search>
+</div>
 	<div id="list" class="list">
 		<div id="carousel">
 			<ul class="list-text">
@@ -208,6 +211,8 @@
 			rewrite JS using backbone
 			rewrite CSS using SASS or LESS
 			write a test harness for PHP and JS
+			clean-up Flickr display
+			FF and RR buttons opposite?
 			-->
 		</section><!-- // notes -->
 	</div><!-- // landing -->
@@ -217,6 +222,19 @@
 @section('footer')@endsection
 
 @section('scripts')
+	<!-- search -->
+	<script>
+	  (function() {
+	    var cx = '006125946068547899866:kzrqsv5_l08';
+	    var gcse = document.createElement('script');
+	    gcse.type = 'text/javascript';
+	    gcse.async = true;
+	    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	        '//www.google.com/cse/cse.js?cx=' + cx;
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script>
 	<!-- 	
 	<script src="http://platform.linkedin.com/in.js" type="text/javascript">
 		api_key: 
