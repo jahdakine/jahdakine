@@ -21,6 +21,7 @@
 			@if(!URI::is('users/login'))
 				{{ HTML::link("users/login", "Sign-on", array("title"=>"Sign on or register demonstration page", "class"=>"href hide signon", "id"=>"signon")) }}
 			@endif
+			<div><gcse:searchbox-only newWindow=true></gcse:searchbox-only></div>
 		</header>
 		<nav>
 			<ul class="drop" id="nav">
@@ -139,6 +140,16 @@
 			</div>
 		</footer>
 	</div> <!-- // wrapper -->
+	<script>
+  	(function() {
+  		//var cx = '006125946068547899866:5psnn32hv48';
+	    var cx = '000888210889775888983:eeinzw5ta4e';
+	    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+	    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	        '//www.google.com/cse/cse.js?cx=' + cx;
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);	    
+	  })();
+	</script>
 	<!-- monolith contains:
 	{ HTML::script('js/vendor/jquery-1.8.2.min.js') }}	
 	{ HTML::script('js/vendor/jquery-ui-1.9.2.custom.min.js') }}
@@ -150,8 +161,9 @@
 	-->
 	{{ HTML::script('js/vendor/monolith.js') }}	
 	{{ HTML::script('js/layout.funcs.js') }}
-					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
+	<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511ff8b15092ccae"></script>
+ 	
  	<!--<script src="&lt;?=Minifier::make(array('//js/vendor/jquery-1.8.2.min.js','//js/vendor/jquery-ui-1.9.2.custom.min.js','//js/vendor/jquery.qtip2.min.js','//js/vendor/jquery.carouFredSel-6.2.0-packed.js','//js/vendor/helper-plugins/jquery.touchSwipe.min.js','//js/vendor/jquery.center.min.js','//js/layout.funcs.js'))?>" type="text/javascript"> -->	
 	@yield('scripts')
 </body>
