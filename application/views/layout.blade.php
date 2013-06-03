@@ -122,7 +122,7 @@
 			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top</a>
 		</section>
 		<footer class="copy">
-			<div><gcse:searchbox-only newWindow=true></gcse:searchbox-only></div>
+			<div><gcse:searchbox-only></gcse:searchbox-only></div>
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
 				<span>
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>
