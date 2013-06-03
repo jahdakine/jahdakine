@@ -37,16 +37,16 @@
 			<div class="group">
 				<h3 class="accord-link" title="Reveal/Hide contents">EXPERIENCE</h3>
 				<div>
-					<h4>Consultant</h4>
-					<h5>GNERDL</h5>
-					<h6>February 2013 – Present</h6>
+					<h4>Freelancer/PHP Web Developer</h4>
+					<h5>Gnerdl/Portfolio/VivianLongArt/Various</h5>
+					<h6>May 2012 – Present</h6>
+					<p>Retooled from ColdFusion to Open Source PHP/CSS3/HTML5/jQuery/MAMP stack.</p>
 					<ul>
-						<li>Analyzed requirements</li>
-						<li>Built and designed prototypes</li>
+						<li>jahdakine.pagodabox.com – My portfolio site complete with API carousel integrating some of my favorite social networks, a showcase for previous work, a resume download feature, and a contact facility with spam blocker integration. Used PHP Laravel (MVC), jQuery, HTML5 local storage, and CSS3/Bootstrap to put forth a modern, responsive interface that complies with W3C standards and is accessible and configurable.</li>
+						<li>Gnerdl.com – A concept site helping gamers connect with other gamers and interests based on a standardized persona across multiple platforms. Modeled user stories and analyzed requirements for site launch. Created mockups and entity relationship drawings diagramming site flow and interfaces. Utilized database design, requirements gathering/analysis, prototyping, and object modeling skills. Still in alpha and not incorporated into current public listing.</li>
+						<li>VivainLongArt.com – Artist Studio Presentation site redesign. Presented artist's works using responsive layouts and customized image plugins, and custom search feature. Still in alpha and not incorporated into current public listing. </li>
+						<li>Training tools – Solved a problem with scattered codebases relating to coursework by writing a utility that takes course syllabuses and creates directory structures based on PHP environment. </li>
 					</ul>
-					<p>
-						Helped create requirement definitions and prototypes for a venture capital startup. Designed relationship diagrams, user storyboards, and functional prototypes.
-					</p>					
 					<h4>IT Professional IV - Database Application Specialist</h4>
 					<h5>NREL - National Renewable Energy Laboratory</h5>
 					<h6>June 2000 – April 2012 (11 years 11 months) Golden, Colorado</h6>
@@ -78,12 +78,13 @@
 				<div>
 					<ul>
 						<li>Web Applications</li>
-						<li>ColdFusion</li>
 						<li>PHP</li>
+						<li>MAMP</li>
+						<li>MySQL/SQL Server/Postgres</li>
 						<li>HTML4.01/XHTML/HTML5</li>
 						<li>CSS/CSS3</li>
 						<li>JavaScript/jQuery</li>
-						<li>MySQL/SQL Server/Postgres</li>
+						<li>ColdFusion</li>
 						<li>Unix Shell</li>
 					</ul>
 				</div>
@@ -91,9 +92,25 @@
 			<div class="group">
 				<h3 class="accord-link" title="Reveal contents/Hide">EDUCATION</h3>
 				<div>
-					<h4>Regis University</h4>
-					<h5>BS-CIS, Computer Information Systems</h5>
-					<h6>1995 – 1997</h6>
+					<h4>Institutional</h4>
+					<ul>
+						<li>Regis University: BS-CIS, Computer Information Systems: 1995 – 1997 (Magna Cum Laude)</li>
+					</ul>
+					<h4>Independent Coursework</h4>
+					<p>Continuous professional development utilizing online coursework</p>
+					<ul>
+						<li>NetTuts</li>
+						<li>Lynda</li>
+						<li>CodeCademy</li>
+						<li>Udemy</li>
+						<li>CodeSchool</li>
+					</ul>					
+					<h4>Certifications</h4>
+					<ul>
+						<li>SANS Defending Web Applications Security Essentials</li>
+						<li>Oracle SQL/PL-SQL</li>
+						<li>Oracle Programming Design Units </li>
+					</ul>
 				</div>
 			</div><!-- group -->
 			<div class="group">

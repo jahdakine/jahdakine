@@ -21,7 +21,6 @@
 			@if(!URI::is('users/login'))
 				{{ HTML::link("users/login", "Sign-on", array("title"=>"Sign on or register demonstration page", "class"=>"href hide signon", "id"=>"signon")) }}
 			@endif
-			<div><gcse:searchbox-only newWindow=true></gcse:searchbox-only></div>
 		</header>
 		<nav>
 			<ul class="drop" id="nav">
@@ -120,9 +119,10 @@
 			</aside>
 			@yield('main')
 			<div id="skipto" class="clear-fix pad"></div>
-			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top of Page</a>
+			<a href="#top" id="top-link"><i class="icon-circle-arrow-up"></i>&nbsp;Top</a>
 		</section>
 		<footer class="copy">
+			<div><gcse:searchbox-only newWindow=true></gcse:searchbox-only></div>
 			<div class="to-left">&copy;{{ date('Y') }} John Chase (aka 
 				<span>
 					<dfn title="IPA phonetics: dʒɑ dɑ <strong>ki</strong> neɪ <br/>(sounds like: jaw duh <strong>key</strong> nay)" class="black">jahdakine</dfn>
@@ -141,13 +141,15 @@
 		</footer>
 	</div> <!-- // wrapper -->
 	<script>
-  	(function() {
-  		//var cx = '006125946068547899866:5psnn32hv48';
-	    var cx = '000888210889775888983:eeinzw5ta4e';
-	    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+	  (function() {
+	    var cx = '006125946068547899866:5psnn32hv48';
+	    var gcse = document.createElement('script');
+	    gcse.type = 'text/javascript';
+	    gcse.async = true;
 	    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
 	        '//www.google.com/cse/cse.js?cx=' + cx;
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);	    
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(gcse, s);
 	  })();
 	</script>
 	<!-- monolith contains:
