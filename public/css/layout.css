@@ -6,7 +6,7 @@ body
 	color:#555;
 	line-height: 25px;
   background-color: #ccc;
-  min-width: 385px;
+  min-width: 320px;
   height: 100%;
   margin:0;
 }
@@ -281,7 +281,7 @@ ul.drop li:hover > ul { visibility: visible }
 
 /*
 | Media queries
- */
+*/
 @media all and (max-width : 1000px) {
   .main {
     line-height : 1.6; 
@@ -295,6 +295,9 @@ ul.drop li:hover > ul { visibility: visible }
 @media all and (max-width : 600px) {
   .wrapper>header {
     background-image:none;
+  }
+  #skipto {  
+    background-image:none; 
   }
   #legend {
     display:none;

@@ -205,11 +205,11 @@
         limit = 10;
         break;
       case ('flickr'):
-				html = "<div id='flickr-container'>";
+				html = "<div id='flickr-container' class='boxWrapper'>";
 				closer = "</div><div class=\"clear-fix\">";
 				http = 'http://api.flickr.com/services/feeds/photos_public.gne?id=23019891@N00&lang=en-us&format=json&jsoncallback=?';
 				obj = 'data.items';
-				tmp = "'<div><a href=\"' + item.link + '\" target=\"_blank\" class=\"flickr-img\" title=\"Open Flickr page titled &#34;' + item.title + '&#34; in a new window/tab\"><img src=\"' + item.media.m + '\" /></a></div>'";
+				tmp = "'<div class=\"boxOuter\"><a href=\"' + item.link + '\" target=\"_blank\" class=\"flickr-img boxInner\" title=\"Open Flickr page titled &#34;' + item.title + '&#34; in a new window/tab\"><img src=\"' + item.media.m + '\" /></a></div>'";
 				show = "content_frame.css('display','block').addClass('image-matrix')";
 				limit = 20;
         break;
