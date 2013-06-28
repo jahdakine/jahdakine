@@ -39,6 +39,13 @@
 			</p>
 			<br/>
 		</article>
+		<!-- 
+			To create new project:
+			add name.php file in application/views/home/partials/
+			copy name.php to ../../../../public/partials/name.php
+			then from public/partials make a sym link:
+			ln -sv ../../application/views/home/partials/name.php name.php 
+		-->
 		<div id="tabs">
 			<div id="projects">
 				<ul id="tab-links" class="hide">
@@ -103,9 +110,10 @@
 				<div id="volunteer">
 					<h5 class="h5nojs">Volunteer (Pro Bono)</h5>
 				  <ul>
-						<!-- <li><a href="project/" title="Show description and screenshots" class="project">One Voice ~ Many Paths</a></li> -->										
-						<!-- <li><a href="project/medusa/noimg/" title="Show description and screenshots" class="project href">Medusa</a></li> -->
+						<!-- <li><a href="project/one_voice_~_many_paths/noimg" title="Show description and screenshots" class="project href noimage">One Voice ~ Many Paths</a></li> -->										
+						<li><a href="project/vivian_long_art/null" title="Show description and screenshots" class="project href">Vivian Long Art</a></li>										
 						<li><a href="project/gnerdl/noimg" title="Show description and screenshots" class="project no-image href">Gnerdl</a></li>										
+						<li><a href="project/medusa/noimg/" title="Show description and screenshots" class="project href">Medusa</a></li>
 						<li><a href="project/corin_design/null/" title="Show description and screenshots" class="project href">Corin Design</a></li>
 						<li><a href="project/personal_site/null/" title="Show description and screenshots" class="project href">Personal Site</a></li>
 					</ul>

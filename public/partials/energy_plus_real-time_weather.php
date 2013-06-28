@@ -1,0 +1,1 @@
+../../application/views/home/partials/energy_plus_real-time_weather.php
